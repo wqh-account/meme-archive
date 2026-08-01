@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>热梗档案馆 · 近5年热门梗 & 今日热梗动画演示</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="nav">
+    <div class="logo">🔥 热梗<span class="hot">档案馆</span> <span class="arc">MEME ARCHIVE</span></div>
+    <div class="nav-links">
+      <a href="index.html" class="active">🏠 首页</a>
+      <a href="years.html">📅 五年编年史</a>
+    </div>
+  </nav>
+
+  <!-- 今日热搜滚动条 -->
+  <div class="ticker-wrap">
+    <div class="ticker" id="ticker"></div>
+  </div>
+
+  <!-- 首页动画舞台：近10天最热梗自动轮播 -->
+  <section class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-overlay">
+      <div class="hero-title">热梗正在发生</div>
+      <div class="hero-sub">近 10 天最热门的梗 · 动画自动演示中</div>
+      <div class="hero-badge" id="heroBadge">🔥 今日热梗</div>
+    </div>
+    <div class="hero-meta" id="heroMeta"></div>
+    <div class="hero-progress" id="heroProgress"></div>
+  </section>
+
+  <!-- 近10天热梗卡片墙 -->
+  <div class="section">
+    <div class="section-head">
+      <h2>🔥 近 10 天最热梗</h2>
+      <span class="tagline">数据抓取自 B 站官方热门/热搜接口（2026-08-01），点击「播放动画」观看自制演示，点击「看视频」直达 B 站。</span>
+    </div>
+    <div class="grid" id="recentGrid"></div>
+  </div>
+
+  <hr class="hr">
+
+  <!-- 五年编年史入口 -->
+  <div class="section">
+    <div class="section-head">
+      <h2>📅 近五年热门梗编年史</h2>
+      <span class="tagline">2021 → 2026 · 每个梗都有 B 站视频链接 + 自制动画演示</span>
+    </div>
+    <div class="year-strip" id="yearStrip"></div>
+  </div>
+
+  <div class="footer">
+    <b>热梗档案馆</b> · 一个用动画记住流行梗的地方<br>
+    热门数据来自 B 站官方接口 · 历史梗为人工整理 · 数据文件 <b>js/data.js</b> 可自行增删改<br>
+    💡 提示：可直接双击 <b>index.html</b> 打开，或运行 <b>start-server.ps1</b> 启动本地服务器
+  </div>
+
+  <!-- 动画演示弹窗 -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal">
+      <div class="modal-stage">
+        <canvas id="modalCanvas"></canvas>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <h3 id="modalName"></h3>
+        <p class="m-desc" id="modalDesc"></p>
+        <div class="m-btns">
+          <a class="btn video" id="modalVideo" target="_blank" rel="noopener">▶ 去 B 站看原视频</a>
+          <a class="btn" id="modalMore" href="years.html">📅 查看五年编年史</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/anim.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
