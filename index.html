@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>热梗档案馆 · 近5年热门梗 & 今日热梗动画演示</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .daily-entry { display:flex; align-items:center; gap:16px; padding:22px 26px; border-radius:18px;
+      background:linear-gradient(135deg,#1a2032,#141824); border:1px solid #ff5f6d66; text-decoration:none;
+      transition:.25s; flex-wrap:wrap; }
+    .daily-entry:hover { border-color:#ff5f6d; transform:translateY(-3px); box-shadow:0 8px 30px #ff5f6d22; }
+    .daily-entry-icon { font-size:34px; }
+    .daily-entry-title { font-size:20px; font-weight:bold; color:#fff; }
+    .daily-entry-sub { font-size:13px; color:#889; margin-top:4px; }
+    .daily-entry-go { margin-left:auto; font-size:15px; color:#ffc371; font-weight:bold; white-space:nowrap; }
+  </style>
 </head>
 <body>
 
@@ -13,6 +23,7 @@
     <div class="logo">🔥 热梗<span class="hot">档案馆</span> <span class="arc">MEME ARCHIVE</span></div>
     <div class="nav-links">
       <a href="index.html" class="active">🏠 首页</a>
+      <a href="daily.html">🔥 每日热点</a>
       <a href="years.html">📅 五年编年史</a>
     </div>
   </nav>
@@ -32,6 +43,18 @@
     </div>
     <div class="hero-meta" id="heroMeta"></div>
     <div class="hero-progress" id="heroProgress"></div>
+  </section>
+
+  <!-- 每日热点入口 -->
+  <section class="section">
+    <a href="daily.html" class="daily-entry">
+      <div class="daily-entry-icon">⚡</div>
+      <div>
+        <div class="daily-entry-title">🔥 每日热点 · 实时聚合</div>
+        <div class="daily-entry-sub">微博 / B站 / 抖音 三平台热榜 · 每天自动更新 · 每条热点一键传送</div>
+      </div>
+      <div class="daily-entry-go">立即查看 →</div>
+    </a>
   </section>
 
   <!-- 近10天热梗卡片墙 -->
