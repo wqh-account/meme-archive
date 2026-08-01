@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日热点 · 热梗档案馆</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .d-meta { display:flex; align-items:center; gap:12px; margin:10px 0 6px; flex-wrap:wrap; }
+    .d-updated { font-size:13px; color:#889; }
+    .d-source { font-size:12px; padding:3px 12px; border-radius:12px; background:#1c2130; color:#ffc371; border:1px solid #333; }
+    .d-tabs { display:flex; gap:10px; margin:20px 0 18px; flex-wrap:wrap; }
+    .d-tab { padding:9px 22px; border-radius:24px; background:#141824; color:#9aa3b5; cursor:pointer; border:1px solid #2a2f45; transition:.2s; font-size:14px; }
+    .d-tab:hover { border-color:#ff5f6d; color:#fff; }
+    .d-tab.active { background:linear-gradient(135deg,#ff5f6d,#ffc371); color:#111; font-weight:bold; border-color:transparent; }
+    .d-card { display:flex; align-items:center; gap:14px; padding:13px 18px; margin-bottom:10px; background:#141824; border:1px solid #2a2f45; border-radius:14px; transition:.2s; flex-wrap:wrap; }
+    .d-card:hover { border-color:#ff5f6d; transform:translateX(4px); }
+    .d-rank { font-size:20px; font-weight:900; width:38px; text-align:center; color:#ff5f6d; font-style:italic; flex-shrink:0; }
+    .d-rank.top1 { color:#ffc371; font-size:24px; }
+    .d-rank.top2 { color:#c0c8dc; font-size:22px; }
+    .d-rank.top3 { color:#e08b5b; font-size:21px; }
+    .d-title { flex:1; min-width:160px; font-size:16px; cursor:pointer; line-height:1.4; }
+    .d-title:hover { color:#ffc371; }
+    .d-hot { font-size:13px; color:#889; white-space:nowrap; min-width:70px; text-align:right; }
+    .d-portal { display:flex; gap:8px; flex-wrap:wrap; }
+    .d-btn { padding:6px 12px; border-radius:10px; font-size:12px; text-decoration:none; border:1px solid #444; color:#ddd; transition:.2s; white-space:nowrap; }
+    .d-btn:hover { background:#ff5f6d; border-color:#ff5f6d; color:#fff; }
+    .d-empty { padding:70px 20px; text-align:center; color:#889; font-size:15px; }
+    .d-empty b { color:#ffc371; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">🔥 热梗<span class="hot">档案馆</span> <span class="arc">MEME ARCHIVE</span></div>
+    <div class="nav-links">
+      <a href="index.html">🏠 首页</a>
+      <a href="daily.html" class="active">🔥 每日热点</a>
+      <a href="years.html">📅 五年编年史</a>
+    </div>
+  </nav>
+
+  <div class="section">
+    <div class="section-head">
+      <h2>🔥 每日热点 · 实时聚合</h2>
+      <span class="tagline">微博 / B站 / 抖音 三平台热榜 · 每个热点带「传送门」，一键直达各平台搜索</span>
+    </div>
+
+    <div class="d-meta">
+      <span class="d-updated" id="dailyUpdated">⏳ 更新时间：--</span>
+      <span class="d-source" id="dailySource">数据源：--</span>
+    </div>
+
+    <div class="d-tabs" id="dailyTabs"></div>
+    <div id="dailyList"></div>
+  </div>
+
+  <div class="footer">
+    <b>热梗档案馆</b> · 每日热点由定时任务自动抓取（B站官方接口 / 微博·抖音热榜聚合）<br>
+    点击热点标题查看源页面 · 点击「传送门」直达对应平台搜索该话题<br>
+    数据仅供学习交流，版权归原平台所有
+  </div>
+
+  <script src="js/daily-data.js"></script>
+  <script src="js/daily.js"></script>
+</body>
+</html>
