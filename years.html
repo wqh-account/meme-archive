@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>近五年热门梗编年史 · 热梗档案馆</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">🔥 热梗<span class="hot">档案馆</span> <span class="arc">MEME ARCHIVE</span></div>
+    <div class="nav-links">
+      <a href="index.html">🏠 首页</a>
+      <a href="years.html" class="active">📅 五年编年史</a>
+    </div>
+  </nav>
+
+  <div class="section" style="padding-top:90px;">
+    <div class="section-head">
+      <h2>📅 近五年热门梗编年史</h2>
+      <span class="tagline">2021 — 2026 · 点击「播放动画」看自制演示，点击「看视频」直达 B 站搜索</span>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+
+  <div class="footer">
+    <b>热梗档案馆</b> · 一个用动画记住流行梗的地方<br>
+    历史梗为人工整理（部分年份为示例数据）· 数据文件 <b>js/data.js</b> 可自行增删改
+  </div>
+
+  <!-- 动画演示弹窗 -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal">
+      <div class="modal-stage">
+        <canvas id="modalCanvas"></canvas>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <h3 id="modalName"></h3>
+        <p class="m-desc" id="modalDesc"></p>
+        <div class="m-btns">
+          <a class="btn video" id="modalVideo" target="_blank" rel="noopener">▶ 去 B 站看原视频</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/anim.js"></script>
+  <script src="js/years.js"></script>
+</body>
+</html>
