@@ -35,6 +35,9 @@
   var updEl = document.getElementById("dailyUpdated");
   var srcEl = document.getElementById("dailySource");
   var current = "weibo";
+  // 支持 hash 直达：daily.html#douyin / #bili / #weibo
+  var _h = location.hash ? location.hash.replace('#', '') : '';
+  if (_h && PLATFORMS.some(function (p) { return p.key === _h; })) current = _h;
   // default to the first platform that has data (better UX)
   if (DATA) {
     for (var i = 0; i < PLATFORMS.length; i++) {
@@ -120,4 +123,5 @@
   renderTabs();
   renderMeta();
   renderList();
+
 })();
