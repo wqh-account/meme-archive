@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梗龄测试 · 热梗档案馆</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .test-wrap { max-width: 620px; margin: 0 auto; padding: 40px 20px 60px; }
+  .t-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 20px; padding: 30px 26px; text-align: center; }
+  .t-title { font-size: 26px; font-weight: 900; margin-bottom: 8px; }
+  .t-sub { color: #889; font-size: 14px; margin-bottom: 26px; }
+  .t-question { font-size: 19px; line-height: 1.6; margin: 10px 0 22px; }
+  .t-question b { color: #ffc371; }
+  .t-options { display: grid; gap: 12px; }
+  .t-opt { cursor: pointer; padding: 14px 18px; border-radius: 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); color: #fff; font-size: 16px; text-align: left; transition: .2s; }
+  .t-opt:hover { border-color: #ff5f6d; background: rgba(255,95,109,.12); transform: translateX(4px); }
+  .t-opt.correct { border-color: #2ecc71; background: rgba(46,204,113,.18); }
+  .t-opt.wrong { border-color: #ff5f6d; background: rgba(255,95,109,.18); }
+  .t-opt.disabled { pointer-events: none; opacity: .75; }
+  .t-progress { height: 6px; background: rgba(255,255,255,.08); border-radius: 3px; margin-bottom: 24px; overflow: hidden; }
+  .t-progress i { display: block; height: 100%; background: linear-gradient(90deg,#ff5f6d,#ffc371); transition: width .3s; }
+  .t-count { font-size: 13px; color: #889; margin-bottom: 6px; }
+  .t-result-emoji { font-size: 64px; margin-bottom: 10px; }
+  .t-result-title { font-size: 28px; font-weight: 900; margin-bottom: 6px; }
+  .t-result-score { font-size: 15px; color: #889; margin-bottom: 18px; }
+  .t-share-box { background: rgba(255,255,255,.05); border: 1px dashed rgba(255,255,255,.2); border-radius: 12px; padding: 14px; font-size: 13px; color: #ccd; line-height: 1.7; text-align: left; margin-bottom: 18px; word-break: break-all; }
+  .t-btn { cursor: pointer; border: none; border-radius: 12px; padding: 13px 26px; font-size: 15px; font-weight: 700; margin: 6px; transition: .2s; }
+  .t-btn.primary { background: linear-gradient(135deg,#ff5f6d,#ffc371); color: #111; }
+  .t-btn.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,95,109,.35); }
+  .t-btn.ghost { background: rgba(255,255,255,.07); color: #fff; border: 1px solid rgba(255,255,255,.15); }
+  .t-btn.ghost:hover { border-color: #ff5f6d; }
+  .t-done { font-size: 15px; color: #fff; margin-bottom: 20px; line-height: 1.8; }
+  @media (max-width:640px){ .t-title{font-size:22px} .t-question{font-size:17px} .t-card{padding:22px 16px} }
+</style>
+
+<meta name="description" content="10道题测出你是哪年的冲浪选手，快来看看你的称号！">
+<meta property="og:title" content="测测你的梗龄｜热梗档案馆">
+<meta property="og:description" content="10道题测出你是哪年的冲浪选手，快来看看你的称号！">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meme-archive-2026.netlify.app/meme-test.html">
+<meta property="og:image" content="https://meme-archive-2026.netlify.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="index.html">🔥 热梗档案馆 <span class="arc">MEME ARCHIVE</span></a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="daily.html">每日热点</a>
+      <a href="years.html">五年编年史</a>
+      <a href="meme-test.html" style="color:#ffc371">🎮 梗龄测试</a>
+    </div>
+  </nav>
+
+  <div class="test-wrap">
+    <div class="t-card" id="quizBox">
+      <div class="t-progress" id="progressBar"><i id="progressFill" style="width:0%"></i></div>
+      <div class="t-count" id="quizCount"></div>
+      <div class="t-question" id="quizQuestion"></div>
+      <div class="t-options" id="quizOptions"></div>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var QUIZ = [
+    { name: '芭比Q了', year: 2021 },
+    { name: 'YYDS', year: 2021 },
+    { name: '刘畊宏女孩', year: 2022 },
+    { name: '疯狂星期四', year: 2022 },
+    { name: '科目三', year: 2023 },
+    { name: '挖呀挖呀挖', year: 2023 },
+    { name: '显眼包', year: 2023 },
+    { name: '南方小土豆', year: 2024 },
+    { name: 'City不City', year: 2024 },
+    { name: '天塌了', year: 2025 }
+  ];
+  var POOL = [2020, 2021, 2022, 2023, 2024, 2025, 2026];
+  var idx = 0, score = 0, locked = false;
+
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+  function start() {
+    idx = 0; score = 0; locked = false;
+    document.getElementById('quizBox').innerHTML =
+      '<div class="t-result-emoji">🎮</div>' +
+      '<div class="t-title">测测你的梗龄</div>' +
+      '<div class="t-sub">10 道题，测出你是哪年出生的冲浪选手</div>' +
+      '<button class="t-btn primary" id="beginBtn">开始测试</button>';
+    document.getElementById('beginBtn').addEventListener('click', function () { render(); });
+  }
+
+  function buildOptions(q) {
+    var wrong = POOL.filter(function (y) { return y !== q.year; });
+    wrong = shuffle(wrong).slice(0, 3);
+    var opts = shuffle(wrong.concat([q.year]));
+    return opts;
+  }
+
+  function render() {
+    locked = false;
+    var q = QUIZ[idx];
+    document.getElementById('quizBox').innerHTML =
+      '<div class="t-progress" id="progressBar"><i id="progressFill" style="width:0%"></i></div>' +
+      '<div class="t-count" id="quizCount"></div>' +
+      '<div class="t-question" id="quizQuestion"></div>' +
+      '<div class="t-options" id="quizOptions"></div>';
+    document.getElementById('progressFill').style.width = (idx / QUIZ.length * 100) + '%';
+    document.getElementById('quizCount').textContent = '第 ' + (idx + 1) + ' / ' + QUIZ.length + ' 题';
+    document.getElementById('quizQuestion').innerHTML = '『<b>' + q.name + '</b>』是在哪一年火遍全网的？';
+    var box = document.getElementById('quizOptions');
+    box.innerHTML = '';
+    [].forEach.call(buildOptions(q), function (y) {
+      var b = document.createElement('button');
+      b.className = 't-opt';
+      b.textContent = y + ' 年';
+      b.addEventListener('click', function () { pick(y, b); });
+      box.appendChild(b);
+    });
+  }
+
+  function pick(y, btn) {
+    if (locked) return;
+    locked = true;
+    var q = QUIZ[idx];
+    var opts = document.querySelectorAll('.t-opt');
+    [].forEach.call(opts, function (o) { o.classList.add('disabled'); });
+    if (y === q.year) { score++; btn.classList.add('correct'); }
+    else { btn.classList.add('wrong'); [].forEach.call(opts, function (o) { if (parseInt(o.textContent, 10) === q.year) o.classList.add('correct'); }); }
+    setTimeout(function () {
+      idx++;
+      if (idx < QUIZ.length) render(); else result();
+    }, 700);
+  }
+
+  function title() {
+    var pct = score / QUIZ.length;
+    if (pct >= 0.9) return ['🏆', '梗王本王'];
+    if (pct >= 0.7) return ['🌊', '资深冲浪选手'];
+    if (pct >= 0.5) return ['📱', '普通网民'];
+    if (pct >= 0.3) return ['🦕', '远古网友'];
+    return ['📡', '2G 信号接收中'];
+  }
+
+  function result() {
+    var t = title();
+    var shareText = '我在「热梗档案馆」测出梗龄：' + score + '/10 题，称号【' + t[1] + '】！你也来测测？' + location.origin + '/meme-test.html';
+    document.getElementById('progressFill').style.width = '100%';
+    document.getElementById('quizBox').innerHTML =
+      '<div class="t-result-emoji">' + t[0] + '</div>' +
+      '<div class="t-result-title">' + t[1] + '</div>' +
+      '<div class="t-result-score">答对 ' + score + ' / ' + QUIZ.length + ' 题</div>' +
+      '<div class="t-share-box" id="shareText">' + shareText + '</div>' +
+      '<button class="t-btn primary" id="copyBtn">📋 复制结果去炫耀</button><br>' +
+      '<button class="t-btn ghost" id="againBtn">🔄 再来一次</button> ' +
+      '<a class="t-btn ghost" href="index.html" style="text-decoration:none;display:inline-block">🏠 逛热梗档案馆</a>';
+    document.getElementById('copyBtn').addEventListener('click', function () {
+      var txt = document.getElementById('shareText').textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(function () { alert('已复制！快去朋友圈炫耀吧 🎉'); });
+      } else {
+        var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta); alert('已复制！快去朋友圈炫耀吧 🎉');
+      }
+    });
+    document.getElementById('againBtn').addEventListener('click', start);
+  }
+
+  start();
+})();
+</script>
+</body>
+</html>
