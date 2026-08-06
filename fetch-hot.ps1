@@ -46,6 +46,25 @@ function Get-WeiboSource {
         $r = Invoke-RestMethod -Uri "https://api-hot.imsyy.top/wbhot" -Headers $UA -TimeoutSec 12
         if ($r.data) { return @{ list = $r.data; src = "imsyy" } }
     } catch { }
+    # source 3: Baidu hot board (reliable in mainland China)
+    try {
+        $r = Invoke-RestMethod -Uri "https://top.baidu.com/api/board?platform=wise&tab=realtime" -Headers $UA -TimeoutSec 12
+        $card = $r.data.cards | Where-Object { $_.component -eq "tabTextList" } | Select-Object -First 1
+        if ($card -and $card.content) {
+            # Baidu returns a nested structure: content[0].content[] holds the real list
+            $raw = if ($card.content[0] -and $card.content[0].content) { $card.content[0].content } else { $card.content }
+            $list = @()
+            foreach ($it in $raw) {
+                if (-not $it.word) { continue }
+                $list += [pscustomobject]@{
+                    title = [string]$it.word
+                    hot   = 0
+                    url   = if ($it.url) { [string]$it.url } else { "https://www.baidu.com/s?wd=$([uri]::EscapeDataString([string]$it.word))" }
+                }
+            }
+            if ($list.Count) { return @{ list = $list; src = "baidu-hot" } }
+        }
+    } catch { }
     return $null
 }
 $wbSrc = Get-WeiboSource
