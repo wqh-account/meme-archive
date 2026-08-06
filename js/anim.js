@@ -31,11 +31,15 @@ function drawTitle(ctx, text, w, h, color, sizeRatio) {
   var size = Math.min(w / (text.length * 0.62 + 6), h * 0.14, 96);
   if (sizeRatio) size *= sizeRatio;
   ctx.save();
+  ctx.lineJoin = 'round';
+  ctx.strokeStyle = 'rgba(16,26,58,0.9)';
+  ctx.lineWidth = Math.max(3, size * 0.09);
   ctx.font = '900 ' + size + 'px "Microsoft YaHei", "PingFang SC", sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.shadowColor = color;
   ctx.shadowBlur = 30;
+  ctx.strokeText(text, w / 2, h * 0.5);
   ctx.fillStyle = '#ffffff';
   ctx.fillText(text, w / 2, h * 0.5);
   ctx.restore();
@@ -59,6 +63,130 @@ function drawBg(ctx, w, h, color, t) {
   }
   ctx.globalAlpha = 1;
 }
+/* ---------- MC 方块画风（站内原创像素风） ---------- */
+var MC_PAL = {
+  skyTop: '#6ba7ff', skyBot: '#c8e6ff',
+  sun: '#ffe87a', sunEdge: '#ffc93c',
+  cloud: '#ffffff', cloudShade: '#d8e8f8',
+  grassTop: '#79c143', grassSide: '#8a6a45', grassLine: '#5d9c34',
+  dirt: '#7a5540', dirtDark: '#654634',
+  tntRed: '#d33b2b', tntDark: '#a92c1f', tntWhite: '#f4ead9',
+  diamond: '#46e8d8', gold: '#ffd84d',
+  charSkin: '#e8b98a', charShirt: '#3fa9f5', charPants: '#3b5bdb'
+};
+
+/* MC 方块粒子: mcParticle(ctx,x,y,s,rot,color) */
+function mcParticle(ctx, x, y, s, rot, color) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.rotate(rot);
+  ctx.fillStyle = color;
+  ctx.fillRect(-s / 2, -s / 2, s, s);
+  ctx.fillStyle = 'rgba(255,255,255,0.35)';
+  ctx.fillRect(-s / 2, -s / 2, s, s * 0.28);
+  ctx.fillStyle = 'rgba(0,0,0,0.22)';
+  ctx.fillRect(-s / 2, s * 0.2, s, s * 0.3);
+  ctx.restore();
+}
+
+/* MC 风文字: 深色粗描边 + 白字（亮背景可读） */
+function drawMcText(ctx, text, x, y, size, glowColor) {
+  ctx.font = '900 ' + size + 'px "Microsoft YaHei", "PingFang SC", sans-serif';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.lineJoin = 'round';
+  ctx.strokeStyle = 'rgba(16,26,58,0.9)';
+  ctx.lineWidth = Math.max(3, size * 0.09);
+  ctx.strokeText(text, x, y);
+  if (glowColor) { ctx.shadowColor = glowColor; ctx.shadowBlur = 26; }
+  ctx.fillStyle = '#ffffff';
+  ctx.fillText(text, x, y);
+  ctx.shadowBlur = 0;
+}
+
+/* MC 方块人（Steve 风，原创像素小人） */
+function drawSteve(ctx, x, y, s, p) {
+  var bob = (p.bob || 0) * s;
+  var headS = 26 * s, bodyS = 20 * s;
+  var hipX = x, hipY = y + bodyS + bob;
+  function limb(hx, hy, ang, len, wd, col) {
+    ctx.save();
+    ctx.translate(hx, hy);
+    ctx.rotate(ang);
+    ctx.fillStyle = col;
+    ctx.fillRect(-wd / 2, 0, wd, len);
+    ctx.fillStyle = 'rgba(0,0,0,0.18)';
+    ctx.fillRect(-wd / 2, len - wd * 0.45, wd, wd * 0.45);
+    ctx.restore();
+  }
+  // 腿
+  limb(hipX - 4 * s, hipY, p.legL, 34 * s, 9 * s, MC_PAL.charPants);
+  limb(hipX + 4 * s, hipY, p.legR, 34 * s, 9 * s, MC_PAL.charPants);
+  // 身体
+  ctx.fillStyle = MC_PAL.charShirt;
+  ctx.fillRect(hipX - bodyS / 2, hipY - bodyS, bodyS, bodyS);
+  ctx.fillStyle = 'rgba(0,0,0,0.15)';
+  ctx.fillRect(hipX - bodyS / 2, hipY - bodyS, bodyS, 4 * s);
+  // 手臂
+  var shY = hipY - bodyS;
+  limb(hipX - bodyS / 2 - 2 * s, shY, p.armL, 30 * s, 8 * s, MC_PAL.charShirt);
+  limb(hipX + bodyS / 2 + 2 * s, shY, p.armR, 30 * s, 8 * s, MC_PAL.charShirt);
+  // 头（方块 + 像素脸）
+  var hy2 = shY - headS + 2 * s;
+  ctx.fillStyle = MC_PAL.charSkin;
+  ctx.fillRect(hipX - headS / 2, hy2, headS, headS);
+  ctx.fillStyle = 'rgba(0,0,0,0.15)';
+  ctx.fillRect(hipX - headS / 2, hy2, headS, 5 * s);
+  var ey = hy2 + headS * 0.38, ex = headS * 0.22;
+  ctx.fillStyle = '#3b2b1a';
+  ctx.fillRect(hipX - ex, ey, 4 * s, 5 * s);
+  ctx.fillRect(hipX + ex - 4 * s, ey, 4 * s, 5 * s);
+  ctx.fillRect(hipX - 3 * s, ey + 9 * s, 6 * s, 3 * s);
+}
+
+/* MC 方块世界背景 */
+function drawMcBg(ctx, w, h, t) {
+  var g = ctx.createLinearGradient(0, 0, 0, h);
+  g.addColorStop(0, MC_PAL.skyTop);
+  g.addColorStop(1, MC_PAL.skyBot);
+  ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+  // 方块太阳
+  var sx = w * 0.82, sy = h * 0.13, ss = 32;
+  ctx.fillStyle = 'rgba(255,232,122,0.35)';
+  ctx.fillRect(sx - ss * 0.7, sy - ss * 0.7, ss * 2.4, ss * 2.4);
+  ctx.fillStyle = MC_PAL.sun;
+  ctx.fillRect(sx, sy, ss, ss);
+  ctx.fillStyle = MC_PAL.sunEdge;
+  ctx.fillRect(sx + ss * 0.5, sy, ss * 0.5, ss);
+  ctx.fillRect(sx, sy + ss * 0.5, ss, ss * 0.5);
+  // 像素云
+  for (var i = 0; i < 3; i++) {
+    var rng = mulberry32(i * 77 + 3);
+    var cx = ((t * (8 + i * 5) + rng() * (w + 220)) % (w + 220)) - 110;
+    var cy = h * (0.06 + rng() * 0.2);
+    var cs = 15 + rng() * 13;
+    ctx.fillStyle = MC_PAL.cloud;
+    ctx.fillRect(cx, cy, cs * 3, cs);
+    ctx.fillRect(cx + cs, cy - cs, cs * 2, cs);
+    ctx.fillStyle = MC_PAL.cloudShade;
+    ctx.fillRect(cx, cy + cs * 0.55, cs * 3, cs * 0.45);
+  }
+  // 草方块地面
+  var gy = h * 0.78;
+  ctx.fillStyle = MC_PAL.grassTop;
+  ctx.fillRect(0, gy, w, h - gy);
+  ctx.fillStyle = MC_PAL.grassLine;
+  ctx.fillRect(0, gy, w, 8);
+  ctx.fillStyle = MC_PAL.grassSide;
+  ctx.fillRect(0, gy + 8, w, 14);
+  ctx.fillStyle = MC_PAL.dirt;
+  ctx.fillRect(0, gy + 22, w, h - gy - 22);
+  ctx.fillStyle = MC_PAL.dirtDark;
+  for (var j = 0; j < 14; j++) {
+    var r2 = mulberry32(j * 13 + 5);
+    ctx.fillRect(r2() * w, gy + 28 + r2() * (h - gy - 46), 6 + r2() * 10, 4 + r2() * 6);
+  }
+}
+
 /* 颜色变亮/变暗: shade('#4fc3f7', 22) 加深22% */
 function shade(hex, amt) {
   var c = hex.replace('#', '');
@@ -108,34 +236,32 @@ function sceneTextPop(ctx, w, h, t, meme) {
   ctx.translate(w / 2, h / 2);
   ctx.scale(grow + wob, grow - wob * 0.6);
   var size = Math.min(w / (text.length * 0.62 + 4), h * 0.16, 92);
-  ctx.font = '900 ' + size + 'px "Microsoft YaHei", "PingFang SC", sans-serif';
-  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-  ctx.shadowColor = meme.color; ctx.shadowBlur = 46;
-  ctx.fillStyle = '#ffffff';
-  ctx.fillText(text, 0, 0);
+  drawMcText(ctx, text, 0, 0, size, meme.color);
   ctx.restore();
   for (var i = 0; i < 26; i++) {
     var a = (i / 26) * Math.PI * 2 + t * 0.6;
     var rr = Math.min(w, h) * 0.32 + 42 * Math.sin(t * 2.1 + i * 2.4);
     var px = w / 2 + Math.cos(a) * rr, py = h / 2 + Math.sin(a) * rr;
     ctx.globalAlpha = 0.35 + 0.65 * Math.abs(Math.sin(t * 2.6 + i));
-    ctx.fillStyle = meme.color;
-    ctx.beginPath(); ctx.arc(px, py, 2 + (i % 3), 0, Math.PI * 2); ctx.fill();
+    mcParticle(ctx, px, py, 6 + (i % 3) * 3, t * 1.4 + i, meme.color);
   }
   ctx.globalAlpha = 1;
 }
 
-/* ---------- 场景：火柴人跳舞（科目三） ---------- */
+/* ---------- 场景：MC 方块人跳舞（科目三） ---------- */
 function sceneDance(ctx, w, h, t, meme) {
   var groundY = h * 0.72;
-  // 节拍条
+  // MC 方块节拍柱
   for (var i = 0; i < 9; i++) {
     var beat = Math.abs(Math.sin(t * 5.4 + i * 0.75));
     var bw = w / 9 - 8, bx = i * (w / 9) + 4;
     var bh = 26 + beat * 110;
     ctx.fillStyle = meme.color + 'aa';
-    roundRect(ctx, bx, groundY + 6, bw, -bh, 7);
-    ctx.fill();
+    ctx.fillRect(bx, groundY + 6, bw, -bh);
+    ctx.fillStyle = 'rgba(255,255,255,0.3)';
+    ctx.fillRect(bx, groundY + 6, bw, 4);
+    ctx.fillStyle = 'rgba(0,0,0,0.25)';
+    ctx.fillRect(bx + bw - 6, groundY + 6, 6, -bh);
   }
   var s = Math.min(w, h) / 300;
   var x = w / 2, y = groundY - 108 * s;
@@ -148,15 +274,9 @@ function sceneDance(ctx, w, h, t, meme) {
     legR: Math.sin(f + Math.PI) * 0.55,
     bob: Math.abs(Math.sin(f)) * 9
   };
-  drawStick(ctx, x, y, s, pose, meme.color);
+  drawSteve(ctx, x, y, s, pose);
   // 动作名称
-  ctx.save();
-  ctx.font = '800 ' + Math.min(w * 0.05, 34) + 'px "Microsoft YaHei", sans-serif';
-  ctx.textAlign = 'center';
-  ctx.fillStyle = 'rgba(255,255,255,0.85)';
-  ctx.shadowColor = meme.color; ctx.shadowBlur = 18;
-  ctx.fillText((meme.animText || meme.name) + ' 💃', w / 2, h * 0.14);
-  ctx.restore();
+  drawMcText(ctx, (meme.animText || meme.name) + ' 💃', w / 2, h * 0.88, Math.min(w * 0.05, 34), meme.color);
 }
 
 /* ---------- 场景：表情雨 ---------- */
@@ -203,12 +323,8 @@ function sceneShake(ctx, w, h, t, meme) {
   ctx.fillRect(-30, -30, w + 60, h + 60);
   var text = meme.animText || meme.name;
   var size = Math.min(w / (text.length * 0.68 + 4), h * 0.15, 88);
-  ctx.font = '900 ' + size + 'px "Microsoft YaHei", "PingFang SC", sans-serif';
-  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   var jx = (Math.random() * 2 - 1) * 9, jy = (Math.random() * 2 - 1) * 9;
-  ctx.shadowColor = '#ff1744'; ctx.shadowBlur = 34;
-  ctx.fillStyle = '#ffffff';
-  ctx.fillText(text, w / 2 + jx, h / 2 + jy);
+  drawMcText(ctx, text, w / 2 + jx, h / 2 + jy, size, '#ff1744');
   ctx.restore();
   // 感叹号
   for (var i = 0; i < 3; i++) {
@@ -223,7 +339,7 @@ function sceneShake(ctx, w, h, t, meme) {
   ctx.globalAlpha = 1;
 }
 
-/* ---------- 场景：火焰 ---------- */
+/* ---------- 场景：方块火焰（MC 火苗） ---------- */
 function sceneFire(ctx, w, h, t, meme) {
   for (var i = 0; i < 90; i++) {
     var rng = mulberry32(i * 613 + 13);
@@ -233,32 +349,102 @@ function sceneFire(ctx, w, h, t, meme) {
     var size = (7 + rng() * 26) * (1 - cycle * 0.75);
     var hue = rng() > 0.55 ? 16 : 42;
     ctx.globalAlpha = (1 - cycle) * 0.85;
-    ctx.fillStyle = 'hsl(' + hue + ', 100%, ' + (52 + cycle * 22) + '%)';
-    ctx.beginPath();
-    ctx.arc(x, y, size, 0, Math.PI * 2);
-    ctx.fill();
+    mcParticle(ctx, x, y, size * 1.5, t * 3 + i * 0.7, 'hsl(' + hue + ', 100%, ' + (52 + cycle * 22) + '%)');
   }
   ctx.globalAlpha = 1;
-  // 火星
+  // 火星（小方块）
   for (var j = 0; j < 26; j++) {
     var r2 = mulberry32(j * 317 + 5);
     var cy2 = (t * 0.9 + r2()) % 1;
     var x2 = w * (0.1 + 0.8 * r2());
     var y2 = h - cy2 * h * 0.9;
     ctx.globalAlpha = (1 - cy2) * 0.9;
-    ctx.fillStyle = '#ffd740';
-    ctx.beginPath();
-    ctx.arc(x2, y2, 2.5 * (1 - cy2) + 0.5, 0, Math.PI * 2);
-    ctx.fill();
+    mcParticle(ctx, x2, y2, (2.5 * (1 - cy2) + 0.5) * 2, t * 5 + j, '#ffd740');
   }
   ctx.globalAlpha = 1;
   var text = meme.animText || meme.name;
   var size = Math.min(w / (text.length * 0.6 + 4), h * 0.13, 80);
-  ctx.font = '900 ' + size + 'px "Microsoft YaHei", "PingFang SC", sans-serif';
-  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-  ctx.shadowColor = '#ff6d00'; ctx.shadowBlur = 40;
-  ctx.fillStyle = '#ffffff';
-  ctx.fillText(text, w / 2 + Math.sin(t * 2) * 4, h / 2 + Math.cos(t * 3) * 4);
+  drawMcText(ctx, text, w / 2 + Math.sin(t * 2) * 4, h / 2 + Math.cos(t * 3) * 4, size, '#ff6d00');
+}
+
+/* ---------- 场景：MC TNT 爆炸 ---------- */
+function sceneMcTnt(ctx, w, h, t, meme) {
+  var cx = w / 2, cy = h * 0.4;
+  var text = meme.animText || meme.name;
+  if (t < 2.0) {
+    // TNT 闪烁阶段
+    var flash = Math.abs(Math.sin(t * 14)) > 0.55;
+    var bs = Math.min(w, h) * 0.17;
+    ctx.fillStyle = flash ? MC_PAL.tntWhite : MC_PAL.tntRed;
+    ctx.fillRect(cx - bs / 2, cy - bs / 2, bs, bs);
+    ctx.fillStyle = flash ? '#ffffff' : MC_PAL.tntDark;
+    ctx.fillRect(cx - bs / 2, cy - bs / 2, bs, bs * 0.14);
+    ctx.fillStyle = flash ? MC_PAL.tntRed : '#24160f';
+    ctx.font = '900 ' + bs * 0.36 + 'px "Courier New", monospace';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('TNT', cx, cy + bs * 0.06);
+    drawMcText(ctx, text, cx, cy - bs * 1.0, Math.min(w * 0.06, 40), meme.color);
+  } else {
+    // 爆炸阶段
+    var et = t - 2.0;
+    var colors = ['#ff6d00', '#ff3d00', '#ffd54f', '#ff9800', '#f4ead9'];
+    for (var i = 0; i < 46; i++) {
+      var rng = mulberry32(i * 911 + 17);
+      var a = rng() * Math.PI * 2;
+      var spd = 60 + rng() * 320;
+      var dist = spd * et;
+      var px = cx + Math.cos(a) * dist;
+      var py = cy + Math.sin(a) * dist * 0.75 + et * et * 40;
+      var ps = (7 + rng() * 20) * clamp(1 - et / 2.4, 0.15, 1);
+      ctx.globalAlpha = clamp(1 - et / 2.6, 0, 1);
+      mcParticle(ctx, px, py, ps, a + et * 6, colors[i % colors.length]);
+    }
+    ctx.globalAlpha = 1;
+    // 方块冲击波环
+    var ring = clamp(et * 1.6, 0, 1);
+    ctx.strokeStyle = 'rgba(255,255,255,' + (0.6 * (1 - ring)) + ')';
+    ctx.lineWidth = 6 + ring * 8;
+    ctx.strokeRect(cx - 90 * ring, cy - 90 * ring, 180 * ring, 180 * ring);
+    // BOOM 文字
+    var bsize = Math.min(w * 0.2, 88) * clamp(1 - et * 1.5, 0.35, 1);
+    ctx.fillStyle = 'rgba(255,255,255,' + (0.9 * clamp(1 - et * 2.0, 0, 1)) + ')';
+    ctx.font = '900 ' + bsize + 'px "Courier New", monospace';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('BOOM!', cx, cy);
+    drawMcText(ctx, text, cx, cy + bsize * 1.3, Math.min(w * 0.055, 34), meme.color);
+  }
+}
+
+/* ---------- 场景：MC 方块雨 ---------- */
+function sceneMcRain(ctx, w, h, t, meme) {
+  var blocks = [
+    { top: MC_PAL.grassTop, side: MC_PAL.dirt },
+    { top: MC_PAL.diamond, side: '#2ea8a0' },
+    { top: MC_PAL.tntRed, side: MC_PAL.tntDark },
+    { top: MC_PAL.gold, side: '#c9972e' },
+    { top: '#a8c4e8', side: '#7d97b8' }
+  ];
+  for (var i = 0; i < 30; i++) {
+    var rng = mulberry32(i * 331 + 9);
+    var b = blocks[i % blocks.length];
+    var size = 18 + rng() * 26;
+    var vy = 90 + rng() * 120;
+    var span = h + 220;
+    var yOff = ((t * vy + rng() * span) % span) - 110;
+    var x = rng() * w;
+    var rot = rng() * 0.4 * Math.sin(t + i);
+    ctx.save();
+    ctx.translate(x, yOff);
+    ctx.rotate(rot);
+    ctx.fillStyle = b.top;
+    ctx.fillRect(-size / 2, -size / 2, size, size);
+    ctx.fillStyle = b.side;
+    ctx.fillRect(-size / 2, size * 0.18, size, size * 0.32);
+    ctx.fillStyle = 'rgba(0,0,0,0.2)';
+    ctx.fillRect(-size / 2, size / 2 - 4, size, 4);
+    ctx.restore();
+  }
+  drawTitle(ctx, meme.animText || meme.name, w, h, meme.color, 0.8);
 }
 
 /* ---------- 场景：开花 ---------- */
@@ -336,11 +522,7 @@ function sceneRing(ctx, w, h, t, meme) {
   ctx.save();
   ctx.translate(cx, cy);
   ctx.scale(pulse, pulse);
-  ctx.font = '900 ' + size + 'px "Microsoft YaHei", "PingFang SC", sans-serif';
-  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-  ctx.shadowColor = meme.color; ctx.shadowBlur = 44;
-  ctx.fillStyle = '#ffffff';
-  ctx.fillText(text, 0, 0);
+  drawMcText(ctx, text, 0, 0, size, meme.color);
   ctx.restore();
 }
 
@@ -355,7 +537,9 @@ var MemeAnim = {
     shake: sceneShake,
     fire: sceneFire,
     flower: sceneFlower,
-    ring: sceneRing
+    ring: sceneRing,
+    mcTnt: sceneMcTnt,
+    mcRain: sceneMcRain
   },
   start: function (canvas, meme, opts) {
     this.stop();
@@ -377,7 +561,7 @@ var MemeAnim = {
       var t = (now - start) / 1000;
       var w = canvas.clientWidth, h = canvas.clientHeight;
       ctx.clearRect(0, 0, w, h);
-      drawBg(ctx, w, h, meme.color || '#4fc3f7', t);
+      drawMcBg(ctx, w, h, t);
       scene(ctx, w, h, t, meme);
       if (t < duration) {
         self.raf = requestAnimationFrame(loop);
