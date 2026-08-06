@@ -15,6 +15,14 @@
     .daily-entry-sub { font-size:13px; color:#889; margin-top:4px; }
     .daily-entry-go { margin-left:auto; font-size:15px; color:#ffc371; font-weight:bold; white-space:nowrap; }
   </style>
+
+<meta name="description" content="收录五年全网热梗，追溯抖音、B站、微博每一个出圈名场面。测测你的梗龄！">
+<meta property="og:title" content="热梗档案馆｜近5年全网热梗收录 + 每日热点">
+<meta property="og:description" content="收录五年全网热梗，追溯抖音、B站、微博每一个出圈名场面。测测你的梗龄！">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meme-archive-2026.netlify.app/">
+<meta property="og:image" content="https://meme-archive-2026.netlify.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -25,6 +33,8 @@
       <a href="index.html" class="active">🏠 首页</a>
       <a href="daily.html">🔥 每日热点</a>
       <a href="years.html">📅 五年编年史</a>
+<a href="meme-test.html">🎮 梗龄测试</a>
+<a href="predict.html">📈 趋势预测</a>
     </div>
   </nav>
 
@@ -39,11 +49,21 @@
     <div class="hero-overlay">
       <div class="hero-title">热梗正在发生</div>
       <div class="hero-sub">近 10 天最热门的梗 · 动画自动演示中</div>
+      <div class="hero-slogan">收录五年全网热梗，追溯抖音 · B站 · 微博每一个出圈名场面</div>
       <div class="hero-badge" id="heroBadge">🔥 今日热梗</div>
     </div>
     <div class="hero-meta" id="heroMeta"></div>
     <div class="hero-progress" id="heroProgress"></div>
   </section>
+
+  <!-- 全站搜索 -->
+  <div class="search-bar" id="searchBar">
+    <span class="search-ico">🔍</span>
+    <input id="searchInput" type="text" placeholder="搜索全网热梗，如：芭比Q、YYDS、蛋仔、周处…" autocomplete="off">
+    <button id="searchClear" class="search-clear" title="清空">✕</button>
+    <span class="search-count" id="searchCount"></span>
+  </div>
+  <div class="search-hits" id="searchHits"></div>
 
   <!-- 每日热点入口 -->
   <section class="section">
@@ -55,13 +75,22 @@
       </div>
       <div class="daily-entry-go">立即查看 →</div>
     </a>
+  <!-- 三平台分区 -->
+  <section class="section">
+    <div class="section-head"><h2>三平台实时热榜</h2><span class="tagline">抖音 · B站 · 微博 今日热梗一键直达</span></div>
+    <div class="platform-cards">
+      <a class="p-card" href="daily.html#douyin"><span class="p-emoji">🎵</span><b>抖音热榜</b><small>今日热门话题 · 头条热榜源</small><span class="p-go">进入 →</span></a>
+      <a class="p-card" href="daily.html#bili"><span class="p-emoji">📺</span><b>B站热榜</b><small>官方热门视频 · 实时榜单</small><span class="p-go">进入 →</span></a>
+      <a class="p-card" href="daily.html#weibo"><span class="p-emoji">🔥</span><b>微博热榜</b><small>全网热议话题 · 百度热搜源</small><span class="p-go">进入 →</span></a>
+    </div>
+  </section>
   </section>
 
   <!-- 近10天热梗卡片墙 -->
   <div class="section">
     <div class="section-head">
       <h2>🔥 近 10 天最热梗</h2>
-      <span class="tagline">数据抓取自 B 站官方热门/热搜接口（2026-08-01），点击「播放动画」观看自制演示，点击「看视频」直达 B 站。</span>
+      <span class="tagline">数据抓取自 B 站官方热门/热搜接口，每日三次自动更新。点击「播放动画」观看自制演示，点击「看视频」直达 B 站。</span>
     </div>
     <div class="grid" id="recentGrid"></div>
   </div>
@@ -87,12 +116,22 @@
   <div class="modal-mask" id="modalMask">
     <div class="modal">
       <div class="modal-stage">
-        <canvas id="modalCanvas"></canvas>
+        <div class="stage-tabs" id="stageTabs">
+          <button class="st-tab active" data-tab="video">🎬 看原视频</button>
+          <button class="st-tab" data-tab="anim">✨ 自制动画</button>
+        </div>
+        <div class="stage-video" id="stageVideo">
+          <iframe id="videoFrame" src="" frameborder="0" scrolling="no" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="stage-loading" id="stageLoading"><div class="spinner"></div>加载中…</div>
+        <canvas id="modalCanvas" style="display:none"></canvas>
         <button class="modal-close" id="modalClose">✕</button>
       </div>
       <div class="modal-body">
         <h3 id="modalName"></h3>
+        <div class="m-meta" id="modalMeta"></div>
         <p class="m-desc" id="modalDesc"></p>
+        <div class="m-related" id="modalRelated"></div>
         <div class="m-btns">
           <a class="btn video" id="modalVideo" target="_blank" rel="noopener">▶ 去 B 站看原视频</a>
           <a class="btn" id="modalMore" href="years.html">📅 查看五年编年史</a>
@@ -102,6 +141,7 @@
   </div>
 
   <script src="js/data.js"></script>
+  <script src="js/covers.js"></script>
   <script src="js/anim.js"></script>
   <script src="js/main.js"></script>
 </body>
