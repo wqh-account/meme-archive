@@ -11,17 +11,32 @@
 /* 数据抓取自 B 站官方热门/热搜接口，抓取时间：2026-08-01 */
 const RECENT_MEMES = [
   {
-    id: 'r1',
-    name: '《死》死亡是什么？',
+    id: 'r11',
+    name: '本想简单吃个见手青小炒，却被云南…',
     emoji: '🔥',
     date: '2026-08-07',
-    hot: 100,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第1名：《死》死亡是什么？。',
-    animation: 'textPop',
-    animText: '《死》死亡是什么？',
+    desc: 'B站今日热门第11名：本想简单吃个见手青小炒，却被云南厨师火焰魔法吓晕了...。',
+    animation: 'shake',
+    animText: '本想简单吃个见手青小炒…',
     emojis: ['🔥', '⚡'],
-    color: '#ff6b6b',
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1e8Mk6wEWZ',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '《死》死亡是什么？',
+    emoji: '🎬',
+    date: '2026-08-07',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：《死》死亡是什么？。',
+    animation: 'fire',
+    animText: '《死》死亡是什么？',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
     videoUrl: 'https://www.bilibili.com/video/BV115un6dE9a',
     source: 'B站今日热门（实时抓取）'
   },
@@ -41,21 +56,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '欢迎来到研究生的世界',
-    emoji: '🎵',
-    date: '2026-08-07',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：欢迎来到研究生的世界。',
-    animation: 'ring',
-    animText: '欢迎来到研究生的世界',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1R53R6rE7a',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r10',
     name: '【独家】《将夜》第17集 痛其不…',
     emoji: '🎯',
@@ -71,48 +71,78 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r26',
-    name: '把课本搬进现实，送娃入住有100…',
-    emoji: '⚡',
+    id: 'r14',
+    name: '听说洛克王国的精灵原型很难猜？',
+    emoji: '🎵',
     date: '2026-08-07',
-    hot: 75,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：把课本搬进现实，送娃入住有1000个兵马俑的奇葩酒店！他惊呆了！。',
-    animation: 'fire',
-    animText: '把课本搬进现实，送娃入住有1000个兵马俑的奇葩酒店…',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1qyu76BE7F',
+    desc: 'B站今日热门第14名：听说洛克王国的精灵原型很难猜？。',
+    animation: 'ring',
+    animText: '听说洛克王国的精灵原型很难猜…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1hTup6uERS',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '第三集 |🐧赛伊德：“雷斯也变…',
-    emoji: '🎯',
+    id: 'r15',
+    name: '欢迎来到研究生的世界',
+    emoji: '📺',
     date: '2026-08-07',
-    hot: 91,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：第三集 |🐧赛伊德：“雷斯也变成女孩了？！”🐧。',
-    animation: 'emojiRain',
-    animText: '第三集 |🐧赛伊德…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1T8uJ6oEqK',
+    desc: 'B站今日热门第15名：欢迎来到研究生的世界。',
+    animation: 'textPop',
+    animText: '欢迎来到研究生的世界',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1R53R6rE7a',
     source: 'B站今日热门（实时抓取）'
   },
   {
     id: 'r16',
-    name: '保安从业手册！超好玩儿的奇幻喜剧…',
+    name: '逆天！1.9元套餐收60元服务费…',
     emoji: '⚡',
     date: '2026-08-07',
     hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：保安从业手册！超好玩儿的奇幻喜剧，上映20年创意依然脑洞大开。',
+    desc: 'B站今日热门第16名：逆天！1.9元套餐收60元服务费，老板要起诉勇哥并报警！【网络狠人111】。',
     animation: 'dance',
-    animText: '保安从业手册！超好玩儿的奇幻喜剧…',
+    animText: '逆天！1.9元套餐收60元服务费…',
     emojis: ['⚡', '⚡'],
     color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1GYMk6FEPY',
+    videoUrl: 'https://www.bilibili.com/video/BV1LGuJ6uEvx',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r31',
+    name: '高中尊者？本科圣人？小明修仙传2…',
+    emoji: '🔥',
+    date: '2026-08-07',
+    hot: 70,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第31名：高中尊者？本科圣人？小明修仙传25分钟优化纯享版【AI全民制作人】。',
+    animation: 'emojiRain',
+    animText: '高中尊者？本科圣人？小明…',
+    emojis: ['🔥', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1U8MS65Efm',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r32',
+    name: '《别接我，我改！》',
+    emoji: '🎬',
+    date: '2026-08-07',
+    hot: 69,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第32名：《别接我，我改！》。',
+    animation: 'shake',
+    animText: '《别接我，我改！》',
+    emojis: ['🎬', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1v1Mr6wEiP',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -130,42 +160,12 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1JtuF64ENj',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r25',
-    name: '离谱！狗子被催五万网贷',
-    emoji: '📺',
-    date: '2026-08-07',
-    hot: 76,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：离谱！狗子被催五万网贷。',
-    animation: 'shake',
-    animText: '离谱！狗子被催五万网贷',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV123un6ZEck',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r26',
-    name: '《别接我，我改！》',
-    emoji: '⚡',
-    date: '2026-08-07',
-    hot: 75,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：《别接我，我改！》。',
-    animation: 'fire',
-    animText: '《别接我，我改！》',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1v1Mr6wEiP',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 
 /* ---------- 今日热搜词（顶部滚动条） ---------- */
 const HOT_WORDS = [
-  '真实电竞评NIP战胜IG', '中国人会飞主创真龙回应', '美国弹药紧张原因何在', '为什么蜜雪冰城越卖越贵', 'WE AL', '一化儿粉丝破1000万', '西游记之外的三本游记有多离谱', '中国三蹦子为何在美被制裁', '酸菜坑为何成了夺命坑', '皇马官宣迪奥曼德加盟', 'GTA6将发布新预告片', '央视起底网购以旧换新变零元购'
+  '雀巢工作室VS小潮team', '被焦虑毁掉的多角恋叙事', '中国AI偶像能飞', '中国人会飞主创真龙回应', '绝地反击大战肉食恐龙', '周深贵州方言新歌每个人', '小明修仙传', '牛蛙抗生素超标还能吃吗', 'UP主做出雷神之锤汉堡', '真实电竞评NIP战胜IG', '当周处除三害照进现实', 'GTA6将发布新预告片'
 ];
 
 /* ---------- 近五年经典梗编年史 (2021-2026) ---------- */
