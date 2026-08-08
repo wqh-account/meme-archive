@@ -108,6 +108,46 @@
     }, 120);
   }
 
+  /* ---------- 全网出圈热梗（流传度广的梗 + 爆火的人） ---------- */
+  function renderViral() {
+    var grid = document.getElementById('viralGrid');
+    if (!grid) return;
+    grid.innerHTML = VIRAL_MEMES.map(function (m, i) {
+      var tags = (m.tags || []).map(function (t) { return '<span class="tag">' + t + '</span>'; }).join('');
+      var bv = getBvid(m.videoUrl);
+      var real = bv && (window.COVERS || {})[bv];
+      var cover = real
+        ? '<div class="card-cover"><img class="cover-img" src="' + COVERS[bv] + '" referrerpolicy="no-referrer" loading="lazy" alt="" onerror="this.parentNode.style.display=\'none\'"><span class="cover-badge">🚀 出圈</span><span class="cover-hot">' + m.hot + '</span><span class="cover-play">▶ 看原视频</span></div>'
+        : '<div class="card-cover fb" data-name="' + q(m.name) + '" data-emoji="' + q(m.emoji || '🚀') + '"><span class="cover-badge">🚀 出圈</span><span class="cover-hot">' + m.hot + '</span><span class="cover-play">▶ 看原视频</span></div>';
+      return '<div class="card" data-kw="' + q(memeText(m)) + '">' + cover +
+        '<div class="card-head"><span class="rank">#' + (i + 1) + '</span><span class="date">' + (m.date || '') + '</span></div>' +
+        '<div class="card-top"><span class="card-emoji">' + m.emoji + '</span>' +
+        '<div class="card-name" title=' + q(m.name) + '>' + m.name + '</div></div>' +
+        '<div class="card-tags">' + tags + '</div>' +
+        '<div class="card-desc" title=' + q(m.desc) + '>' + m.desc + '</div>' +
+        '<div class="hot-bar"><span class="label">🔥 热度</span>' +
+        '<div class="track"><div class="fill" data-hot="' + m.hot + '"></div></div>' +
+        '<span class="num">' + m.hot + '</span></div>' +
+        '<div class="card-actions">' +
+        '<button class="btn play" data-vidx="' + i + '">🎬 播放动画</button>' +
+        '<a class="btn video" href="' + m.videoUrl + '" target="_blank" rel="noopener">▶ 看视频</a>' +
+        '</div></div>';
+    }).join('');
+    // 无真实封面的卡片：canvas 绘制 MC 像素兜底封面
+    [].forEach.call(grid.querySelectorAll('.card-cover.fb'), function (el) {
+      var cv = document.createElement('canvas');
+      cv.width = 640; cv.height = 360;
+      drawMcFallback(cv.getContext('2d'), el.getAttribute('data-name'), el.getAttribute('data-emoji'));
+      el.insertBefore(cv, el.firstChild);
+    });
+    // 热度条动画
+    setTimeout(function () {
+      grid.querySelectorAll('.fill').forEach(function (f) {
+        f.style.width = f.getAttribute('data-hot') + '%';
+      });
+    }, 120);
+  }
+
   /* ---------- 五年入口 ---------- */
   function renderYears() {
     var strip = document.getElementById('yearStrip');
@@ -127,6 +167,7 @@
   function buildAllMemes() {
     var all = [];
     (RECENT_MEMES || []).forEach(function (m) { all.push({ m: m, isRecent: true }); });
+    (VIRAL_MEMES || []).forEach(function (m) { all.push({ m: m, isRecent: true }); });
     (YEARS || []).forEach(function (yr) {
       (yr.memes || []).forEach(function (m) { all.push({ m: m, year: yr.year, isRecent: false }); });
     });
@@ -140,6 +181,7 @@
     var count = document.getElementById('searchCount');
     var hits = document.getElementById('searchHits');
     var grid = document.getElementById('recentGrid');
+    var vgrid = document.getElementById('viralGrid');
     if (!input) return;
     var histMemes = [];
 
@@ -148,6 +190,7 @@
       var has = kw.length > 0;
       if (clear) clear.style.display = has ? 'block' : 'none';
       var cards = grid ? grid.querySelectorAll('.card') : [];
+      if (vgrid) cards = cards.concat(Array.prototype.slice.call(vgrid.querySelectorAll('.card')));
       var recentHit = 0;
       histMemes = [];
       if (has) {
@@ -360,6 +403,11 @@
       openModal(RECENT_MEMES[idx]);
       return;
     }
+    if (playBtn && playBtn.hasAttribute('data-vidx')) {
+      var vidx = parseInt(playBtn.getAttribute('data-vidx'), 10);
+      openModal(VIRAL_MEMES[vidx]);
+      return;
+    }
     var st = e.target.closest('.st-tab');
     if (st && modalMeme) {
       var tab = st.getAttribute('data-tab');
@@ -385,6 +433,7 @@
   /* ---------- 启动 ---------- */
   renderTicker();
   renderRecent();
+  renderViral();
   renderYears();
   initSearch();
   playHero();
