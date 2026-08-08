@@ -162,6 +162,129 @@ const RECENT_MEMES = [
   },
 ];
 
+/* ---------- 全网出圈热梗（流传度广的梗 + 爆火的人，不只热搜榜） ---------- */
+const VIRAL_MEMES = [
+  {
+    id: 'v1',
+    name: '中国人能飞（揽佬）',
+    emoji: '🚀',
+    date: '2026-08-05',
+    hot: 100,
+    tags: ['全网出圈', '说唱神曲', '人物'],
+    desc: '惠州说唱歌手揽佬（陈序垲）登上美国电台《On The Radar》freestyle，唱响"中国人能飞，黄皮肤才对，讲中文才飞，中国就是美"。7月28日《国防时报》用其做航天/战机视频BGM直接抬咖出圈，8月5日登微博热搜，B站二创动辄数百万播放。',
+    animation: 'ring',
+    animText: '中国人能飞',
+    emojis: ['🚀', '✈️', '🇨🇳'],
+    color: '#ff6b6b',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E4%BA%BA%E8%83%BD%E9%A3%9E',
+    source: '全网流传（人工收录）'
+  },
+  {
+    id: 'v2',
+    name: 'OMG你吓到我了（papi酱）',
+    emoji: '🎤',
+    date: '2026-07',
+    hot: 97,
+    tags: ['AI单曲', '二创刷屏', '人物'],
+    desc: 'papi酱AI单曲副歌"OMG你吓到我了"魔性洗脑，与"中国人能飞"并称2026夏天两大互联网声音记忆，翻唱二创刷屏。',
+    animation: 'textPop',
+    animText: 'OMG你吓到我了',
+    emojis: ['🎤', '😱'],
+    color: '#feca57',
+    videoUrl: 'https://search.bilibili.com/all?keyword=OMG%E4%BD%A0%E5%90%93%E5%88%B0%E6%88%91%E4%BA%86',
+    source: '全网流传（人工收录）'
+  },
+  {
+    id: 'v3',
+    name: '大展鸿图（揽佬）',
+    emoji: '🏮',
+    date: '2025-07',
+    hot: 95,
+    tags: ['海外爆火', '说唱', '人物'],
+    desc: '揽佬代表作，"别墅里面唱K，水池里面银龙鱼"魔性歌词+舞蹈在中国台湾与英语世界爆火，曾以月听众302万登顶Spotify华语歌手第一。',
+    animation: 'dance',
+    animText: '大展鸿图',
+    emojis: ['🏮', '🐟'],
+    color: '#ff9ff3',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E6%8F%BD%E4%BD%AC%E5%A4%A7%E5%B1%95%E9%B8%BF%E5%9B%BE',
+    source: '全网流传（人工收录）'
+  },
+  {
+    id: 'v4',
+    name: '《别接我，我改！》（中国消防）',
+    emoji: '🚒',
+    date: '2026-08-08',
+    hot: 94,
+    tags: ['官方整活', 'B站热门'],
+    desc: '中国消防官方号魔性整活视频，835万播放，官方下场玩梗的天花板，又好笑又正能量。',
+    animation: 'fire',
+    animText: '别接我，我改！',
+    emojis: ['🚒', '🔥'],
+    color: '#ff6b6b',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E5%88%AB%E6%8E%A5%E6%88%91%E6%88%91%E6%94%B9',
+    source: 'B站热门（全网流传）'
+  },
+  {
+    id: 'v5',
+    name: '欢迎来到研究生的世界',
+    emoji: '🎓',
+    date: '2026-08-08',
+    hot: 93,
+    tags: ['爆款视频', 'B站热门'],
+    desc: 'UP主豆豆豆豆逗是我的整活视频，841万播放，研究生日常被演活了，全网研究生共鸣爆棚。',
+    animation: 'textPop',
+    animText: '欢迎来到研究生的世界',
+    emojis: ['🎓', '📚'],
+    color: '#54a0ff',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E4%B8%96%E7%95%8C',
+    source: 'B站热门（全网流传）'
+  },
+  {
+    id: 'v6',
+    name: '当和你一起玩的那个兄弟延迟过高',
+    emoji: '🎮',
+    date: '2026-08-08',
+    hot: 92,
+    tags: ['游戏整活', 'B站热门'],
+    desc: '联机游戏延迟名场面，631万播放，"兄弟延迟过高"让每个开黑玩家都狠狠共情。',
+    animation: 'shake',
+    animText: '兄弟延迟过高',
+    emojis: ['🎮', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E5%BD%93%E5%92%8C%E4%BD%A0%E4%B8%80%E8%B5%B7%E7%8E%A9%E7%9A%84%E9%82%A3%E4%B8%AA%E5%85%84%E5%BC%9F%E5%BB%B6%E8%BF%9F%E8%BF%87%E9%AB%98',
+    source: 'B站热门（全网流传）'
+  },
+  {
+    id: 'v7',
+    name: '见手青小炒火焰魔法',
+    emoji: '🍄',
+    date: '2026-08-08',
+    hot: 90,
+    tags: ['美食爆款', 'B站热门'],
+    desc: '盗月社见手青小炒，云南厨师火焰魔法346万播放，又怕又馋，评论区全是"吃了见小人"的梗。',
+    animation: 'fire',
+    animText: '见手青火焰魔法',
+    emojis: ['🍄', '🔥'],
+    color: '#ff9ff3',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E8%A7%81%E6%89%8B%E9%9D%92%E5%B0%8F%E7%82%92',
+    source: 'B站热门（全网流传）'
+  },
+  {
+    id: 'v8',
+    name: '不要做挑战第二十一期',
+    emoji: '🎯',
+    date: '2026-08-08',
+    hot: 89,
+    tags: ['综艺整活', 'B站热门'],
+    desc: '小潮院长"不要做挑战"系列第21期，216万播放，老牌整活IP持续长红，新一期照样上热门。',
+    animation: 'shake',
+    animText: '不要做挑战',
+    emojis: ['🎯', '😤'],
+    color: '#f368e0',
+    videoUrl: 'https://search.bilibili.com/all?keyword=%E4%B8%8D%E8%A6%81%E5%81%9A%E6%8C%91%E6%88%98%E5%B0%8F%E6%BD%AE%E9%99%A2%E9%95%BF',
+    source: 'B站热门（全网流传）'
+  }
+];
 
 /* ---------- 今日热搜词（顶部滚动条） ---------- */
 const HOT_WORDS = [
