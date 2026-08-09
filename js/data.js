@@ -11,18 +11,18 @@
 /* 数据抓取自 B 站官方热门/热搜接口，抓取时间：2026-08-01 */
 const RECENT_MEMES = [
   {
-    id: 'r1',
-    name: '调色别再只会拉饱和度啦',
-    emoji: '🔥',
+    id: 'r13',
+    name: '😨"后室里的乌鲁鲁"😰',
+    emoji: '🎮',
     date: '2026-08-09',
-    hot: 100,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第1名：调色别再只会拉饱和度啦。',
-    animation: 'textPop',
-    animText: '调色别再只会拉饱和度啦',
-    emojis: ['🔥', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1TgMZ6cEYd',
+    desc: 'B站今日热门第13名：😨"后室里的乌鲁鲁"😰。',
+    animation: 'flower',
+    animText: '😨"后室里的乌鲁鲁"�…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1YYuN6tEWC',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -41,48 +41,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '😨"后室里的乌鲁鲁"😰',
-    emoji: '🎮',
-    date: '2026-08-09',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：😨"后室里的乌鲁鲁"😰。',
-    animation: 'flower',
-    animText: '😨"后室里的乌鲁鲁"�…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1YYuN6tEWC',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r14',
-    name: '怪兽中 出了一个奥特曼的卧底',
+    name: '[我的世界怪物学院] 逗逗小乐魂',
     emoji: '🎵',
     date: '2026-08-09',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：怪兽中 出了一个奥特曼的卧底。',
+    desc: 'B站今日热门第14名：[我的世界怪物学院] 逗逗小乐魂。',
     animation: 'ring',
-    animText: '怪兽中 出了一个奥特曼的…',
+    animText: '我的世界怪物学院 逗逗小…',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1gnub6REqy',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '发烧梗',
-    emoji: '📺',
-    date: '2026-08-09',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：发烧梗。',
-    animation: 'textPop',
-    animText: '发烧梗',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Unub69EpX',
+    videoUrl: 'https://www.bilibili.com/video/BV1quug6JE11',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -102,47 +72,17 @@ const RECENT_MEMES = [
   },
   {
     id: 'r14',
-    name: '[我的世界怪物学院] 逗逗小乐魂',
+    name: '怪兽中 出了一个奥特曼的卧底',
     emoji: '🎵',
     date: '2026-08-09',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：[我的世界怪物学院] 逗逗小乐魂。',
+    desc: 'B站今日热门第14名：怪兽中 出了一个奥特曼的卧底。',
     animation: 'ring',
-    animText: '我的世界怪物学院 逗逗小…',
+    animText: '怪兽中 出了一个奥特曼的…',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1quug6JE11',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '在贵州按猪遇见羡慕的婚礼',
-    emoji: '📺',
-    date: '2026-08-09',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：在贵州按猪遇见羡慕的婚礼。',
-    animation: 'textPop',
-    animText: '在贵州按猪遇见羡慕的婚礼',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Bbun6jEaJ',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '“那些只打高端局的神级串烧”',
-    emoji: '🎵',
-    date: '2026-08-09',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：“那些只打高端局的神级串烧”。',
-    animation: 'ring',
-    animText: '“那些只打高端局的神级串…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1J4un6mEV1',
+    videoUrl: 'https://www.bilibili.com/video/BV1gnub6REqy',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -158,6 +98,66 @@ const RECENT_MEMES = [
     emojis: ['📺', '⚡'],
     color: '#f368e0',
     videoUrl: 'https://www.bilibili.com/video/BV1vtMy63E4G',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '发烧梗',
+    emoji: '⚡',
+    date: '2026-08-09',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：发烧梗。',
+    animation: 'dance',
+    animText: '发烧梗',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1Unub69EpX',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '在东方明珠玩100人躲猫猫！奖金…',
+    emoji: '🎮',
+    date: '2026-08-09',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：在东方明珠玩100人躲猫猫！奖金10万元。',
+    animation: 'flower',
+    animText: '在东方明珠玩100人躲猫猫…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1ocu46fE1z',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '调色别再只会拉饱和度啦',
+    emoji: '🎵',
+    date: '2026-08-09',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：调色别再只会拉饱和度啦。',
+    animation: 'ring',
+    animText: '调色别再只会拉饱和度啦',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1TgMZ6cEYd',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '在贵州按猪遇见羡慕的婚礼',
+    emoji: '📺',
+    date: '2026-08-09',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：在贵州按猪遇见羡慕的婚礼。',
+    animation: 'textPop',
+    animText: '在贵州按猪遇见羡慕的婚礼',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1Bbun6jEaJ',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -288,7 +288,7 @@ const VIRAL_MEMES = [
 
 /* ---------- 今日热搜词（顶部滚动条） ---------- */
 const HOT_WORDS = [
-  'KSG战胜AG.AL赛后数据', '台风白海豚', '警惕食品中的含糖陷阱', '堂主年马计划一周年', '大学刚毕业的我们belike', '曼联1-1巴黎', '野兽先生回归6年前的MC', '曝费兰托雷斯和巴黎达成协议', '财神窦占龙', '罗子君近期为何再次翻红', '完蛋男同学主创回应', 'AG.AL KSG'
+  'KSG战胜AG.AL赛后数据', '欢迎来龙餐馆是反战片吗', '台风白海豚', '堂主年马计划一周年', '歌剧老师锐评歌王之战', '曝费兰托雷斯和巴黎达成协议', '罗子君近期为何再次翻红', '曼联1-1巴黎', '当年的CF老玩家现在在做什么', '台风红色预警发布', 'WBG LNG', 'AG.AL KSG'
 ];
 
 /* ---------- 近五年经典梗编年史 (2021-2026) ---------- */
