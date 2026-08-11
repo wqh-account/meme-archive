@@ -11,6 +11,21 @@
 /* 数据抓取自 B 站官方热门/热搜接口，抓取时间：2026-08-01 */
 const RECENT_MEMES = [
   {
+    id: 'r20',
+    name: '靠这锅沙子烤玉米，他在印度街头撑…',
+    emoji: '🎯',
+    date: '2026-08-11',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：靠这锅沙子烤玉米，他在印度街头撑起了尊严。',
+    animation: 'flower',
+    animText: '靠这锅沙子烤玉米，他在印…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV15HuZ62E6R',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r13',
     name: '《原神》角色预告-「奥黛塔：天真…',
     emoji: '🎮',
@@ -26,18 +41,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '靠这锅沙子烤玉米，他在印度街头撑…',
-    emoji: '🎯',
+    id: 'r12',
+    name: '【萌黄一槽】一起来捉萤火虫吧！枫…',
+    emoji: '🎬',
     date: '2026-08-11',
-    hot: 81,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：靠这锅沙子烤玉米，他在印度街头撑起了尊严。',
-    animation: 'flower',
-    animText: '靠这锅沙子烤玉米，他在印…',
-    emojis: ['🎯', '⚡'],
+    desc: 'B站今日热门第12名：【萌黄一槽】一起来捉萤火虫吧！枫[夏日限定]全技能爆料！。',
+    animation: 'fire',
+    animText: '萌黄一槽一起来捉萤火虫吧…',
+    emojis: ['🎬', '⚡'],
     color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV15HuZ62E6R',
+    videoUrl: 'https://www.bilibili.com/video/BV1kguq6YEZg',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '不看后悔！海绵宝宝主题汉堡店 这…',
+    emoji: '🎵',
+    date: '2026-08-11',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：不看后悔！海绵宝宝主题汉堡店 这装修下血本了。',
+    animation: 'ring',
+    animText: '不看后悔！海绵宝宝主题汉堡店…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV11vu96nEHL',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '青瓦台不是从外部被攻破的！李在明…',
+    emoji: '🎬',
+    date: '2026-08-11',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：青瓦台不是从外部被攻破的！李在明废除韩国监察厅？。',
+    animation: 'fire',
+    animText: '青瓦台不是从外部被攻破的…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1sAuq6uEma',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -57,77 +102,47 @@ const RECENT_MEMES = [
   },
   {
     id: 'r19',
-    name: '《人民の少爷》',
+    name: '《英文最差の一集》',
     emoji: '🎤',
     date: '2026-08-11',
     hot: 82,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：《人民の少爷》。',
+    desc: 'B站今日热门第19名：《英文最差の一集》。',
     animation: 'fire',
-    animText: '《人民の少爷》',
+    animText: '《英文最差の一集》',
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1rJuu6XE66',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r20',
-    name: '《英文最差の一集》',
-    emoji: '🎯',
-    date: '2026-08-11',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：《英文最差の一集》。',
-    animation: 'flower',
-    animText: '《英文最差の一集》',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
     videoUrl: 'https://www.bilibili.com/video/BV1p5u86mECB',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '“两广人的家具belike：”【…',
-    emoji: '🎮',
+    id: 'r20',
+    name: '《人民の少爷》',
+    emoji: '🎯',
     date: '2026-08-11',
-    hot: 88,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：“两广人的家具belike：”【Monody-混响】【两广家具の小曲】。',
+    desc: 'B站今日热门第20名：《人民の少爷》。',
     animation: 'flower',
-    animText: '“两广人的家具belike…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV11Xuu6cEiJ',
+    animText: '《人民の少爷》',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1rJuu6XE66',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '《崩坏：星穹铁道》阿哈时刻：「真…',
-    emoji: '🎮',
-    date: '2026-08-11',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：《崩坏：星穹铁道》阿哈时刻：「真珠」。',
-    animation: 'flower',
-    animText: '《崩坏：星穹铁道》阿哈时刻…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Hbui6aEYj',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '【战双帕弥什】动画短片 | 于频…',
+    id: 'r21',
+    name: '当你遇上了奇葩家长',
     emoji: '🔥',
     date: '2026-08-11',
-    hot: 90,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：【战双帕弥什】动画短片 | 于频率中相汇。',
-    animation: 'shake',
-    animText: '战双帕弥什动画短片 |…',
+    desc: 'B站今日热门第21名：当你遇上了奇葩家长。',
+    animation: 'ring',
+    animText: '当你遇上了奇葩家长',
     emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV16iMr6MEwn',
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1cAu96VE5U',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -143,21 +158,6 @@ const RECENT_MEMES = [
     emojis: ['🎬', '⚡'],
     color: '#1dd1a1',
     videoUrl: 'https://www.bilibili.com/video/BV1xyux6rENC',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '淀粉：碳基压缩科技',
-    emoji: '🎮',
-    date: '2026-08-11',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：淀粉：碳基压缩科技。',
-    animation: 'flower',
-    animText: '淀粉：碳基压缩科技',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1ayuR6PE5V',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -288,7 +288,7 @@ const VIRAL_MEMES = [
 
 /* ---------- 今日热搜词（顶部滚动条） ---------- */
 const HOT_WORDS = [
-  '怎么看AI突破黎曼猜想下界', '2026特摄入坑指南', '欢迎来龙餐馆原型回应', '大理百元豪车租赁乱象调查', '假面骑士ZZZ吐槽', '台风白海豚实时路径', '赵露思澳门演唱会全记录', '歌手大结局Reaction', '花小龙带张伟丽自律的一天', 'AI在黎曼猜想上做出了什么突破', '首届新三国only展', '如果上学是一款游戏'
+  '女生晨跑后热射病离世身体发生了什么', 'AUBL决赛上交大vs政大', '龙餐馆到底好看在哪', '余红李 因公牺牲的一等功臣', '日全食巧遇英仙座流星雨', '2026特摄入坑指南', '欢迎来龙餐馆观后感', '复盘张本智和横滨夺冠', '台风白海豚实时路径', '红警蜘蛛机器人走进现实', 'JDG EDG', 'DRG TE'
 ];
 
 /* ---------- 近五年经典梗编年史 (2021-2026) ---------- */
