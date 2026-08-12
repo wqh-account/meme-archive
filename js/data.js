@@ -11,6 +11,66 @@
 /* 数据抓取自 B 站官方热门/热搜接口，抓取时间：2026-08-01 */
 const RECENT_MEMES = [
   {
+    id: 'r10',
+    name: '《影之刃零》预购开启，11分钟实…',
+    emoji: '🎯',
+    date: '2026-08-12',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：《影之刃零》预购开启，11分钟实机预告公开。',
+    animation: 'emojiRain',
+    animText: '《影之刃零》预购开启…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1Hmuv68EWW',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '《异环》残虹角色PV丨惑心谲影',
+    emoji: '📺',
+    date: '2026-08-12',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：《异环》残虹角色PV丨惑心谲影。',
+    animation: 'textPop',
+    animText: '《异环》残虹角色PV丨惑…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1y1uq6zEud',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '在非洲，我和死亡只隔了一扇车窗……',
+    emoji: '🍿',
+    date: '2026-08-12',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：在非洲，我和死亡只隔了一扇车窗……。',
+    animation: 'emojiRain',
+    animText: '在非洲，我和死亡只隔了一…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1KUuz6jEPM',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '恶心套路？情绪共振！细节夯爆！观…',
+    emoji: '🎵',
+    date: '2026-08-12',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：恶心套路？情绪共振！细节夯爆！观众比男主先爱上女主！《花开锦绣》。',
+    animation: 'ring',
+    animText: '恶心套路？情绪共振！细节夯爆…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1mwuz62EPy',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r26',
     name: '【咒术回战IF】高羽史彦:你觉得…',
     emoji: '⚡',
@@ -42,6 +102,21 @@ const RECENT_MEMES = [
   },
   {
     id: 'r11',
+    name: '⚡泥 肘⚡',
+    emoji: '🔥',
+    date: '2026-08-12',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：⚡泥 肘⚡。',
+    animation: 'shake',
+    animText: '⚡泥 肘⚡',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1TiuZ6TEQw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
     name: '这不是黑历史…是23年 我奋斗的…',
     emoji: '🔥',
     date: '2026-08-12',
@@ -53,96 +128,6 @@ const RECENT_MEMES = [
     emojis: ['🔥', '⚡'],
     color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV1qVuv6XEBd',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '2026和平精英刺激之夜完整高清…',
-    emoji: '🏆',
-    date: '2026-08-12',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：2026和平精英刺激之夜完整高清回放。',
-    animation: 'shake',
-    animText: '2026和平精英刺激之夜…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1ffuU6bEHj',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '恶心套路？情绪共振！细节夯爆！观…',
-    emoji: '🎵',
-    date: '2026-08-12',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：恶心套路？情绪共振！细节夯爆！观众比男主先爱上女主！《花开锦绣》。',
-    animation: 'ring',
-    animText: '恶心套路？情绪共振！细节夯爆…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1mwuz62EPy',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r32',
-    name: '【不是说奥特曼在地球的活动时间只…',
-    emoji: '🎬',
-    date: '2026-08-12',
-    hot: 69,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第32名：【不是说奥特曼在地球的活动时间只有三分钟吗】我发点别的看看流量怎么样，这不是我盗的，也别盗我视频。',
-    animation: 'shake',
-    animText: '不是说奥特曼在地球的活动时间只有三分钟吗我发点别的看看流量怎么样…',
-    emojis: ['🎬', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV18guo6NEdD',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r33',
-    name: '⚡泥 肘⚡',
-    emoji: '🎮',
-    date: '2026-08-12',
-    hot: 68,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第33名：⚡泥 肘⚡。',
-    animation: 'fire',
-    animText: '⚡泥 肘⚡',
-    emojis: ['🎮', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1TiuZ6TEQw',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '《原神》角色预告-「奥黛塔：天真…',
-    emoji: '🎮',
-    date: '2026-08-12',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：《原神》角色预告-「奥黛塔：天真的挽歌」。',
-    animation: 'flower',
-    animText: '《原神》角色预告-「奥黛塔…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1sxui6eEGH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '王者荣耀的公平竞技又回来了，这种…',
-    emoji: '🎮',
-    date: '2026-08-12',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：王者荣耀的公平竞技又回来了，这种熟悉的感觉。',
-    animation: 'flower',
-    animText: '王者荣耀的公平竞技又回来了…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV19du66bE7o',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -158,6 +143,21 @@ const RECENT_MEMES = [
     emojis: ['🎯', '⚡'],
     color: '#1dd1a1',
     videoUrl: 'https://www.bilibili.com/video/BV15HuZ62E6R',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '2026和平精英刺激之夜完整高清…',
+    emoji: '🏆',
+    date: '2026-08-12',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：2026和平精英刺激之夜完整高清回放。',
+    animation: 'shake',
+    animText: '2026和平精英刺激之夜…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1ffuU6bEHj',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -288,7 +288,7 @@ const VIRAL_MEMES = [
 
 /* ---------- 今日热搜词（顶部滚动条） ---------- */
 const HOT_WORDS = [
-  '海外显卡价格暴涨', '影之刃零11分钟最新实机', '白海豚停编后为何还有暴雨能力', '叙利亚前总统被判死刑', 'C罗宣布结婚', '百花奖看点全复盘', '关注全国多地强降雨', '小八买成吉思鸡', 'C罗乔治娜恋情时间线梳理', '郭兰英经典作品回顾', 'AI产业给韩国人带来什么', '大众百花奖争议盘点'
+  'AI产业给韩国人带来什么', '影之刃零11分钟最新实机', '曝曼城决定在夏窗签下恩佐', 'C罗宣布结婚', '海外显卡价格暴涨', '新剧花开锦绣好看吗', '如何看懂奥德赛', '白海豚停编后为何还有暴雨能力', '罗翔谈医疗事故罪判罚', '郭兰英经典作品回顾', '原神至冬有哪些新玩法', '大理百元豪车租赁乱象调查'
 ];
 
 /* ---------- 近五年经典梗编年史 (2021-2026) ---------- */
