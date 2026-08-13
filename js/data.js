@@ -11,6 +11,21 @@
 /* 数据抓取自 B 站官方热门/热搜接口，抓取时间：2026-08-01 */
 const RECENT_MEMES = [
   {
+    id: 'r19',
+    name: '🐧当你打游戏时父母进你房间蹭空…',
+    emoji: '🎤',
+    date: '2026-08-13',
+    hot: 82,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第19名：🐧当你打游戏时父母进你房间蹭空调🐧。',
+    animation: 'fire',
+    animText: '🐧当你打游戏时父母进你…',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1nngV6YEzr',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r10',
     name: '《影之刃零》预购开启，11分钟实…',
     emoji: '🎯',
@@ -27,17 +42,47 @@ const RECENT_MEMES = [
   },
   {
     id: 'r11',
-    name: '《顽童戏老叟》',
+    name: '这视频等了五年！',
     emoji: '🔥',
     date: '2026-08-13',
     hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：《顽童戏老叟》。',
+    desc: 'B站今日热门第11名：这视频等了五年！。',
     animation: 'shake',
-    animText: '《顽童戏老叟》',
+    animText: '这视频等了五年！',
     emojis: ['🔥', '⚡'],
     color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV17WgV6hEdX',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '《顽童戏老叟》',
+    emoji: '🎬',
+    date: '2026-08-13',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：《顽童戏老叟》。',
+    animation: 'fire',
+    animText: '《顽童戏老叟》',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
     videoUrl: 'https://www.bilibili.com/video/BV1EAuk6CEfw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '《癫佬外传》第一季合集',
+    emoji: '🎮',
+    date: '2026-08-13',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：《癫佬外传》第一季合集。',
+    animation: 'flower',
+    animText: '《癫佬外传》第一季合集',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1y1uW6wEAA',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -56,33 +101,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r25',
-    name: '这视频等了五年！',
-    emoji: '📺',
+    id: 'r11',
+    name: '🔥全看完的可以封神了！三角洲A…',
+    emoji: '🔥',
     date: '2026-08-13',
-    hot: 76,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：这视频等了五年！。',
+    desc: 'B站今日热门第11名：🔥全看完的可以封神了！三角洲AI夏日晚会🔥。',
     animation: 'shake',
-    animText: '这视频等了五年！',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV17WgV6hEdX',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '2026和平精英刺激之夜完整高清…',
-    emoji: '🏆',
-    date: '2026-08-13',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：2026和平精英刺激之夜完整高清回放。',
-    animation: 'shake',
-    animText: '2026和平精英刺激之夜…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1ffuU6bEHj',
+    animText: '🔥全看完的可以封神了…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1QDui6jEbi',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -101,63 +131,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '船新版本新宝岛！这个联动怎么说？',
-    emoji: '📺',
-    date: '2026-08-13',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：船新版本新宝岛！这个联动怎么说？。',
-    animation: 'textPop',
-    animText: '船新版本新宝岛！这个联动怎么说…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1mJuB6jEDj',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '《癫佬外传》第一季合集',
-    emoji: '⚡',
-    date: '2026-08-13',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：《癫佬外传》第一季合集。',
-    animation: 'dance',
-    animText: '《癫佬外传》第一季合集',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1y1uW6wEAA',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '🐧当你打游戏时父母进你房间蹭空…',
+    id: 'r69',
+    name: '【原神一条龙全收集】至冬7.0(…',
     emoji: '🎤',
     date: '2026-08-13',
-    hot: 82,
+    hot: 32,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：🐧当你打游戏时父母进你房间蹭空调🐧。',
-    animation: 'fire',
-    animText: '🐧当你打游戏时父母进你…',
+    desc: 'B站今日热门第69名：【原神一条龙全收集】至冬7.0(成就数/冰神瞳/摩拉/影生翼滴/枪械蓝图)古兽冰原+焰羽谷+永凝冻土+霜殛寒峰+白桦雪藏地/玉帛/原神7.0一条龙。',
+    animation: 'flower',
+    animText: '原神一条龙全收集至冬7.…',
     emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1nngV6YEzr',
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1BMgj6MEz4',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '⚡泥 肘⚡',
-    emoji: '🎯',
+    id: 'r11',
+    name: '假千金绑定了云原神系统，没想到我…',
+    emoji: '🔥',
     date: '2026-08-13',
-    hot: 81,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：⚡泥 肘⚡。',
-    animation: 'flower',
-    animText: '⚡泥 肘⚡',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1TiuZ6TEQw',
+    desc: 'B站今日热门第11名：假千金绑定了云原神系统，没想到我绑定了爱上雷神系统，这都什么和什么啊我剪的时候果珍绷住了吗。。',
+    animation: 'shake',
+    animText: '假千金绑定了云原神系统…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1nZuz6uEjr',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -288,7 +288,7 @@ const VIRAL_MEMES = [
 
 /* ---------- 今日热搜词（顶部滚动条） ---------- */
 const HOT_WORDS = [
-  '朱镕基同志逝世', 'C919正式执飞国际商业航线', '中国人形机器人一骑绝尘', '新疆沙漠如何养殖水产海鲜', 'DeepSeek V4 Pro正式版上线', '顽童戏老叟', 'BLG JDG', 'SYG KSG', '小片片聊欢迎来龙餐馆', '大学一个月要多少生活费', 'EDG AL', '影之刃零11分钟最新实机'
+  '朱镕基同志逝世', '平陆运河实船试验启动', '全球最大单体智算中心投产', '高中生自制蛛丝发射器', '我国生态环境质量持续向好', 'Falcons LGD', '宁缺复仇遇隐藏修行者', '邱文平聊欢迎来龙餐馆', '欧超杯巴黎2-1维拉', '高中生暑假在欢乐谷当NPC', '异环残虹EP', '徐静雨解读影之刃零预告'
 ];
 
 /* ---------- 近五年经典梗编年史 (2021-2026) ---------- */
