@@ -5,18 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r10',
-    name: '《影之刃零》预购开启，11分钟实…',
-    emoji: '🎯',
+    id: 'r15',
+    name: '长着云台的手机？荣耀Robot …',
+    emoji: '📺',
     date: '2026-08-14',
-    hot: 91,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：《影之刃零》预购开启，11分钟实机预告公开。',
-    animation: 'emojiRain',
-    animText: '《影之刃零》预购开启…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1Hmuv68EWW',
+    desc: 'B站今日热门第15名：长着云台的手机？荣耀Robot Phone上手。',
+    animation: 'textPop',
+    animText: '长着云台的手机？荣耀Robot…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1UKgL6SEyA',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -32,6 +32,36 @@ const RECENT_MEMES = [
     emojis: ['🎵', '⚡'],
     color: '#5f27cd',
     videoUrl: 'https://www.bilibili.com/video/BV1FRgn6pEph',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '《影之刃零》预购开启，11分钟实…',
+    emoji: '🎯',
+    date: '2026-08-14',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：《影之刃零》预购开启，11分钟实机预告公开。',
+    animation: 'emojiRain',
+    animText: '《影之刃零》预购开启…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1Hmuv68EWW',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '【独家】时光代理人 第三季 Pa…',
+    emoji: '🔥',
+    date: '2026-08-14',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：【独家】时光代理人 第三季 PartOne 第1集 遗忘的过去【8月国创】。',
+    animation: 'shake',
+    animText: '独家时光代理人 第三季…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1hyuC6eEwm',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -51,21 +81,6 @@ const RECENT_MEMES = [
   },
   {
     id: 'r10',
-    name: '【独家】《将夜》第18集 茶楼喋…',
-    emoji: '🎯',
-    date: '2026-08-14',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：【独家】《将夜》第18集 茶楼喋血【4月国创】。',
-    animation: 'emojiRain',
-    animText: '独家《将夜》第18集…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV14SgL6nEn6',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
     name: '黑白色经典星空喷漆画，划走你就草…',
     emoji: '🎯',
     date: '2026-08-14',
@@ -77,6 +92,21 @@ const RECENT_MEMES = [
     emojis: ['🎯', '⚡'],
     color: '#feca57',
     videoUrl: 'https://www.bilibili.com/video/BV1Mquv6MEEw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '河流地貌',
+    emoji: '🔥',
+    date: '2026-08-14',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：河流地貌。',
+    animation: 'shake',
+    animText: '河流地貌',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1o1gG6xEXK',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,33 +125,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r24',
-    name: '河流地貌',
-    emoji: '🎵',
+    id: 'r69',
+    name: '【原神一条龙全收集】至冬7.0(…',
+    emoji: '🎤',
     date: '2026-08-14',
-    hot: 77,
+    hot: 32,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：河流地貌。',
-    animation: 'emojiRain',
-    animText: '河流地貌',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1o1gG6xEXK',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '路况千千万，总能遇到点新知识，今…',
-    emoji: '🎵',
-    date: '2026-08-14',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：路况千千万，总能遇到点新知识，今天是地上的大镜子。',
-    animation: 'ring',
-    animText: '路况千千万，总能遇到点新知识…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV16juq6bEFc',
+    desc: 'B站今日热门第69名：【原神一条龙全收集】至冬7.0(成就数/冰神瞳/摩拉/影生翼滴/枪械蓝图)古兽冰原+焰羽谷+永凝冻土+霜殛寒峰+白桦雪藏地/玉帛/原神7.0一条龙。',
+    animation: 'flower',
+    animText: '原神一条龙全收集至冬7.…',
+    emojis: ['🎤', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1BMgj6MEz4',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -139,21 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1cXgp6aESY',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r13',
-    name: '🐧功夫女足🐧',
-    emoji: '🎮',
-    date: '2026-08-14',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：🐧功夫女足🐧。',
-    animation: 'flower',
-    animText: '🐧功夫女足🐧',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1PzgE6RE4D',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '美航母250天不上岸的背后', '百花奖最佳导演的来时路', '一次看懂DeepSeek新模型', '威少雷霆时期高光时刻', '各国贸易战背后的真相', '复盘TES 0-2 LGD', '云南交警翻唱坏苹果', 'UP主泰拉瑞亚再创新历史', '万字拆解奥德赛前传故事', '杜兰特长文致敬威少', '查理斯超长播客爆料TI幕后', 'MC里的Him究竟是谁'
+  '时光代理人第三季', 'TI2026小组赛', '湖南一煤矿发生瓦斯突出事故', '深度解读DeepSeek Harness', '直击河南溃口封堵抢险现场', 'Wings TI6夺冠十周年', 'DeepSeek官方Agent发布', '跟着TXT乱闯上海', '百花奖最佳导演的来时路', '老叟爱炸鱼', '原神至冬7.0一条龙全收集', '查理斯超长播客爆料TI幕后'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
