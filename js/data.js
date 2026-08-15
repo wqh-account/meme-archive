@@ -20,48 +20,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '赛伯朋克之大圣归来：耗时两年半，…',
+    id: 'r25',
+    name: '飞机安检模拟器',
     emoji: '📺',
     date: '2026-08-15',
-    hot: 86,
+    hot: 76,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：赛伯朋克之大圣归来：耗时两年半，精品制作，一口气看完。。',
-    animation: 'textPop',
-    animText: '赛伯朋克之大圣归来：耗时两年半…',
+    desc: 'B站今日热门第25名：飞机安检模拟器。',
+    animation: 'shake',
+    animText: '飞机安检模拟器',
     emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV15xgn6GEjH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '制作糖果的流程—解压',
-    emoji: '⚡',
-    date: '2026-08-15',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：制作糖果的流程—解压。',
-    animation: 'dance',
-    animText: '制作糖果的流程—解压',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1MzGc6UEzT',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r75',
-    name: '【原神一条龙全收集】至冬7.0(…',
-    emoji: '📺',
-    date: '2026-08-15',
-    hot: 26,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第75名：【原神一条龙全收集】至冬7.0(成就数345/冰神瞳140/摩拉119/影生翼滴58)古兽冰原+焰羽谷+永凝冻土+霜殛寒峰+白桦雪藏地/玉帛/原神7.0一条龙。',
-    animation: 'fire',
-    animText: '原神一条龙全收集至冬7.…',
-    emojis: ['📺', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1BMgj6MEz4',
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1fTb16KEDk',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -81,16 +51,46 @@ const RECENT_MEMES = [
   },
   {
     id: 'r25',
-    name: '我实现了我儿时的梦想',
+    name: '制作糖果的流程—解压',
     emoji: '📺',
     date: '2026-08-15',
     hot: 76,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：我实现了我儿时的梦想。',
+    desc: 'B站今日热门第25名：制作糖果的流程—解压。',
     animation: 'shake',
-    animText: '我实现了我儿时的梦想',
+    animText: '制作糖果的流程—解压',
     emojis: ['📺', '⚡'],
     color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1MzGc6UEzT',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '赛伯朋克之大圣归来：耗时两年半，…',
+    emoji: '📺',
+    date: '2026-08-15',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：赛伯朋克之大圣归来：耗时两年半，精品制作，一口气看完。。',
+    animation: 'textPop',
+    animText: '赛伯朋克之大圣归来：耗时两年半…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV15xgn6GEjH',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '我实现了我儿时的梦想',
+    emoji: '⚡',
+    date: '2026-08-15',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：我实现了我儿时的梦想。',
+    animation: 'dance',
+    animText: '我实现了我儿时的梦想',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
     videoUrl: 'https://www.bilibili.com/video/BV1iTgA6hENv',
     source: 'B站今日热门（实时抓取）'
   },
@@ -110,18 +110,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '都什么年代，谁还渡传统通天河？！…',
-    emoji: '🎵',
+    id: 'r75',
+    name: '【原神一条龙全收集】至冬7.0(…',
+    emoji: '📺',
     date: '2026-08-15',
-    hot: 87,
+    hot: 26,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：都什么年代，谁还渡传统通天河？！！。',
-    animation: 'ring',
-    animText: '都什么年代，谁还渡传统通天河…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1CDgw6GEQ2',
+    desc: 'B站今日热门第75名：【原神一条龙全收集】至冬7.0(成就数345/冰神瞳140/摩拉119/影生翼滴58)古兽冰原+焰羽谷+永凝冻土+霜殛寒峰+白桦雪藏地/玉帛/原神7.0一条龙。',
+    animation: 'fire',
+    animText: '原神一条龙全收集至冬7.…',
+    emojis: ['📺', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1BMgj6MEz4',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -140,18 +140,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '“央妈这段运镜太有手法了，完全拍…',
-    emoji: '🎬',
+    id: 'r11',
+    name: '【独家】时光代理人 第三季 Pa…',
+    emoji: '🔥',
     date: '2026-08-15',
-    hot: 89,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：“央妈这段运镜太有手法了，完全拍出了什么叫意气风发！”。',
-    animation: 'fire',
-    animText: '“央妈这段运镜太有手法了…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1cXgp6aESY',
+    desc: 'B站今日热门第11名：【独家】时光代理人 第三季 PartOne 第2集 困兽【8月国创】。',
+    animation: 'shake',
+    animText: '独家时光代理人 第三季…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV18yuC6eEyM',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'BLG TE', '韩立', '今起实施新规严控广场舞音量', '北京JDG 广州TTG', '铁翼机甲部队海上基地亮相', '赢则皆大欢喜 输则铠甲合体', 'TT AL', '耗时三年做了电影牛来', '菲尔兹奖背后的舆论战', 'TI2026小组赛', '解读高分暗黑新剧购物中心', '中国足球小将战平巴萨'
+  '北京JDG 广州TTG', '探秘韩国贫富差距有多大', '韩立', 'XLG AG', '直击东北超常规赛收官之战', '披哥初舞台陪看', 'BLG战胜TE赛后分析', '沈腾叫你好好吃饭', '东京审判八十年', '曹骏来B站了', 'TT AL', '中国足球小将战平巴萨'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
