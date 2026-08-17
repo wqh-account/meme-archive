@@ -5,6 +5,36 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r43',
+    name: '【verity实验室片段/女声配…',
+    emoji: '🎮',
+    date: '2026-08-17',
+    hot: 58,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第43名：【verity实验室片段/女声配音】这将会是你听过情感爆发最强烈最充沛最崩溃的中文女声配音。',
+    animation: 'textPop',
+    animText: 'verity实验室片段/…',
+    emojis: ['🎮', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1P8gW6TEq4',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r44',
+    name: '三角洲s11前瞻爆料',
+    emoji: '🎵',
+    date: '2026-08-17',
+    hot: 57,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第44名：三角洲s11前瞻爆料。',
+    animation: 'dance',
+    animText: '三角洲s11前瞻爆料',
+    emojis: ['🎵', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV11Xb96qE97',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
     name: '自行车被偷后，保安在监控里发现了…',
     emoji: '🎤',
@@ -17,36 +47,6 @@ const RECENT_MEMES = [
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV18Tby67EG9',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '《鸣潮》共鸣者战斗演示 | 清宵',
-    emoji: '🔥',
-    date: '2026-08-17',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：《鸣潮》共鸣者战斗演示 | 清宵。',
-    animation: 'shake',
-    animText: '《鸣潮》共鸣者战斗演示…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1q2b86sEZz',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '《绝区零》希格莉德角色PV | …',
-    emoji: '🎮',
-    date: '2026-08-17',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：《绝区零》希格莉德角色PV | 小马希莉。',
-    animation: 'flower',
-    animText: '《绝区零》希格莉德角色PV…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Qfb86LEC5',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -66,6 +66,21 @@ const RECENT_MEMES = [
   },
   {
     id: 'r11',
+    name: '德穆兰Boss扮演来啦！重生之我…',
+    emoji: '🔥',
+    date: '2026-08-17',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：德穆兰Boss扮演来啦！重生之我在航天城当安保总监！胜者为王自建房下放！烽火1v1单挑房搞起！S11测试服爆料！。',
+    animation: 'shake',
+    animText: '德穆兰Boss扮演来啦…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1kwbR6hEAV',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
     name: '龙 餐 馆 连 线 勇 哥',
     emoji: '🔥',
     date: '2026-08-17',
@@ -77,6 +92,36 @@ const RECENT_MEMES = [
     emojis: ['🔥', '⚡'],
     color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV1o8b96pEQA',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '【新赛季内容前瞻】大狗嚼，重生老…',
+    emoji: '🎯',
+    date: '2026-08-17',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：【新赛季内容前瞻】大狗嚼，重生老太，长弓玩法变革！。',
+    animation: 'emojiRain',
+    animText: '新赛季内容前瞻大狗嚼…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1LXb86nEjd',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '《鸣潮》共鸣者战斗演示 | 清宵',
+    emoji: '🔥',
+    date: '2026-08-17',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：《鸣潮》共鸣者战斗演示 | 清宵。',
+    animation: 'shake',
+    animText: '《鸣潮》共鸣者战斗演示…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1q2b86sEZz',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,63 +140,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r18',
-    name: '【战双帕弥什】「卡列尼娜·烬航」…',
-    emoji: '🏆',
+    id: 'r75',
+    name: '【原神一条龙全收集】至冬7.0(…',
+    emoji: '📺',
     date: '2026-08-17',
-    hot: 83,
+    hot: 26,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：【战双帕弥什】「卡列尼娜·烬航」角色PV | 案发现场。',
-    animation: 'shake',
-    animText: '战双帕弥什「卡列尼娜·烬航」角色PV…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1NAgu6bEy8',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
-    name: '什么⁉Bye bye baby …',
-    emoji: '🎯',
-    date: '2026-08-17',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：什么⁉Bye bye baby blue翻译竟然是错的✖！。',
-    animation: 'emojiRain',
-    animText: '什么⁉Bye bye…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1tMby62EC4',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '我一路走来，嘴巴都是绿色的。',
-    emoji: '🎮',
-    date: '2026-08-17',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：我一路走来，嘴巴都是绿色的。。',
-    animation: 'flower',
-    animText: '我一路走来，嘴巴都是绿色的…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1J2bR6hEzf',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r27',
-    name: '第12期：收官之夜！无双唱将集结…',
-    emoji: '🍿',
-    date: '2026-08-17',
-    hot: 74,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第27名：第12期：收官之夜！无双唱将集结合唱《小美满》【国乐无双】。',
-    animation: 'flower',
-    animText: '第12期：收官之夜！无双…',
-    emojis: ['🍿', '⚡'],
+    desc: 'B站今日热门第75名：【原神一条龙全收集】至冬7.0(成就数345/冰神瞳140/摩拉120/影生翼滴58)古兽冰原+焰羽谷+永凝冻土+霜殛寒峰+白桦雪藏地/玉帛/原神7.0一条龙。',
+    animation: 'fire',
+    animText: '原神一条龙全收集至冬7.…',
+    emojis: ['📺', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1KUbk6rE7q',
+    videoUrl: 'https://www.bilibili.com/video/BV1BMgj6MEz4',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '龙餐馆连线勇哥', '解析IG战胜WBG晋级骑士之路', '龙餐馆军事顾问分享幕后花絮', '小孩曾卓君卫冕美国CEO饿狼传说', 'DeepSeek正式涨价', '把全网热梗做成捏捏乐', '勇哥re自己连线龙餐馆', '张雅琪offer5简历解析', '不同时代的老叟戏顽童', '逆水寒盗墓笔记联动PV', '鸣潮清宵战斗演示', '昭和米国物语现场试玩导览'
+  '龙餐馆银幕外的战争', '胖东来关闭老店背后的故事', '烽火职业联赛夏季赛', '饮食营养背后的生意经', '会飞的救生圈成救援神器', '如何好好爱 沈奕斐新书分享会', '中国核聚迈出关键一步', '宇树发布超人机器人', '保安在监控里发现了霸王龙', '棋盘戏老叟', '电影原型聊真实龙餐馆', '火影师徒杯S3 选人之夜'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
