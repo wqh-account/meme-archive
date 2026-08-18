@@ -20,18 +20,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r21',
-    name: '奥特曼中 出了一个怪兽的卧底【A…',
-    emoji: '🔥',
+    id: 'r13',
+    name: '《鸣潮》共鸣者「清宵」PV | …',
+    emoji: '🎮',
     date: '2026-08-18',
-    hot: 80,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：奥特曼中 出了一个怪兽的卧底【AI全民制作人】。',
-    animation: 'ring',
-    animText: '奥特曼中 出了一个怪兽的…',
-    emojis: ['🔥', '⚡'],
+    desc: 'B站今日热门第13名：《鸣潮》共鸣者「清宵」PV | 修行。',
+    animation: 'flower',
+    animText: '《鸣潮》共鸣者「清宵」PV…',
+    emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1wrba6iE56',
+    videoUrl: 'https://www.bilibili.com/video/BV1GFbk6LEVm',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '我这一生最大的罪，是把人写成了妖…',
+    emoji: '🏆',
+    date: '2026-08-18',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：我这一生最大的罪，是把人写成了妖……。',
+    animation: 'shake',
+    animText: '我这一生最大的罪，是把人…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1rHbY6MEB9',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -50,18 +65,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '【独家】《记忆管理局》第5集 主…',
-    emoji: '🎬',
+    id: 'r21',
+    name: '奥特曼中 出了一个怪兽的卧底【A…',
+    emoji: '🔥',
     date: '2026-08-18',
-    hot: 89,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：【独家】《记忆管理局》第5集 主角光环【8月国创】。',
-    animation: 'fire',
-    animText: '独家《记忆管理局》第5集…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1N2gp6iEn8',
+    desc: 'B站今日热门第21名：奥特曼中 出了一个怪兽的卧底【AI全民制作人】。',
+    animation: 'ring',
+    animText: '奥特曼中 出了一个怪兽的…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1wrba6iE56',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '《影之刃零》专场 State o…',
+    emoji: '🎵',
+    date: '2026-08-18',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：《影之刃零》专场 State of Play 全程回顾。',
+    animation: 'ring',
+    animText: '《影之刃零》专场 State…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Zdbi6rER9',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,48 +110,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '危！秘境最终奖励竟然亮起了血条？…',
-    emoji: '📺',
+    id: 'r18',
+    name: '音画不同步！为什么视频口型总是怪…',
+    emoji: '🏆',
     date: '2026-08-18',
-    hot: 86,
+    hot: 83,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：危！秘境最终奖励竟然亮起了血条？！【小明修仙传EP9】【AI全民制作人】。',
-    animation: 'textPop',
-    animText: '危！秘境最终奖励竟然亮起了血条…',
-    emojis: ['📺', '⚡'],
+    desc: 'B站今日热门第18名：音画不同步！为什么视频口型总是怪怪的？。',
+    animation: 'shake',
+    animText: '音画不同步！为什么视频口型总是怪怪的…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1A2bi6UEev',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r23',
+    name: '童年最大愿望实现啦！100元在各…',
+    emoji: '🎮',
+    date: '2026-08-18',
+    hot: 78,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第23名：童年最大愿望实现啦！100元在各家能买多少汉堡？！。',
+    animation: 'dance',
+    animText: '童年最大愿望实现啦！100元在各家能买多少汉堡…',
+    emojis: ['🎮', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1uAbh6CEwg',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '极品金灵根各峰主都想收我为徒#m…',
-    emoji: '🔥',
-    date: '2026-08-18',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：极品金灵根各峰主都想收我为徒#meme剧场。',
-    animation: 'ring',
-    animText: '极品金灵根各峰主都想收我…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1x6gu6AEyb',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '特效小哥大战逗比的雀巢！',
-    emoji: '🎬',
-    date: '2026-08-18',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：特效小哥大战逗比的雀巢！。',
-    animation: 'textPop',
-    animText: '特效小哥大战逗比的雀巢！',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1mkbQ6iEWJ',
+    videoUrl: 'https://www.bilibili.com/video/BV1DKbY6EEF3',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -139,21 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1DybY6pEiA',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r15',
-    name: '周处除三害现实版，我们干掉他了！',
-    emoji: '📺',
-    date: '2026-08-18',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：周处除三害现实版，我们干掉他了！。',
-    animation: 'textPop',
-    animText: '周处除三害现实版，我们干掉他了…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1VfbR6pEw9',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '天安门下半旗悼念朱镕基同志', '中国核聚变迈出关键一步', '燕云新武学袁和平联动前瞻', '复盘石宇奇止步世锦赛首轮', '成吉思鸡小哥挑战做中国菜', '巴斯家族放弃湖人股权', '特朗普该如何应对弹药短缺', '当奥特曼中出了怪兽卧底', '飓风拉娜拐弯', '胖东来关闭老店背后的故事', '影之刃零专场SOP', '泰勒婚前协议都签了什么'
+  '天安门下半旗悼念朱镕基同志', '中国核聚变迈出关键一步', '德比斯送张雪冠军头盔', '自制AI电影出马仙镇东北', '百日成王', '当奥特曼出了怪兽卧底', '特效小哥大战逗比的雀巢', '龙餐馆原型分享伊拉克经历', '拉宏桑宝剑嫂欣小萌随机旅行', '解读周星驰与香港影人往事', '影之刃零专场SOP', '复盘石宇奇止步世锦赛首轮'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
