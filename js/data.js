@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r16',
+    name: '《黑神话：钟馗》15分钟实机演示',
+    emoji: '⚡',
+    date: '2026-08-20',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：《黑神话：钟馗》15分钟实机演示。',
+    animation: 'dance',
+    animText: '《黑神话：钟馗》15分钟…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1kS8H6VERt',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r18',
     name: '我这一生最大的罪，是把人写成了妖…',
     emoji: '🏆',
@@ -20,18 +35,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '《影之刃零》专场 State o…',
-    emoji: '🎵',
+    id: 'r22',
+    name: '多厨狂喜！舞蹈区顶流锦依卫们来给…',
+    emoji: '🎬',
     date: '2026-08-20',
-    hot: 87,
+    hot: 79,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：《影之刃零》专场 State of Play 全程回顾。',
-    animation: 'ring',
-    animText: '《影之刃零》专场 State…',
-    emojis: ['🎵', '⚡'],
+    desc: 'B站今日热门第22名：多厨狂喜！舞蹈区顶流锦依卫们来给痒痒鼠庆生啦！。',
+    animation: 'textPop',
+    animText: '多厨狂喜！舞蹈区顶流锦依卫们来给痒痒鼠庆生啦…',
+    emojis: ['🎬', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Zdbi6rER9',
+    videoUrl: 'https://www.bilibili.com/video/BV1Rc8E6JEKV',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '【独家/完结】《将夜》第19集 …',
+    emoji: '🎮',
+    date: '2026-08-20',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：【独家/完结】《将夜》第19集 光明之夜【4月国创】。',
+    animation: 'flower',
+    animText: '独家/完结《将夜》第19集…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1UE8p6WEP3',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '我的蚊子生病了，带它去看病',
+    emoji: '🎮',
+    date: '2026-08-20',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：我的蚊子生病了，带它去看病。',
+    animation: 'flower',
+    animText: '我的蚊子生病了，带它去看…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1Dx876VEXe',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -47,36 +92,6 @@ const RECENT_MEMES = [
     emojis: ['🎬', '⚡'],
     color: '#1dd1a1',
     videoUrl: 'https://www.bilibili.com/video/BV1hY8g6xEwE',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '时空列车',
-    emoji: '🎮',
-    date: '2026-08-20',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：时空列车。',
-    animation: 'flower',
-    animText: '时空列车',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1CUbS69EAs',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '七夕节老番茄就和自己玩游戏',
-    emoji: '🎮',
-    date: '2026-08-20',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：七夕节老番茄就和自己玩游戏。',
-    animation: 'flower',
-    animText: '七夕节老番茄就和自己玩游…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1q28V6VEYU',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -96,62 +111,47 @@ const RECENT_MEMES = [
   },
   {
     id: 'r17',
-    name: '你们忍得住不说吗？',
+    name: '时空列车',
     emoji: '🍿',
     date: '2026-08-20',
     hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：你们忍得住不说吗？。',
+    desc: 'B站今日热门第17名：时空列车。',
     animation: 'emojiRain',
-    animText: '你们忍得住不说吗？',
+    animText: '时空列车',
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1u4876CE5w',
+    videoUrl: 'https://www.bilibili.com/video/BV1CUbS69EAs',
     source: 'B站今日热门（实时抓取）'
   },
   {
     id: 'r13',
-    name: '《鸡来》一个半小时超长电影！！！',
+    name: '七夕节老番茄就和自己玩游戏',
     emoji: '🎮',
     date: '2026-08-20',
     hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：《鸡来》一个半小时超长电影！！！。',
+    desc: 'B站今日热门第13名：七夕节老番茄就和自己玩游戏。',
     animation: 'flower',
-    animText: '《鸡来》一个半小时超长电影…',
+    animText: '七夕节老番茄就和自己玩游…',
     emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1NBbe6jEzz',
+    videoUrl: 'https://www.bilibili.com/video/BV1q28V6VEYU',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r24',
-    name: '注视着你连唱20分钟~专属于你的…',
-    emoji: '🎵',
+    id: 'r22',
+    name: '【七夕】我用50部电影来感受《出…',
+    emoji: '🎬',
     date: '2026-08-20',
-    hot: 77,
+    hot: 79,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：注视着你连唱20分钟~专属于你的七夕甜蜜电台💕。',
-    animation: 'emojiRain',
-    animText: '注视着你连唱20分钟~专…',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV13N8E6mEiY',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r25',
-    name: '韩国从黄金时代到黑铁',
-    emoji: '📺',
-    date: '2026-08-20',
-    hot: 76,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：韩国从黄金时代到黑铁。',
-    animation: 'shake',
-    animText: '韩国从黄金时代到黑铁',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1RV876HEd5',
+    desc: 'B站今日热门第22名：【七夕】我用50部电影来感受《出现又离开》这首歌，发现早已热泪盈眶。',
+    animation: 'textPop',
+    animText: '七夕我用50部电影来感受《出现又离开》这首歌…',
+    emojis: ['🎬', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Ee8n6vExr',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'Bin回归BLG首发', '宇树是人形机器人第一名吗', '巴萨2-1开罗国民', '我国首次火箭陆地回收全过程', '双台风胚胎将影响华东', 'PVZ恐怖版新潜伏者僵尸', 'LNG WBG', '小猫哈气对决模拟器', 'BLG XLG', 'BLG晋级胜决赛后数据图', '龙餐馆演员讲述亲历的伊拉克战争', '终末地陈千语二创短片'
+  '美国林肯号航母之乱背后', '黑神话钟馗15分钟实机演示', '宁缺', 'VISION BB', '刚发现的黑洞星究竟是什么', '美联邦政府债务超40万亿美元', 'IVL', '盘点披哥初舞台笑点', '胖东来的商业逻辑特殊在哪', 'FURIA战胜Aurora', '他予回声新团曝光', 'Spirit战胜Iron Wing'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
