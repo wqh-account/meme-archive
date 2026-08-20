@@ -2,13 +2,13 @@
 /* B站封面已本地化: images/covers/{BV}.jpg，绕开防盗链 */
 window.COVERS = {
   "BV1kS8H6VERt": "images/covers/BV1kS8H6VERt.jpg",
+  "BV1bM8E6yEYd": "images/covers/BV1bM8E6yEYd.jpg",
+  "BV1BS876oEwP": "images/covers/BV1BS876oEwP.jpg",
+  "BV1bX8u6XEWm": "images/covers/BV1bX8u6XEWm.jpg",
   "BV1rHbY6MEB9": "images/covers/BV1rHbY6MEB9.jpg",
-  "BV1Rc8E6JEKV": "images/covers/BV1Rc8E6JEKV.jpg",
+  "BV1SDbZ6sETi": "images/covers/BV1SDbZ6sETi.jpg",
+  "BV1vF8n6ZEUz": "images/covers/BV1vF8n6ZEUz.jpg",
+  "BV18UgK6cEX8": "images/covers/BV18UgK6cEX8.jpg",
+  "BV1Zdbi6rER9": "images/covers/BV1Zdbi6rER9.jpg",
   "BV1UE8p6WEP3": "images/covers/BV1UE8p6WEP3.jpg",
-  "BV1Dx876VEXe": "images/covers/BV1Dx876VEXe.jpg",
-  "BV1hY8g6xEwE": "images/covers/BV1hY8g6xEwE.jpg",
-  "BV1iv8j6EE77": "images/covers/BV1iv8j6EE77.jpg",
-  "BV1CUbS69EAs": "images/covers/BV1CUbS69EAs.jpg",
-  "BV1q28V6VEYU": "images/covers/BV1q28V6VEYU.jpg",
-  "BV1Ee8n6vExr": "images/covers/BV1Ee8n6vExr.jpg",
 };
