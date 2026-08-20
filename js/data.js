@@ -20,6 +20,51 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r11',
+    name: '他予回声StarToU | Ma…',
+    emoji: '🔥',
+    date: '2026-08-20',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：他予回声StarToU | MacGuffin<打歌舞台-排练版>公开。',
+    animation: 'shake',
+    animText: '他予回声StarToU…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1bM8E6yEYd',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '菜谱：洋葱炒蛋，家庭红烧鱼，蒜炒…',
+    emoji: '🎮',
+    date: '2026-08-20',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：菜谱：洋葱炒蛋，家庭红烧鱼，蒜炒西兰花，辣椒炒猪腰，绿豆汤，从买菜开始，你在家随时可以复刻。',
+    animation: 'flower',
+    animText: '菜谱：洋葱炒蛋，家庭红烧鱼…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1BS876oEwP',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '【独家】时光代理人 第三季 Pa…',
+    emoji: '🔥',
+    date: '2026-08-20',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：【独家】时光代理人 第三季 PartOne 第3集 血洗缅挝【8月国创】。',
+    animation: 'shake',
+    animText: '独家时光代理人 第三季…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1bX8u6XEWm',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r18',
     name: '我这一生最大的罪，是把人写成了妖…',
     emoji: '🏆',
@@ -35,18 +80,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r22',
-    name: '多厨狂喜！舞蹈区顶流锦依卫们来给…',
-    emoji: '🎬',
+    id: 'r15',
+    name: '【IGN】《黑神话：钟馗》实机演…',
+    emoji: '📺',
     date: '2026-08-20',
-    hot: 79,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：多厨狂喜！舞蹈区顶流锦依卫们来给痒痒鼠庆生啦！。',
+    desc: 'B站今日热门第15名：【IGN】《黑神话：钟馗》实机演示。',
     animation: 'textPop',
-    animText: '多厨狂喜！舞蹈区顶流锦依卫们来给痒痒鼠庆生啦…',
-    emojis: ['🎬', '⚡'],
+    animText: 'IGN《黑神话：钟馗》实…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1SDbZ6sETi',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '知道为啥这乐队没主唱了吧',
+    emoji: '⚡',
+    date: '2026-08-20',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：知道为啥这乐队没主唱了吧。',
+    animation: 'dance',
+    animText: '知道为啥这乐队没主唱了吧',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1vF8n6ZEUz',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '好专业的煎饼果子来一套',
+    emoji: '🍿',
+    date: '2026-08-20',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：好专业的煎饼果子来一套。',
+    animation: 'emojiRain',
+    animText: '好专业的煎饼果子来一套',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV18UgK6cEX8',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '《影之刃零》专场 State o…',
+    emoji: '🎵',
+    date: '2026-08-20',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：《影之刃零》专场 State of Play 全程回顾。',
+    animation: 'ring',
+    animText: '《影之刃零》专场 State…',
+    emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Rc8E6JEKV',
+    videoUrl: 'https://www.bilibili.com/video/BV1Zdbi6rER9',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -64,96 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1UE8p6WEP3',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r13',
-    name: '我的蚊子生病了，带它去看病',
-    emoji: '🎮',
-    date: '2026-08-20',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：我的蚊子生病了，带它去看病。',
-    animation: 'flower',
-    animText: '我的蚊子生病了，带它去看…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Dx876VEXe',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '这几个片段大家可能都听过，但你们…',
-    emoji: '🎬',
-    date: '2026-08-20',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：这几个片段大家可能都听过，但你们知道其实来源于同一首歌吗。',
-    animation: 'fire',
-    animText: '这几个片段大家可能都听过…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1hY8g6xEwE',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '怪谈逃生指南第一期：《恶魔法典》',
-    emoji: '⚡',
-    date: '2026-08-20',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：怪谈逃生指南第一期：《恶魔法典》。',
-    animation: 'dance',
-    animText: '怪谈逃生指南第一期：《恶…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1iv8j6EE77',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '时空列车',
-    emoji: '🍿',
-    date: '2026-08-20',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：时空列车。',
-    animation: 'emojiRain',
-    animText: '时空列车',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1CUbS69EAs',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '七夕节老番茄就和自己玩游戏',
-    emoji: '🎮',
-    date: '2026-08-20',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：七夕节老番茄就和自己玩游戏。',
-    animation: 'flower',
-    animText: '七夕节老番茄就和自己玩游…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1q28V6VEYU',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '【七夕】我用50部电影来感受《出…',
-    emoji: '🎬',
-    date: '2026-08-20',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：【七夕】我用50部电影来感受《出现又离开》这首歌，发现早已热泪盈眶。',
-    animation: 'textPop',
-    animText: '七夕我用50部电影来感受《出现又离开》这首歌…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Ee8n6vExr',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '美国林肯号航母之乱背后', '黑神话钟馗15分钟实机演示', '宁缺', 'VISION BB', '刚发现的黑洞星究竟是什么', '美联邦政府债务超40万亿美元', 'IVL', '盘点披哥初舞台笑点', '胖东来的商业逻辑特殊在哪', 'FURIA战胜Aurora', '他予回声新团曝光', 'Spirit战胜Iron Wing'
+  'JDG TT', '黑神话钟馗终极深扒', 'UP主挑战画沈腾表情包送给他', 'LGD BLG', '长鑫市值超越Intel', '黑神话钟馗PV逐帧解析', 'XLG NOVA', '如何评价VCTCN联赛主题曲', '时光代理人', 'Falcons Mongolz', '黑神话钟馗15分钟实机演示', '维斯塔潘续约红牛'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
