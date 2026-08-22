@@ -20,6 +20,21 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r20',
+    name: '做最黑暗的料理，送给最爱整活的甲…',
+    emoji: '🎯',
+    date: '2026-08-22',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：做最黑暗的料理，送给最爱整活的甲方...。',
+    animation: 'flower',
+    animText: '做最黑暗的料理，送给最爱…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1qdb16eEF5',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r31',
     name: '人族少女混入兽人国，还引发了一场…',
     emoji: '🔥',
@@ -35,33 +50,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '《影之刃零》专场 State o…',
+    id: 'r24',
+    name: '【独家】《凡人修仙传之慕兰之战》…',
     emoji: '🎵',
     date: '2026-08-22',
-    hot: 87,
+    hot: 77,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：《影之刃零》专场 State of Play 全程回顾。',
-    animation: 'ring',
-    animText: '《影之刃零》专场 State…',
+    desc: 'B站今日热门第24名：【独家】《凡人修仙传之慕兰之战》第12集【总第188集】。',
+    animation: 'emojiRain',
+    animText: '独家《凡人修仙传之慕兰之…',
     emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Zdbi6rER9',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '我收容了100位粉丝到我的一辈子…',
-    emoji: '🎤',
-    date: '2026-08-22',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：我收容了100位粉丝到我的一辈子存档里！。',
-    animation: 'fire',
-    animText: '我收容了100位粉丝到我的一辈子存档里…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1DV8F6bEkz',
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1Ka866BEo8',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,48 +95,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '吃蜘蛛眼就可以飞去末地外岛？！这…',
-    emoji: '🎮',
+    id: 'r19',
+    name: '我收容了100位粉丝到我的一辈子…',
+    emoji: '🎤',
     date: '2026-08-22',
-    hot: 88,
+    hot: 82,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：吃蜘蛛眼就可以飞去末地外岛？！这个bug简直是艺术品！。',
-    animation: 'flower',
-    animText: '吃蜘蛛眼就可以飞去末地外岛…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1jM8P6EEDy',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '全球十大餐厅！为吃这顿饭！我们在…',
-    emoji: '🎬',
-    date: '2026-08-22',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：全球十大餐厅！为吃这顿饭！我们在欧洲被偷5万！到底值不值？。',
+    desc: 'B站今日热门第19名：我收容了100位粉丝到我的一辈子存档里！。',
     animation: 'fire',
-    animText: '全球十大餐厅！为吃这顿饭…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1UU8q6FEPL',
+    animText: '我收容了100位粉丝到我的一辈子存档里…',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1DV8F6bEkz',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '《你咋开的车》',
-    emoji: '🎮',
+    id: 'r20',
+    name: '我想超小傲',
+    emoji: '🎯',
     date: '2026-08-22',
-    hot: 88,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：《你咋开的车》。',
+    desc: 'B站今日热门第20名：我想超小傲。',
     animation: 'flower',
-    animText: '《你咋开的车》',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1dS8P6JEha',
+    animText: '我想超小傲',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1t48i6xEL3',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -154,6 +139,21 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1JDbo6iEaR',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r12',
+    name: '【纪录片】守护解放西·探案季 第…',
+    emoji: '🎬',
+    date: '2026-08-22',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：【纪录片】守护解放西·探案季 第十集  难以“置信”。',
+    animation: 'fire',
+    animText: '纪录片守护解放西·探案季…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1ET8K6oETN',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'NGX BB', '非洲沙漠小国如何翻盘', '国产内存颗粒持续涨价', '国际足联处罚阿根廷足协', 'Donk复仇小蜜蜂', '曝克莱将加盟热火', '复盘BLG战胜TES', '下一个是谁第七季正片更新啦', '阿森纳3-0考文垂', 'F1荷兰战报', 'TES BLG', '美林肯号航母士兵哗变始末'
+  '凡人', 'NGX BB', 'mRNA癌症疫苗是如何工作的', '如何评价汤普森加盟热火', '姚琛手搓爱的主打歌练习室', 'Donk复仇小蜜蜂', '运油20A歼16等已抵达埃及', '国际足联处罚阿根廷足协', '怎么看反抗强拆被定正当防卫', '拉宏桑从上海走回深圳完结篇', 'UP主带蚊子去看病', '缉毒犬经历了怎样的一生'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
