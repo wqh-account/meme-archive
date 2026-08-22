@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>热梗趋势预测 · 热榜热梗档案馆</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+  :root {
+    --bg: #0B2A52; --card: #ffffff; --line: #1E4D8A; --text: #1E4D8A;
+    --acc: #CC5500; --btn: #FF6A00; --light: #FF9A4D; --sub: #A0BFE6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); font-family: "Microsoft YaHei", sans-serif; color: #fff; min-height: 100vh; padding-top: 64px; }
+  /* ---- 主站导航（与热梗档案馆一致） ---- */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; row-gap: 8px;
+    padding: 14px 4%;
+    background: rgba(7, 10, 22, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .logo { font-size: 20px; font-weight: 900; letter-spacing: 1px; color: #eef1ff; }
+  .logo .hot { color: #ff9a4d; }
+  .logo .arc { background: linear-gradient(90deg, #ff6a00, #ff9a4d); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .nav-links a {
+    color: #a0bfe6; text-decoration: none; font-size: 14px;
+    margin-left: 22px; padding: 6px 14px; border-radius: 999px;
+    transition: all .25s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(255, 106, 0, 0.25); }
+  @media (max-width: 640px) { .nav-links a { margin-left: 6px; padding: 5px 10px; font-size: 13px; } }
+  /* ---- 预测页内容 ---- */
+  .header {
+    background: linear-gradient(135deg, var(--btn), var(--acc));
+    padding: 22px 5%; text-align: center;
+  }
+  .header h1 { font-size: 26px; letter-spacing: 2px; text-shadow: 0 2px 6px rgba(0,0,0,.3); }
+  .header p { margin-top: 6px; font-size: 13px; opacity: .92; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px 4%; }
+  .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 14px; }
+  .controls label { font-size: 14px; color: var(--sub); }
+  select, button {
+    padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,.25);
+    background: #fff; color: var(--text); font-size: 14px; cursor: pointer;
+  }
+  button { background: var(--btn); border: none; color: #fff; font-weight: bold; }
+  button:hover { background: var(--acc); }
+  button:disabled { background: #c9c9c9; cursor: not-allowed; }
+  .card {
+    background: var(--card); border: 2px solid var(--line); border-radius: 14px;
+    padding: 18px; margin-bottom: 18px; color: var(--text);
+  }
+  .card h2 { font-size: 17px; border-left: 5px solid var(--btn); padding-left: 10px; margin-bottom: 12px; }
+  #chart { width: 100%; height: 420px; }
+  .model-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .model-table th, .model-table td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #e8eef7; }
+  .model-table th { background: #f2f6fc; color: var(--line); }
+  .best-row { background: #fff3e6; font-weight: bold; }
+  .badge {
+    display: inline-block; background: var(--btn); color: #fff; font-size: 11px;
+    padding: 2px 8px; border-radius: 10px; margin-left: 6px;
+  }
+  .meta { color: var(--sub); font-size: 12px; margin-top: 8px; }
+  .footer { text-align: center; color: var(--sub); font-size: 12px; padding: 20px 0 30px; }
+  .loading { text-align: center; padding: 40px; color: var(--sub); }
+  .back-link { display: inline-block; margin: 14px 0 0 4%; color: var(--light); text-decoration: none; font-size: 14px; }
+  .back-link:hover { text-decoration: underline; }
+
+  /* ---- 分类按钮组 ---- */
+  .cat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .cat-btn {
+    padding: 7px 16px; border-radius: 999px; border: 1px solid var(--line);
+    background: #fff; color: var(--text); font-size: 13px; cursor: pointer; transition: all .2s;
+  }
+  .cat-btn:hover { border-color: var(--btn); color: var(--btn); }
+  .cat-btn.active { background: var(--btn); border-color: var(--btn); color: #fff; font-weight: bold; }
+  .cat-btn.warn { color: #999; border-style: dashed; }
+  .cat-btn.warn:hover { border-color: #999; color: #999; }
+
+  /* ---- 今日热点 ---- */
+  .search-row { display: flex; gap: 10px; margin-bottom: 12px; align-items: center; }
+  .search-row input {
+    flex: 1; padding: 9px 14px; border-radius: 8px; border: 1px solid var(--line);
+    font-size: 14px; color: var(--text); outline: none;
+  }
+  .search-row input:focus { border-color: var(--btn); box-shadow: 0 0 0 2px rgba(255,106,0,.15); }
+  .hot-list { max-height: 340px; overflow-y: auto; border: 1px solid #e8eef7; border-radius: 10px; }
+  .hot-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 14px; border-bottom: 1px solid #eef3fa; cursor: pointer; transition: background .15s;
+  }
+  .hot-item:last-child { border-bottom: none; }
+  .hot-item:hover { background: #fff3e6; }
+  .hot-item.selected { background: #ffe3c4; box-shadow: inset 3px 0 0 var(--btn); }
+  .hot-rank {
+    min-width: 30px; height: 30px; border-radius: 8px; background: #f2f6fc;
+    color: var(--line); font-weight: bold; font-size: 13px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hot-rank.top3 { background: linear-gradient(135deg, var(--btn), var(--acc)); color: #fff; }
+  .hot-title { flex: 1; font-size: 14px; line-height: 1.4; }
+  .cat-chip {
+    flex-shrink: 0; font-size: 11px; padding: 2px 9px; border-radius: 999px;
+    background: #eef3fa; color: var(--line); border: 1px solid #d7e3f2;
+  }
+  .cat-chip.c-游戏 { background: #e8f5ee; color: #1d7a4f; border-color: #bfe6d2; }
+  .cat-chip.c-科技 { background: #e8f0ff; color: #1d4ed8; border-color: #c3d6ff; }
+  .cat-chip.c-娱乐 { background: #ffe9f0; color: #c2185b; border-color: #ffc4d8; }
+  .cat-chip.c-财经 { background: #fff4e0; color: #b45309; border-color: #ffddb0; }
+  .cat-chip.c-教育 { background: #f0f4ff; color: #4f46e5; border-color: #d3d8ff; }
+  .cat-chip.c-健康 { background: #eafaf1; color: #15803d; border-color: #bbf7d0; }
+  .cat-chip.c-体育 { background: #fff7ed; color: #ea580c; border-color: #fed7aa; }
+  .cat-chip.c-社会 { background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe; }
+  .cat-chip.c-国际 { background: #ecfeff; color: #0e7490; border-color: #a5f3fc; }
+  .hot-empty { padding: 24px; text-align: center; color: var(--sub); font-size: 13px; }
+  .hot-count { color: var(--sub); font-size: 12px; margin-left: 4px; }
+  .src-tag { flex-shrink: 0; font-size: 11px; color: var(--sub); min-width: 44px; text-align: center; }
+  .src-tag.bili { color: #fb7299; font-weight: bold; }
+  .src-tag.weibo { color: #e6162d; font-weight: bold; }
+  .src-tag.douyin { color: #111; font-weight: bold; }
+  .view-toggle { display: flex; gap: 8px; margin-bottom: 12px; }
+  .v-btn {
+    padding: 7px 16px; border-radius: 999px; border: 1px solid var(--line);
+    background: #fff; color: var(--sub); font-size: 13px; cursor: pointer; transition: .2s;
+  }
+  .v-btn:hover { border-color: var(--btn); color: var(--btn); }
+  .v-btn.active { background: var(--btn); border-color: var(--btn); color: #fff; font-weight: bold; }
+  .hot-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .hot-col { border: 1px solid #e8eef7; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  .hot-col-head {
+    padding: 9px 14px; font-size: 13px; font-weight: bold; color: #fff;
+    background: linear-gradient(135deg, var(--btn), var(--acc)); display: flex; justify-content: space-between;
+  }
+  .hot-col-body { max-height: 340px; overflow-y: auto; }
+  .hot-col-body .hot-item { padding: 8px 12px; }
+  .hot-col .hot-empty { padding: 18px 10px; font-size: 12px; }
+  @media (max-width: 800px) { .hot-cols { grid-template-columns: 1fr; } }
+  .predict-hint { background: #fff3e6; border: 1px dashed var(--light); border-radius: 10px; padding: 10px 14px; font-size: 13px; color: #8a4b00; margin-bottom: 14px; display: none; }
+  .predict-hint b { color: var(--acc); }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="logo">🔥 热梗<span class="hot">档案馆</span> <span class="arc">MEME ARCHIVE</span></div>
+  <div class="nav-links">
+    <a href="index.html">🏠 首页</a>
+    <a href="daily.html">🔥 每日热点</a>
+    <a href="years.html">📅 五年编年史</a>
+    <a href="meme-test.html">🎮 梗龄测试</a>
+    <a href="predict.html" class="active">📈 趋势预测</a>
+  </div>
+</nav>
+
+<a class="back-link" href="index.html">← 返回档案馆首页</a>
+
+<div class="header">
+  <h1>🔥 热梗趋势预测</h1>
+  <p>按分类或今日热点预测热度走势 · 数据每日自动更新</p>
+</div>
+
+<div class="container">
+  <!-- 分类预测区 -->
+  <div class="card">
+    <h2>📂 按分类预测 <span class="hot-count" id="catMeta"></span></h2>
+    <div class="cat-bar" id="catBar">加载分类中...</div>
+    <div class="controls">
+      <label>数据源</label>
+      <select id="sourceSel">
+        <option value="">全部平台</option>
+        <option value="bili">B站热门</option>
+        <option value="douyin">抖音热门</option>
+        <option value="weibo">微博热搜</option>
+      </select>
+      <label>模型</label>
+      <select id="modelSel">
+        <option value="auto">自动选优</option>
+      </select>
+      <button onclick="loadForecast()">📈 开始预测</button>
+      <span id="status" style="color:var(--light);font-size:13px;"></span>
+    </div>
+    <div class="predict-hint" id="predictHint"></div>
+    <div class="card" style="margin:0; border:none; padding:0;">
+      <div id="chart"><div class="loading">加载中...</div></div>
+      <div class="meta" id="chartMeta"></div>
+    </div>
+  </div>
+
+  <!-- 今日热点选择区 -->
+  <div class="card">
+    <h2>🔥 今日热点 · 点击预测 <span class="hot-count" id="hotCount"></span></h2>
+    <div class="view-toggle" id="viewToggle">
+      <button class="v-btn active" data-view="cols" onclick="setView('cols')">🆚 三榜并列</button>
+      <button class="v-btn" data-view="list" onclick="setView('list')">📋 混排</button>
+    </div>
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="🔍 搜索今日热点，如：华为 / 高考 / 游戏 ..." oninput="renderHotList()">
+      <button onclick="clearSearch()" id="clearBtn" style="display:none;">✕ 清空</button>
+    </div>
+    <div id="hotList"><div class="loading">加载中...</div></div>
+  </div>
+
+  <!-- 我的账号 · 多平台数据记录与走势预测 -->
+  <div class="card">
+    <h2>🎥 我的账号 · 走势预测</h2>
+    <div class="view-toggle" id="accToggle" style="margin-bottom:12px;">
+      <button class="v-btn active" data-acc="douyin" onclick="setAccPlatform('douyin')">🎵 抖音</button>
+      <button class="v-btn" data-acc="bili" onclick="setAccPlatform('bili')">📺 B站</button>
+      <button class="v-btn" data-acc="weibo" onclick="setAccPlatform('weibo')">🔁 微博</button>
+    </div>
+    <div class="controls" style="flex-wrap:wrap;gap:10px;margin-bottom:14px;">
+      <label>日期 <input type="date" id="accDate" style="width:150px;padding:6px 8px;border:2px solid var(--line);border-radius:8px;"></label>
+      <label>粉丝数 <input type="number" id="accFans" placeholder="如 15200" style="width:130px;padding:6px 8px;border:2px solid var(--line);border-radius:8px;"></label>
+      <label>今日播放 <input type="number" id="accPlays" placeholder="如 88000" style="width:130px;padding:6px 8px;border:2px solid var(--line);border-radius:8px;"></label>
+      <label>今日点赞 <input type="number" id="accLikes" placeholder="如 7200" style="width:110px;padding:6px 8px;border:2px solid var(--line);border-radius:8px;"></label>
+      <label>备注 <input type="text" id="accNote" placeholder="如：发布了视频X" style="width:170px;padding:6px 8px;border:2px solid var(--line);border-radius:8px;"></label>
+      <button onclick="saveAccount()">💾 记录今天</button>
+      <span id="accMsg" style="color:var(--light);font-size:13px;"></span>
+    </div>
+    <div class="controls" style="gap:12px;margin-bottom:10px;">
+      <label>指标 <select id="accMetric" onchange="loadAccountChart()">
+        <option value="followers">粉丝数</option>
+        <option value="plays">播放量</option>
+        <option value="likes">点赞量</option>
+      </select></label>
+      <span style="color:var(--sub);font-size:13px;" id="accHint"></span>
+    </div>
+    <div id="accChart"><div class="loading">加载中...</div></div>
+    <div style="overflow-x:auto;margin-top:10px;">
+      <table class="model-table" id="accTable">
+        <thead><tr><th>日期</th><th>粉丝数</th><th>播放</th><th>点赞</th><th>备注</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div style="margin-top:10px;font-size:12px;color:var(--sub);">
+      💡 每天花10秒把账号后台的数字填进来，攒够 3 天就能自动画出走势和未来预测。数据只存在你自己的电脑上。
+    </div>
+  </div>
+
+  <!-- 模型对比 -->
+  <div class="card">
+    <h2>模型对比（回测 MAPE）</h2>
+    <div id="modelTable">加载中...</div>
+  </div>
+</div>
+
+<div class="footer">
+  热榜热梗档案馆 · 预测服务 | 数据每日自动更新 · 预测结果仅供参考
+</div>
+
+<script src="js/predict-config.js"></script>
+<script>
+const API = window.PREDICT_API || "/api";
+let m2Data = null;
+let hotItems = [];
+let catList = [];
+let activeCat = null;   // 当前选中的分类
+let activeTitle = null; // 当前选中的热点标题
+let viewMode = "cols";  // cols=三榜并列 list=混排
+
+// 颜色主题（AGOS 品牌规范）
+const COLORS = { hist: "#1E4D8A", pred: "#CC5500", band: "#FF9A4D" };
+
+const SRC_NAMES = { bili: "B站", douyin: "抖音", weibo: "微博" };
+
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) {
+    let msg = "HTTP " + r.status;
+    try { const e = await r.json(); if (e.error) msg = e.error; } catch (_) {}
+    throw new Error(msg);
+  }
+  return r.json();
+}
+
+/* ---- 分类按钮 ---- */
+async function loadCategories() {
+  try {
+    const d = await fetchJSON(API + "/categories");
+    catList = d.categories || [];
+    const bar = document.getElementById("catBar");
+    const predictables = catList.filter(c => c.predictable);
+    bar.innerHTML = "";
+    // 全部可预测分类按钮 + 数据积累中分类（灰色）
+    predictables.forEach(c => {
+      const b = document.createElement("button");
+      b.className = "cat-btn";
+      b.textContent = c.name + " (" + c.today_count + ")";
+      b.onclick = () => selectCategory(c.name);
+      bar.appendChild(b);
+    });
+    catList.filter(c => !c.predictable).forEach(c => {
+      const b = document.createElement("button");
+      b.className = "cat-btn warn";
+      b.textContent = c.name + " 积累中";
+      b.title = "该分类历史数据不足3天，攒几天就能预测啦";
+      b.disabled = true;
+      bar.appendChild(b);
+    });
+    const all = document.createElement("button");
+    all.className = "cat-btn active";
+    all.textContent = "📊 全部";
+    all.onclick = () => { activeCat = null; activeTitle = null; all.className = "cat-btn active"; setCatButtons(null); document.getElementById("predictHint").style.display = "none"; loadForecast(); };
+    bar.insertBefore(all, bar.firstChild);
+    document.getElementById("catMeta").textContent = "｜" + d.today + " 可预测分类 " + predictables.length + " 个";
+  } catch (e) {
+    document.getElementById("catBar").innerHTML = "<span style='color:#999'>分类加载失败：" + e.message + "</span>";
+  }
+}
+
+function setCatButtons(activeName) {
+  document.querySelectorAll(".cat-btn").forEach(b => {
+    const isActive = b.textContent.indexOf(activeName) === 0;
+    b.classList.toggle("active", isActive && !b.classList.contains("warn"));
+  });
+}
+
+function selectCategory(name) {
+  activeCat = name;
+  activeTitle = null;
+  setCatButtons(name);
+  // 清掉热点选中态
+  document.querySelectorAll(".hot-item.selected").forEach(el => el.classList.remove("selected"));
+  document.getElementById("predictHint").style.display = "none";
+  document.getElementById("sourceSel").value = "";
+  loadForecast();
+}
+
+/* ---- 今日热点 ---- */
+async function loadHotToday() {
+  try {
+    const d = await fetchJSON(API + "/hot_today");
+    hotItems = d.items || [];
+    document.getElementById("hotCount").textContent = "｜" + d.date + " 共 " + hotItems.length + " 条";
+    renderHotList();
+  } catch (e) {
+    document.getElementById("hotList").innerHTML = "<div class='loading'>热点加载失败：" + e.message + "</div>";
+  }
+}
+
+function setView(v) {
+  viewMode = v;
+  document.querySelectorAll("#viewToggle .v-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-view") === v);
+  });
+  renderHotList();
+}
+
+function itemHtml(i, idx, showSrc) {
+  const catClass = "cat-chip c-" + i.category;
+  const rankCls = i.rank <= 3 ? "hot-rank top3" : "hot-rank";
+  const sel = (activeTitle === i.title && activeCat === i.category) ? " selected" : "";
+  return `<div class="hot-item${sel}" data-idx="${idx}">
+    <span class="${rankCls}">${i.rank}</span>
+    ${showSrc ? `<span class="src-tag ${i.source}">${SRC_NAMES[i.source] || i.source}</span>` : ""}
+    <span class="hot-title"></span>
+    <span class="${catClass}"></span>
+  </div>`;
+}
+
+function renderHotList() {
+  const q = (document.getElementById("searchInput").value || "").trim().toLowerCase();
+  document.getElementById("clearBtn").style.display = q ? "inline-block" : "none";
+  const list = hotItems.filter(i => !q || i.title.toLowerCase().includes(q));
+  const box = document.getElementById("hotList");
+  if (!list.length) {
+    box.innerHTML = "<div class='hot-empty'>没有匹配的热点，换个关键词试试 🔍</div>";
+    return;
+  }
+  if (viewMode === "cols") {
+    // 三榜并列：微博 / B站 / 抖音 各一列
+    const keys = ["weibo", "bili", "douyin"];
+    let html = '<div class="hot-cols">';
+    keys.forEach(key => {
+      const items = list.filter(i => i.source === key).slice(0, 20);
+      const name = SRC_NAMES[key] || key;
+      html += '<div class="hot-col" data-key="' + key + '"><div class="hot-col-head"><span>' +
+        (key === "weibo" ? "🔁 " : key === "bili" ? "📺 " : "🎵 ") + name +
+        "</span><span>" + items.length + " 条</span></div><div class='hot-col-body'>";
+      if (!items.length) {
+        html += "<div class='hot-empty'>今日暂无数据<br>等待下次自动更新</div>";
+      } else {
+        html += items.map((i, idx) => itemHtml(i, idx, false)).join("");
+      }
+      html += "</div></div>";
+    });
+    html += "</div>";
+    box.innerHTML = html;
+    // 绑定：每列内部顺序与列内 items 一一对应
+    keys.forEach(key => {
+      const items = list.filter(i => i.source === key).slice(0, 20);
+      const col = box.querySelector('.hot-col[data-key="' + key + '"]');
+      if (!col) return;
+      col.querySelectorAll(".hot-item").forEach((el, idx) => {
+        const item = items[idx];
+        el.querySelector(".hot-title").textContent = item.title;
+        el.querySelector(".cat-chip").textContent = item.category;
+        el.addEventListener("click", () => pickHot(item.title, item.category, el));
+      });
+    });
+  } else {
+    // 混排：全平台一条列表
+    box.innerHTML = list.slice(0, 60).map((i, idx) => itemHtml(i, idx, true)).join("");
+    box.querySelectorAll(".hot-item").forEach(el => {
+      const item = list[Number(el.getAttribute("data-idx"))];
+      el.querySelector(".hot-title").textContent = item.title;
+      el.querySelector(".cat-chip").textContent = item.category;
+      el.addEventListener("click", () => pickHot(item.title, item.category, el));
+    });
+  }
+}
+
+function clearSearch() {
+  document.getElementById("searchInput").value = "";
+  renderHotList();
+}
+
+function pickHot(title, cat, el) {
+  activeTitle = title;
+  activeCat = cat;
+  document.querySelectorAll(".hot-item.selected").forEach(x => x.classList.remove("selected"));
+  if (el) el.classList.add("selected");
+  const hint = document.getElementById("predictHint");
+  hint.style.display = "block";
+  hint.innerHTML = "🎯 正在预测热点：<b>《" + title + "》</b>（按「" + cat + "」分类热度走势）";
+  document.getElementById("sourceSel").value = "";
+  setCatButtons(cat);
+  loadForecast();
+}
+
+/* ---- 预测 ---- */
+async function loadModels() {
+  try {
+    m2Data = await fetchJSON(API + "/models");
+    const sel = document.getElementById("modelSel");
+    sel.innerHTML = '<option value="auto">自动选优（' + (m2Data.best_model || "prophet") + '）</option>';
+    const names = {
+      prophet: "Prophet（统计基线）", nbeats: "N-BEATS", nhits: "NHiTS",
+      tft: "TFT（Transformer）", chronos: "Chronos-Bolt（零样本）"
+    };
+    for (const k in (m2Data.metrics || {})) {
+      const opt = document.createElement("option");
+      opt.value = k;
+      opt.textContent = names[k] || k;
+      sel.appendChild(opt);
+    }
+    renderModelTable();
+  } catch (e) {
+    document.getElementById("modelTable").innerHTML = "模型数据加载失败：" + e.message;
+  }
+}
+
+function renderModelTable() {
+  if (!m2Data || !m2Data.metrics) return;
+  const m = m2Data.metrics;
+  const names = {
+    prophet: "Prophet", nbeats: "N-BEATS", nhits: "NHiTS",
+    tft: "TFT", chronos: "Chronos-Bolt"
+  };
+  const rows = Object.keys(m).map(k => {
+    const v = m[k];
+    const best = (k === m2Data.best_model);
+    const mape = v["MAPE%"] != null ? v["MAPE%"] + "%" : "—";
+    const mae = v["MAE"] != null ? Number(v["MAE"]).toLocaleString() : "—";
+    return `<tr class="${best ? "best-row" : ""}">
+      <td>${names[k] || k}${best ? '<span class="badge">最佳</span>' : ""}</td>
+      <td>${mape}</td><td>${mae}</td><td>${v.desc || ""}</td></tr>`;
+  }).join("");
+  document.getElementById("modelTable").innerHTML = `
+    <table class="model-table">
+      <tr><th>模型</th><th>MAPE</th><th>MAE</th><th>说明</th></tr>${rows}
+    </table>
+    <div class="meta">${m2Data.note || ""}</div>`;
+}
+
+async function loadForecast() {
+  const status = document.getElementById("status");
+  const source = document.getElementById("sourceSel").value;
+  const model = document.getElementById("modelSel").value;
+  status.textContent = "预测中（模型训练需要几秒）...";
+  try {
+    const params = new URLSearchParams({ source: source, horizon: "7", model: model });
+    if (activeCat) params.set("category", activeCat);
+    const data = await fetchJSON(API + "/forecast?" + params.toString());
+    drawChart(data);
+    status.textContent = "✓ 完成";
+    let label = activeTitle
+      ? "热点: 《" + activeTitle + "》"
+      : (activeCat ? "分类: " + activeCat : "数据源: " + (source || "全部"));
+    document.getElementById("chartMeta").textContent =
+      label + " | 模型: " + data.model + " | 生成时间: " + data.generated_at;
+  } catch (e) {
+    status.textContent = "✗ 失败: " + e.message;
+  }
+}
+
+function drawChart(data) {
+  const chart = echarts.init(document.getElementById("chart"));
+  const hist = data.history;
+  const fc = data.forecast;
+
+  const allDates = hist.dates.concat(fc.map(f => f.date));
+  const splitIdx = hist.dates.length;
+
+  const histVals = hist.values.concat(Array(fc.length).fill(null));
+  const predVals = Array(splitIdx).fill(null).concat(fc.map(f => f.pred));
+  const lowVals = Array(splitIdx).fill(null).concat(fc.map(f => f.low));
+  const highVals = Array(splitIdx).fill(null).concat(fc.map(f => f.high));
+  const connectNulls = true;
+
+  const option = {
+    title: {
+      text: activeTitle ? "《" + activeTitle + "》热度预测" : (activeCat ? "「" + activeCat + "」分类热度预测" : "全平台热度趋势预测"),
+      left: "center", textStyle: { color: "#1E4D8A", fontSize: 15 }
+    },
+    tooltip: {
+      trigger: "axis",
+      valueFormatter: v => v == null ? "-" : Number(v).toLocaleString() + " 播放",
+      backgroundColor: "#fff", borderColor: "#1E4D8A", textStyle: { color: "#1E4D8A" }
+    },
+    legend: { data: ["历史实际", "预测", "置信区间"], top: 24 },
+    grid: { left: 70, right: 30, top: 62, bottom: 40 },
+    xAxis: {
+      type: "category", data: allDates,
+      axisLine: { lineStyle: { color: "#1E4D8A" } },
+      axisLabel: { color: "#1E4D8A" }
+    },
+    yAxis: {
+      type: "value",
+      axisLabel: { color: "#1E4D8A", formatter: v => (v / 10000).toFixed(0) + "万" },
+      splitLine: { lineStyle: { color: "#e8eef7" } }
+    },
+    series: [
+      {
+        name: "置信区间", type: "line",
+        data: lowVals, stack: "band",
+        lineStyle: { opacity: 0 }, symbol: "none",
+        areaStyle: { color: "rgba(255,154,77,0.18)" },
+        tooltip: { show: false }, silent: true, z: 1
+      },
+      {
+        name: "置信区间上界", type: "line",
+        data: highVals.map((v, i) => (v - lowVals[i])),
+        stack: "band",
+        lineStyle: { opacity: 0 }, symbol: "none",
+        areaStyle: { color: "rgba(255,154,77,0.18)" },
+        tooltip: { show: false }, silent: true, z: 1
+      },
+      { name: "历史实际", type: "line", data: histVals, connectNulls,
+        color: COLORS.hist, lineWidth: 3, symbolSize: 8,
+        areaStyle: { color: "rgba(30,77,138,0.08)" }, z: 3 },
+      { name: "预测", type: "line", data: predVals, connectNulls,
+        color: COLORS.pred, lineWidth: 3, symbolSize: 7,
+        lineStyle: { type: "dashed" }, z: 3,
+        markLine: {
+          silent: true,
+          lineStyle: { color: "#A0BFE6", type: "dashed" },
+          data: [{ xAxis: allDates[splitIdx - 1], label: { formatter: "今天", position: "insideEndTop" } }]
+        }
+      }
+    ]
+  };
+  chart.setOption(option);
+  window.addEventListener("resize", () => chart.resize());
+}
+
+// ==================== 我的账号 · 多平台走势 ====================
+let accChart = null;
+let accPlatform = "douyin";
+
+function setAccPlatform(p) {
+  accPlatform = p;
+  document.querySelectorAll("#accToggle .v-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-acc") === p);
+  });
+  loadAccountTable();
+  loadAccountChart();
+}
+
+async function loadAccount() {
+  const today = new Date();
+  const d = today.getDate().toString().padStart(2, "0");
+  const m = (today.getMonth() + 1).toString().padStart(2, "0");
+  document.getElementById("accDate").value = today.getFullYear() + "-" + m + "-" + d;
+  await loadAccountTable();
+  await loadAccountChart();
+}
+
+async function loadAccountTable() {
+  try {
+    const data = await fetchJSON(API + "/account?platform=" + accPlatform);
+    const tbody = document.querySelector("#accTable tbody");
+    const items = data.items || [];
+    tbody.innerHTML = items.length ? items.map(it =>
+      `<tr><td>${it.date}</td><td>${Number(it.followers).toLocaleString()}</td><td>${Number(it.plays).toLocaleString()}</td><td>${Number(it.likes).toLocaleString()}</td><td style="color:var(--sub);">${it.note || ""}</td></tr>`
+    ).join("") : `<tr><td colspan="5" style="color:#999;text-align:center;">还没有数据，从今天开始记录吧 🎬</td></tr>`;
+    document.getElementById("accHint").textContent = items.length >= 3
+      ? "已记录 " + items.length + " 天，预测进行中 ✓"
+      : "已记录 " + items.length + " 天，再记 " + (3 - items.length) + " 天就能出预测啦";
+  } catch (e) {
+    document.querySelector("#accTable tbody").innerHTML =
+      `<tr><td colspan="5" style="color:#999;text-align:center;">加载失败：${e.message}</td></tr>`;
+  }
+}
+
+async function saveAccount() {
+  const date = document.getElementById("accDate").value;
+  const msg = document.getElementById("accMsg");
+  if (!date) { msg.textContent = "请选择日期"; return; }
+  msg.textContent = "保存中...";
+  try {
+    const r = await fetch(API + "/account/record", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        date: date,
+        followers: document.getElementById("accFans").value || 0,
+        plays: document.getElementById("accPlays").value || 0,
+        likes: document.getElementById("accLikes").value || 0,
+        note: document.getElementById("accNote").value || "",
+        platform: accPlatform
+      })
+    });
+    if (!r.ok) {
+      let em = "HTTP " + r.status;
+      try { const e = await r.json(); if (e.error) em = e.error; } catch (_) {}
+      throw new Error(em);
+    }
+    msg.textContent = "✓ 已记录 " + date + "（重复记录会自动覆盖）";
+    document.getElementById("accFans").value = "";
+    document.getElementById("accPlays").value = "";
+    document.getElementById("accLikes").value = "";
+    document.getElementById("accNote").value = "";
+    await loadAccountTable();
+    await loadAccountChart();
+  } catch (e) {
+    msg.textContent = "✗ 保存失败：" + e.message;
+  }
+}
+
+async function loadAccountChart() {
+  const metric = document.getElementById("accMetric").value;
+  const el = document.getElementById("accChart");
+  const names = { followers: "粉丝数", plays: "播放量", likes: "点赞量" };
+  try {
+    const data = await fetchJSON(API + "/account/forecast?metric=" + metric + "&horizon=14&platform=" + accPlatform);
+    if (!accChart) accChart = echarts.init(el);
+    const hist = data.history, fc = data.forecast;
+    const allDates = hist.dates.concat(fc.map(f => f.date));
+    const splitIdx = hist.dates.length;
+    const histVals = hist.values.concat(Array(fc.length).fill(null));
+    const predVals = Array(splitIdx).fill(null).concat(fc.map(f => f.pred));
+    const lowVals = Array(splitIdx).fill(null).concat(fc.map(f => f.low));
+    const highVals = Array(splitIdx).fill(null).concat(fc.map(f => f.high));
+    accChart.setOption({
+      title: { text: "我的" + (SRC_NAMES[accPlatform] || accPlatform) + " · " + names[metric] + "走势与预测", left: "center", textStyle: { color: "#1E4D8A", fontSize: 15 } },
+      tooltip: {
+        trigger: "axis",
+        valueFormatter: v => v == null ? "-" : Number(v).toLocaleString(),
+        backgroundColor: "#fff", borderColor: "#1E4D8A", textStyle: { color: "#1E4D8A" }
+      },
+      legend: { data: ["历史实际", "预测", "置信区间"], top: 24 },
+      grid: { left: 70, right: 30, top: 62, bottom: 40 },
+      xAxis: { type: "category", data: allDates, axisLine: { lineStyle: { color: "#1E4D8A" } }, axisLabel: { color: "#1E4D8A" } },
+      yAxis: { type: "value", axisLabel: { color: "#1E4D8A", formatter: v => (v / 10000).toFixed(0) + "万" }, splitLine: { lineStyle: { color: "#e8eef7" } } },
+      series: [
+        { name: "置信区间", type: "line", data: lowVals, stack: "band", lineStyle: { opacity: 0 }, symbol: "none", areaStyle: { color: "rgba(255,154,77,0.18)" }, tooltip: { show: false }, silent: true, z: 1 },
+        { name: "置信区间上界", type: "line", data: highVals.map((v, i) => (v - lowVals[i])), stack: "band", lineStyle: { opacity: 0 }, symbol: "none", areaStyle: { color: "rgba(255,154,77,0.18)" }, tooltip: { show: false }, silent: true, z: 1 },
+        { name: "历史实际", type: "line", data: histVals, connectNulls: true, color: COLORS.hist, lineWidth: 3, symbolSize: 8, areaStyle: { color: "rgba(30,77,138,0.08)" }, z: 3 },
+        { name: "预测", type: "line", data: predVals, connectNulls: true, color: COLORS.pred, lineWidth: 3, symbolSize: 7, lineStyle: { type: "dashed" }, z: 3 }
+      ]
+    }, true);
+    window.addEventListener("resize", () => accChart.resize());
+  } catch (e) {
+    if (!accChart) accChart = echarts.init(el);
+    accChart.clear();
+    el.innerHTML = '<div class="loading" style="height:300px;display:flex;align-items:center;justify-content:center;color:#999;">暂无预测：' + e.message + '</div>';
+  }
+}
+
+// 初始加载
+loadModels();
+loadCategories();
+loadHotToday();
+loadForecast();
+loadAccount();
+</script>
+</body>
+</html>
