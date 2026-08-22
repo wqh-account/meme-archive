@@ -491,6 +491,11 @@ async function loadForecast() {
       : (activeCat ? "分类: " + activeCat : "数据源: " + (source || "全部"));
     document.getElementById("chartMeta").textContent =
       label + " | 模型: " + data.model + " | 生成时间: " + data.generated_at;
+    if (model === "auto") {
+      const sel = document.getElementById("modelSel");
+      const opt = sel.options[sel.selectedIndex];
+      if (opt) opt.textContent = "自动选优（" + data.model + "）";
+    }
   } catch (e) {
     status.textContent = "✗ 失败: " + e.message;
   }
