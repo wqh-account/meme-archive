@@ -424,7 +424,7 @@ function pickHot(title, cat, el) {
   if (el) el.classList.add("selected");
   const hint = document.getElementById("predictHint");
   hint.style.display = "block";
-  hint.innerHTML = "🎯 正在预测热点：<b>《" + title + "》</b>（按「" + cat + "」分类热度走势）";
+  hint.innerHTML = "🎯 正在预测热点：<b>《" + title + "》</b>（按该热点历史热度走势）";
   document.getElementById("sourceSel").value = "";
   setCatButtons(cat);
   loadForecast();
@@ -482,6 +482,7 @@ async function loadForecast() {
   status.textContent = "预测中（模型训练需要几秒）...";
   try {
     const params = new URLSearchParams({ source: source, horizon: "7", model: model });
+    if (activeTitle) params.set("title", activeTitle);
     if (activeCat) params.set("category", activeCat);
     const data = await fetchJSON(API + "/forecast?" + params.toString());
     drawChart(data);
@@ -489,6 +490,9 @@ async function loadForecast() {
     let label = activeTitle
       ? "热点: 《" + activeTitle + "》"
       : (activeCat ? "分类: " + activeCat : "数据源: " + (source || "全部"));
+    if (data.mode === "category_fallback") {
+      label += "（该热点历史不足，展示同类趋势）";
+    }
     document.getElementById("chartMeta").textContent =
       label + " | 模型: " + data.model + " | 生成时间: " + data.generated_at;
     if (model === "auto") {
