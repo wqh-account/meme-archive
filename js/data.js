@@ -20,48 +20,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '做最黑暗的料理，送给最爱整活的甲…',
-    emoji: '🎯',
+    id: 'r2',
+    name: '严肃观看儿子的历史记录',
+    emoji: '🎬',
     date: '2026-08-22',
-    hot: 81,
+    hot: 99,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：做最黑暗的料理，送给最爱整活的甲方...。',
-    animation: 'flower',
-    animText: '做最黑暗的料理，送给最爱…',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1qdb16eEF5',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r31',
-    name: '人族少女混入兽人国，还引发了一场…',
-    emoji: '🔥',
-    date: '2026-08-22',
-    hot: 70,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第31名：人族少女混入兽人国，还引发了一场猫猫二当家和黄狗侠客的绝世大战。',
-    animation: 'emojiRain',
-    animText: '人族少女混入兽人国，还引…',
-    emojis: ['🔥', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV17N8P6HEVy',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r24',
-    name: '【独家】《凡人修仙传之慕兰之战》…',
-    emoji: '🎵',
-    date: '2026-08-22',
-    hot: 77,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：【独家】《凡人修仙传之慕兰之战》第12集【总第188集】。',
-    animation: 'emojiRain',
-    animText: '独家《凡人修仙传之慕兰之…',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1Ka866BEo8',
+    desc: 'B站今日热门第2名：严肃观看儿子的历史记录。',
+    animation: 'dance',
+    animText: '严肃观看儿子的历史记录',
+    emojis: ['🎬', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1Vy8r6JE9z',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,18 +50,78 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r24',
+    name: '【独家】《凡人修仙传之慕兰之战》…',
+    emoji: '🎵',
+    date: '2026-08-22',
+    hot: 77,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第24名：【独家】《凡人修仙传之慕兰之战》第12集【总第188集】。',
+    animation: 'emojiRain',
+    animText: '独家《凡人修仙传之慕兰之…',
+    emojis: ['🎵', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1Ka866BEo8',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r25',
+    name: '《牛莱》',
+    emoji: '📺',
+    date: '2026-08-22',
+    hot: 76,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第25名：《牛莱》。',
+    animation: 'shake',
+    animText: '《牛莱》',
+    emojis: ['📺', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1vj8K6DE8D',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r31',
+    name: '人族少女混入兽人国，还引发了一场…',
+    emoji: '🔥',
+    date: '2026-08-22',
+    hot: 70,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第31名：人族少女混入兽人国，还引发了一场猫猫二当家和黄狗侠客的绝世大战。',
+    animation: 'emojiRain',
+    animText: '人族少女混入兽人国，还引…',
+    emojis: ['🔥', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV17N8P6HEVy',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
-    name: '《下一个是谁》第七季（3）',
+    name: '《原神》过场动画-「『复活』之时…',
     emoji: '🎤',
     date: '2026-08-22',
     hot: 82,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：《下一个是谁》第七季（3）。',
+    desc: 'B站今日热门第19名：《原神》过场动画-「『复活』之时将至」。',
     animation: 'fire',
-    animText: '《下一个是谁》第七季3',
+    animText: '《原神》过场动画-「『复…',
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1yj8T6zE1N',
+    videoUrl: 'https://www.bilibili.com/video/BV1UP8q6FEmU',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '本关最优解：放70个窝瓜僵尸 【…',
+    emoji: '🎵',
+    date: '2026-08-22',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：本关最优解：放70个窝瓜僵尸 【bilibilionly同人扶持计划】。',
+    animation: 'ring',
+    animText: '本关最优解：放70个窝瓜僵尸…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Qc8T6SESo',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -107,36 +137,6 @@ const RECENT_MEMES = [
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV1DV8F6bEkz',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r20',
-    name: '我想超小傲',
-    emoji: '🎯',
-    date: '2026-08-22',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：我想超小傲。',
-    animation: 'flower',
-    animText: '我想超小傲',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1t48i6xEL3',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '《晒足一百ber天3.0》',
-    emoji: '🎮',
-    date: '2026-08-22',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：《晒足一百ber天3.0》。',
-    animation: 'flower',
-    animText: '《晒足一百ber天3.0…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1JDbo6iEaR',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '凡人', 'NGX BB', 'mRNA癌症疫苗是如何工作的', '如何评价汤普森加盟热火', '姚琛手搓爱的主打歌练习室', 'Donk复仇小蜜蜂', '运油20A歼16等已抵达埃及', '国际足联处罚阿根廷足协', '怎么看反抗强拆被定正当防卫', '拉宏桑从上海走回深圳完结篇', 'UP主带蚊子去看病', '缉毒犬经历了怎样的一生'
+  'BLG TYL', '第二届世界人形机器人运动会', '阿森纳签下孔萨', '战双音乐会直播中', '江苏省城市足球联赛 苏州vs南京', '核电站到底是怎么发电的', 'NIP IG', '假如八仙有朋友圈', '万字解析钢铁侠3', '非洲沙漠小国如何翻盘', '下一个是谁第七季正片更新啦', 'JDG TES'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
