@@ -65,17 +65,47 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '严肃观看儿子的历史记录',
-    emoji: '🔥',
+    id: 'r14',
+    name: '搞笑疯人院：满级病友竟是大佬！大…',
+    emoji: '🎵',
     date: '2026-08-24',
-    hot: 90,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：严肃观看儿子的历史记录。',
-    animation: 'shake',
+    desc: 'B站今日热门第14名：搞笑疯人院：满级病友竟是大佬！大家都有病的时候，楚闻野张口闭口就喊桑九舅舅，桑九也觉得楚闻野是个好孩子，就是脑子不太好。。',
+    animation: 'ring',
+    animText: '搞笑疯人院：满级病友竟是大佬…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1j38B65Eyw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '护理：一把斩向死亡的温柔刀',
+    emoji: '🎮',
+    date: '2026-08-24',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：护理：一把斩向死亡的温柔刀。',
+    animation: 'flower',
+    animText: '护理：一把斩向死亡的温柔…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1Jv8p6kEJw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '严肃观看儿子的历史记录',
+    emoji: '🎵',
+    date: '2026-08-24',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：严肃观看儿子的历史记录。',
+    animation: 'ring',
     animText: '严肃观看儿子的历史记录',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1Vy8r6JE9z',
     source: 'B站今日热门（实时抓取）'
   },
@@ -95,21 +125,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '护理：一把斩向死亡的温柔刀',
-    emoji: '🎮',
-    date: '2026-08-24',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：护理：一把斩向死亡的温柔刀。',
-    animation: 'flower',
-    animText: '护理：一把斩向死亡的温柔…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Jv8p6kEJw',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r19',
     name: '全网疯传深圳某炸鸡店“窒息45秒…',
     emoji: '🎤',
@@ -122,21 +137,6 @@ const RECENT_MEMES = [
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV1ES876dErp',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '搞笑疯人院：满级病友竟是大佬！大…',
-    emoji: '🎵',
-    date: '2026-08-24',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：搞笑疯人院：满级病友竟是大佬！大家都有病的时候，楚闻野张口闭口就喊桑九舅舅，桑九也觉得楚闻野是个好孩子，就是脑子不太好。。',
-    animation: 'ring',
-    animText: '搞笑疯人院：满级病友竟是大佬…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1j38B65Eyw',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '特大暴雨来了', '重庆狼队 广州TTG', '央视揭秘网售外来物种', 'Spirit夺得TI2026冠军', '美国主导的联盟会终结吗', '洛天依首唱新歌地府美食家', 'BLG AL', '台风紫檀的暴雨会持续多久', '王传君与爱情公寓恩怨始末', '嫦娥七号任务不满足发射条件', '美股再现超级IPO', '开学新生群belike'
+  '特大暴雨来了', 'Spirit夺得TI2026冠军', '央视揭秘网售外来物种', '重庆狼队 广州TTG', '美国加码制裁国际刑事法院', '王传君与爱情公寓恩怨始末', '台风紫檀的暴雨会持续多久', '谁来约束成瘾算法', '美国主导的联盟会终结吗', '嫦娥七号任务不满足发射条件', '小片片解析记忆管理局', '深度剖析美国航空产业发展'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
