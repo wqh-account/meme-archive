@@ -5,63 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r1',
-    name: '原创民俗AI短片《槐灯》',
-    emoji: '🔥',
-    date: '2026-08-24',
-    hot: 100,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第1名：原创民俗AI短片《槐灯》。',
-    animation: 'textPop',
-    animText: '原创民俗AI短片《槐灯》',
-    emojis: ['🔥', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV15B8z61EbV',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r2',
-    name: '"复活吧！我的（ ）"',
+    id: 'r22',
+    name: '【战双帕弥什】「于频率中相汇」全…',
     emoji: '🎬',
     date: '2026-08-24',
-    hot: 99,
+    hot: 79,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第2名："复活吧！我的（ ）"。',
-    animation: 'dance',
-    animText: '"复活吧！我的 "',
+    desc: 'B站今日热门第22名：【战双帕弥什】「于频率中相汇」全球线上音乐会回顾。',
+    animation: 'textPop',
+    animText: '战双帕弥什「于频率中相汇…',
     emojis: ['🎬', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1G48M6XEBt',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '我这一生最大的罪，是把人写成了妖…',
-    emoji: '🏆',
-    date: '2026-08-24',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：我这一生最大的罪，是把人写成了妖……。',
-    animation: 'shake',
-    animText: '我这一生最大的罪，是把人…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1rHbY6MEB9',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
-    name: '【独家】牧神记 第97集 登基',
-    emoji: '🎯',
-    date: '2026-08-24',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：【独家】牧神记 第97集 登基。',
-    animation: 'emojiRain',
-    animText: '独家牧神记 第97集…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1rg8y6uEtG',
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1VH8K67ENH',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -96,17 +51,32 @@ const RECENT_MEMES = [
   },
   {
     id: 'r14',
-    name: '严肃观看儿子的历史记录',
+    name: '原创民俗AI短片《槐灯》',
     emoji: '🎵',
     date: '2026-08-24',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：严肃观看儿子的历史记录。',
+    desc: 'B站今日热门第14名：原创民俗AI短片《槐灯》。',
     animation: 'ring',
-    animText: '严肃观看儿子的历史记录',
+    animText: '原创民俗AI短片《槐灯》',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Vy8r6JE9z',
+    videoUrl: 'https://www.bilibili.com/video/BV15B8z61EbV',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '"复活吧！我的（ ）"',
+    emoji: '📺',
+    date: '2026-08-24',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名："复活吧！我的（ ）"。',
+    animation: 'textPop',
+    animText: '"复活吧！我的 "',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1G48M6XEBt',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -125,18 +95,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r18',
+    name: '我这一生最大的罪，是把人写成了妖…',
+    emoji: '🏆',
+    date: '2026-08-24',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：我这一生最大的罪，是把人写成了妖……。',
+    animation: 'shake',
+    animText: '我这一生最大的罪，是把人…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1rHbY6MEB9',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
-    name: '全网疯传深圳某炸鸡店“窒息45秒…',
+    name: '严肃观看儿子的历史记录',
     emoji: '🎤',
     date: '2026-08-24',
     hot: 82,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：全网疯传深圳某炸鸡店“窒息45秒”事件，暴露年轻人的悲哀困境。',
+    desc: 'B站今日热门第19名：严肃观看儿子的历史记录。',
     animation: 'fire',
-    animText: '全网疯传深圳某炸鸡店“窒息45秒”事件…',
+    animText: '严肃观看儿子的历史记录',
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1ES876dErp',
+    videoUrl: 'https://www.bilibili.com/video/BV1Vy8r6JE9z',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '警员执法遇F-18战机坠落，67…',
+    emoji: '🎮',
+    date: '2026-08-24',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：警员执法遇F-18战机坠落，6700万战损，飞行员报警求助！。',
+    animation: 'flower',
+    animText: '警员执法遇F-18战机坠落…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1P38x6dET4',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '特大暴雨来了', 'Spirit夺得TI2026冠军', '央视揭秘网售外来物种', '重庆狼队 广州TTG', '美国加码制裁国际刑事法院', '王传君与爱情公寓恩怨始末', '台风紫檀的暴雨会持续多久', '谁来约束成瘾算法', '美国主导的联盟会终结吗', '嫦娥七号任务不满足发射条件', '小片片解析记忆管理局', '深度剖析美国航空产业发展'
+  'CS电竞世俱杯16强数据图', '卫健委称白血病不再是不治之症', '四六级查分', '马克龙为AG.AL颁奖', 'F1荷兰站诺里斯夺冠', '国铁集团回应旅客买票占座放零食', '顽叟戏老童', '绿龙一晚包揽两项赛事冠军', '荷兰弟赞达亚爆火的背后', '阿尔瓦雷斯被狂嘘', '在枪店上班是什么体验', '记忆管理局'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
