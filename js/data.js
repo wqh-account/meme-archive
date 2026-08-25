@@ -110,47 +110,47 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '原创民俗AI短片《槐灯》',
+    id: 'r10',
+    name: '🦋 炼 定 仙 游 ♂ 股 �…',
     emoji: '🎯',
     date: '2026-08-25',
-    hot: 81,
+    hot: 91,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：原创民俗AI短片《槐灯》。',
-    animation: 'flower',
-    animText: '原创民俗AI短片《槐灯》',
+    desc: 'B站今日热门第10名：🦋 炼 定 仙 游 ♂ 股 🦋。',
+    animation: 'emojiRain',
+    animText: '🦋 炼 定 仙 游…',
     emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV15B8z61EbV',
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1F58v61EXV',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r21',
-    name: '严肃观看儿子的历史记录',
-    emoji: '🔥',
+    id: 'r16',
+    name: '【苏星河眼镜】铺天盖地宣传的AI…',
+    emoji: '⚡',
     date: '2026-08-25',
-    hot: 80,
+    hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：严肃观看儿子的历史记录。',
-    animation: 'ring',
-    animText: '严肃观看儿子的历史记录',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Vy8r6JE9z',
+    desc: 'B站今日热门第16名：【苏星河眼镜】铺天盖地宣传的AI眼镜，究竟能让你看到什么？。',
+    animation: 'dance',
+    animText: '苏星河眼镜铺天盖地宣传的AI眼镜…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV12u8q6dEay',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r22',
+    id: 'r17',
     name: '放弃一切，只为等你',
-    emoji: '🎬',
+    emoji: '🍿',
     date: '2026-08-25',
-    hot: 79,
+    hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：放弃一切，只为等你。',
-    animation: 'textPop',
+    desc: 'B站今日热门第17名：放弃一切，只为等你。',
+    animation: 'emojiRain',
     animText: '放弃一切，只为等你',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
     videoUrl: 'https://www.bilibili.com/video/BV1f38b6pE5x',
     source: 'B站今日热门（实时抓取）'
   },
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '放假最后一天belike', '鲁豫对话陈岚', '赛考斯殷玉珍重逢', '巫师4计划2028年发售', 'Spirit夺冠名场面回顾', '美日联手保日元有效吗', 'AI续作数码宝贝之全面战争', '韩国人评欧美风女团新歌', '荷兰弟赞达亚爆火的背后', '锐评我们的少年时代2', '王传君与爱情公寓恩怨始末', 'HYBE新女团TUIDE出道曲MV'
+  '放假最后一天belike', 'AI续作数码宝贝之全面战争', '锐评披哥一公下看点', '巫师4计划2028年发售', 'Spirit夺冠名场面回顾', '荷兰弟赞达亚爆火的背后', '鲁豫对话陈岚', '美日联手保日元有效吗', '韩国人评欧美风女团新歌', '中埃空军联合训练', '甲醛白菜事件全解析', 'HYBE新女团TUIDE出道曲MV'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
