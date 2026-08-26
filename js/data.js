@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r22',
+    name: '《无限大》定档预告丨27年1月1…',
+    emoji: '🎬',
+    date: '2026-08-26',
+    hot: 79,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第22名：《无限大》定档预告丨27年1月15日全球上线。',
+    animation: 'textPop',
+    animText: '《无限大》定档预告丨27…',
+    emojis: ['🎬', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV15EhG6qEAg',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r29',
     name: '《崩坏：星穹铁道》知更鸟•晴歌角…',
     emoji: '🎤',
@@ -32,21 +47,6 @@ const RECENT_MEMES = [
     emojis: ['🎯', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1gLhK6LEcb',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '《无限大》定档预告丨27年1月1…',
-    emoji: '🎬',
-    date: '2026-08-26',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：《无限大》定档预告丨27年1月15日全球上线。',
-    animation: 'textPop',
-    animText: '《无限大》定档预告丨27…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV15EhG6qEAg',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -96,47 +96,47 @@ const RECENT_MEMES = [
   },
   {
     id: 'r24',
-    name: '高中生逃离原生家庭过程（下）',
+    name: '谁能坚持到最后？',
     emoji: '🎵',
     date: '2026-08-26',
     hot: 77,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：高中生逃离原生家庭过程（下）。',
+    desc: 'B站今日热门第24名：谁能坚持到最后？。',
     animation: 'emojiRain',
-    animText: '高中生逃离原生家庭过程下',
+    animText: '谁能坚持到最后？',
     emojis: ['🎵', '⚡'],
     color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1Uy8x6AETG',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r25',
-    name: '谁能坚持到最后？',
-    emoji: '📺',
-    date: '2026-08-26',
-    hot: 76,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：谁能坚持到最后？。',
-    animation: 'shake',
-    animText: '谁能坚持到最后？',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
     videoUrl: 'https://www.bilibili.com/video/BV18XhP6GExJ',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '【逆天中配】超神人辉夜姬 完整版…',
-    emoji: '🎯',
+    id: 'r17',
+    name: '《昭和米国物语》科隆游戏展实机预…',
+    emoji: '🍿',
     date: '2026-08-26',
-    hot: 91,
+    hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：【逆天中配】超神人辉夜姬 完整版大电影。',
+    desc: 'B站今日热门第17名：《昭和米国物语》科隆游戏展实机预告。',
     animation: 'emojiRain',
-    animText: '逆天中配超神人辉夜姬…',
-    emojis: ['🎯', '⚡'],
+    animText: '《昭和米国物语》科隆游戏…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1aUhL6CEBD',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '高中生逃离原生家庭过程（下）',
+    emoji: '🏆',
+    date: '2026-08-26',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：高中生逃离原生家庭过程（下）。',
+    animation: 'shake',
+    animText: '高中生逃离原生家庭过程下',
+    emojis: ['🏆', '⚡'],
     color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1v6hP6nE8e',
+    videoUrl: 'https://www.bilibili.com/video/BV1Uy8x6AETG',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '在韩失联女生已遇害', '云南交警官方玩梗', '巫师3重制版官宣预告', '宇树科技为什么急着上市', '锐评人形机器人运动会', '内娱养成系追星有多抽象', '特朗普贴身助理的权力有多大', '不同国家的人如何看龙餐馆', '龙餐馆国宴级徐福烩饭', 'UP主复刻百万英镑牛排套餐', '昭和米国物语科隆展实机预告', '你的胆子真是肥嘟嘟的'
+  '云南交警官方玩梗', '在韩失联女生已遇害', '巫师3重制版官宣预告', '德芙文案为何会翻车', '万字解析植僵恐怖版剧情', '内娱养成系追星有多抽象', '不同国家的人如何看龙餐馆', '锐评人形机器人运动会', '宇树科技为什么急着上市', '驻香港部队组织第29次建制单位轮换', '昭和米国物语科隆展实机预告', '你的胆子真是肥嘟嘟的'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
