@@ -5,25 +5,10 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r1',
-    name: '《背心尊者》',
-    emoji: '🔥',
-    date: '2026-08-27',
-    hot: 100,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第1名：《背心尊者》。',
-    animation: 'textPop',
-    animText: '《背心尊者》',
-    emojis: ['🔥', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1KMhF6dEt1',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r16',
     name: '世界伊始——《伊莫》全球上线定档…',
     emoji: '⚡',
-    date: '2026-08-27',
+    date: '2026-08-28',
     hot: 85,
     tags: ['B站热门', '今日'],
     desc: 'B站今日热门第16名：世界伊始——《伊莫》全球上线定档：PC端9月16日 移动端9月23日！。',
@@ -35,10 +20,25 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r15',
+    name: '《动物朋克》最新预告&实机演示 …',
+    emoji: '📺',
+    date: '2026-08-28',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：《动物朋克》最新预告&实机演示 | 国产动作新游登陆科隆展。',
+    animation: 'textPop',
+    animText: '《动物朋克》最新预告&实机演示…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1jfhA6EEMw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r20',
     name: '打卡！打工！打钱！《异克斯小队》…',
     emoji: '🎯',
-    date: '2026-08-27',
+    date: '2026-08-28',
     hot: 81,
     tags: ['B站热门', '今日'],
     desc: 'B站今日热门第20名：打卡！打工！打钱！《异克斯小队》首曝PV。',
@@ -53,7 +53,7 @@ const RECENT_MEMES = [
     id: 'r11',
     name: '【独家】时光代理人 第三季 Pa…',
     emoji: '🔥',
-    date: '2026-08-27',
+    date: '2026-08-28',
     hot: 90,
     tags: ['B站热门', '今日'],
     desc: 'B站今日热门第11名：【独家】时光代理人 第三季 PartOne 第4集 JAE【8月国创】。',
@@ -65,10 +65,25 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r12',
+    name: '《背心尊者》',
+    emoji: '🎬',
+    date: '2026-08-28',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：《背心尊者》。',
+    animation: 'fire',
+    animText: '《背心尊者》',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1KMhF6dEt1',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
     name: '杭州电梯猥亵案反转：法律给了男邻…',
     emoji: '🎤',
-    date: '2026-08-27',
+    date: '2026-08-28',
     hot: 82,
     tags: ['B站热门', '今日'],
     desc: 'B站今日热门第19名：杭州电梯猥亵案反转：法律给了男邻居清白，但网络舆论的私刑已经执行完了，别让真相的迟到 成为常态。',
@@ -80,78 +95,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r11',
+    name: '三姐妹凌晨醉酒后，居然？？？ 【…',
+    emoji: '🔥',
+    date: '2026-08-28',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：三姐妹凌晨醉酒后，居然？？？ 【雷霆姐妹花2】。',
+    animation: 'shake',
+    animText: '三姐妹凌晨醉酒后，居然…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1QX8e6fE3g',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r19',
+    name: '【苏新皓｜4K直拍】Abraca…',
+    emoji: '🎤',
+    date: '2026-08-28',
+    hot: 82,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第19名：【苏新皓｜4K直拍】Abracadabra 直拍｜重·二周年演唱会。',
+    animation: 'fire',
+    animText: '苏新皓｜4K直拍Abracadabra…',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1VJ8Q6jEgv',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '【本家投稿】東京真中 -  ブレ…',
+    emoji: '🎯',
+    date: '2026-08-28',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：【本家投稿】東京真中 -  ブレインロット feat. 重音テト。',
+    animation: 'emojiRain',
+    animText: '本家投稿東京真中 -…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1o58Q6UEik',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r13',
     name: '星际外卖员：你只迟到了3秒，也被…',
     emoji: '🎮',
-    date: '2026-08-27',
+    date: '2026-08-28',
     hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：星际外卖员：你只迟到了3秒，也被扇了一巴掌。',
+    desc: 'B站今日热门第13名：星际外卖员：你只迟到了3秒，也被扇了一巴掌【AI全民制作人】。',
     animation: 'flower',
     animText: '星际外卖员：你只迟到了3秒…',
     emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1uth56uEz3',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '【英雄联盟】邓紫棋｜心之歌，唱给…',
-    emoji: '🔥',
-    date: '2026-08-27',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：【英雄联盟】邓紫棋｜心之歌，唱给我们的15年。',
-    animation: 'shake',
-    animText: '英雄联盟邓紫棋｜心之歌…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1wwhA6tEUg',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '国产单机《湮灭之潮》全新宣传片 …',
-    emoji: '📺',
-    date: '2026-08-27',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：国产单机《湮灭之潮》全新宣传片 | 旧日之纱。',
-    animation: 'textPop',
-    animText: '国产单机《湮灭之潮》全新宣传片…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1418q6wERg',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
-    name: '《阴阳师》「一瞬刹那，拾光永恒」…',
-    emoji: '🎯',
-    date: '2026-08-27',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：《阴阳师》「一瞬刹那，拾光永恒」前瞻回顾。',
-    animation: 'emojiRain',
-    animText: '《阴阳师》「一瞬刹那…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV17oh56JEcH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '臣妾要自己私通自己【B站笑点大赛…',
-    emoji: '📺',
-    date: '2026-08-27',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：臣妾要自己私通自己【B站笑点大赛】。',
-    animation: 'textPop',
-    animText: '臣妾要自己私通自己B站笑…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1RH896QE2n',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '李强抵达西藏吉隆指导抢险救灾工作', '中元节重温寻梦环游记', '明日方舟仙术杯9开赛', 'IC零封小蜜蜂', '解析西藏吉隆口岸泥石流成因', '沈逸王骁聊中美AI泡沫', '烽火职业联赛夏季赛', '包贝尔多起舆论事件复盘', '时光照相馆收留夏斐', '盘点披哥抓马名场面', '火影师徒杯S3 决赛', '今日中元节'
+  '李强抵达西藏吉隆指导抢险救灾工作', '肥嘟嘟赏析外卖逆天评论', 'GTA6', '台风沙德尔或再次于玉环登陆', 'BLG第三赛段常规赛收官Vlog', '时光照相馆收留夏斐', '电影空枪真实观后感', '沈逸王骁聊中美AI泡沫', 'TXT在上海打八段锦了', '才浅打翻黄金吓坏于谦', '杭州警方通报女子称在电梯遭骚扰', '伊莫科隆定档PV'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
