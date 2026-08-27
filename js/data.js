@@ -5,6 +5,36 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r15',
+    name: '国产单机《湮灭之潮》全新宣传片 …',
+    emoji: '📺',
+    date: '2026-08-27',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：国产单机《湮灭之潮》全新宣传片 | 旧日之纱。',
+    animation: 'textPop',
+    animText: '国产单机《湮灭之潮》全新宣传片…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1418q6wERg',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '打卡！打工！打钱！《异克斯小队》…',
+    emoji: '🎯',
+    date: '2026-08-27',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：打卡！打工！打钱！《异克斯小队》首曝PV。',
+    animation: 'flower',
+    animText: '打卡！打工！打钱！《异克…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1SuhV6aE77',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r22',
     name: '《无限大》定档预告丨27年1月1…',
     emoji: '🎬',
@@ -35,48 +65,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '打卡！打工！打钱！《异克斯小队》…',
-    emoji: '🎯',
-    date: '2026-08-27',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：打卡！打工！打钱！《异克斯小队》首曝PV。',
-    animation: 'flower',
-    animText: '打卡！打工！打钱！《异克…',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1SuhV6aE77',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r15',
-    name: '国产单机《湮灭之潮》全新宣传片 …',
+    name: '《动物朋克》最新预告&实机演示 …',
     emoji: '📺',
     date: '2026-08-27',
     hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：国产单机《湮灭之潮》全新宣传片 | 旧日之纱。',
+    desc: 'B站今日热门第15名：《动物朋克》最新预告&实机演示 | 国产动作新游登陆科隆展。',
     animation: 'textPop',
-    animText: '国产单机《湮灭之潮》全新宣传片…',
+    animText: '《动物朋克》最新预告&实机演示…',
     emojis: ['📺', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1418q6wERg',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '源初之结首曝PV「诸神入刃，斩尽…',
-    emoji: '🎮',
-    date: '2026-08-27',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：源初之结首曝PV「诸神入刃，斩尽死结」。',
-    animation: 'flower',
-    animText: '源初之结首曝PV「诸神入刃…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1erhL6EE6k',
+    videoUrl: 'https://www.bilibili.com/video/BV1jfhA6EEMw',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,33 +95,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '《动物朋克》最新预告&实机演示 …',
-    emoji: '📺',
+    id: 'r13',
+    name: '源初之结首曝PV「诸神入刃，斩尽…',
+    emoji: '🎮',
     date: '2026-08-27',
-    hot: 86,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：《动物朋克》最新预告&实机演示 | 国产动作新游登陆科隆展。',
-    animation: 'textPop',
-    animText: '《动物朋克》最新预告&实机演示…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1jfhA6EEMw',
+    desc: 'B站今日热门第13名：源初之结首曝PV「诸神入刃，斩尽死结」。',
+    animation: 'flower',
+    animText: '源初之结首曝PV「诸神入刃…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1erhL6EE6k',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r16',
-    name: '高中生逃离原生家庭过程（下）',
-    emoji: '⚡',
+    id: 'r14',
+    name: '堪比海啸：尼泊尔826泥石流，为…',
+    emoji: '🎵',
     date: '2026-08-27',
-    hot: 85,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：高中生逃离原生家庭过程（下）。',
-    animation: 'dance',
-    animText: '高中生逃离原生家庭过程下',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1Uy8x6AETG',
+    desc: 'B站今日热门第14名：堪比海啸：尼泊尔826泥石流，为什么这么厉害？。',
+    animation: 'ring',
+    animText: '堪比海啸：尼泊尔826泥石流…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Ez8R6FE5e',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -141,17 +141,17 @@ const RECENT_MEMES = [
   },
   {
     id: 'r16',
-    name: '贱谍过家家（8）',
+    name: '高中生逃离原生家庭过程（下）',
     emoji: '⚡',
     date: '2026-08-27',
     hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：贱谍过家家（8）。',
+    desc: 'B站今日热门第16名：高中生逃离原生家庭过程（下）。',
     animation: 'dance',
-    animText: '贱谍过家家8',
+    animText: '高中生逃离原生家庭过程下',
     emojis: ['⚡', '⚡'],
     color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1gLhK6LEcb',
+    videoUrl: 'https://www.bilibili.com/video/BV1Uy8x6AETG',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '西藏吉隆泥石流已致3死265失联', '中国人有自己的奥德赛', '津巴布韦背后的黄金梦', '学校不会教但很重要的事', '和平精英地铁逃生', '米哈游新作源初之结解析', '异克斯小队最新PV', '动物朋克最新实机PV', 'Donk一图双五杀', '警惕演唱会门票低价帮抢套路', '湮灭之潮全新宣传片', '有兽焉'
+  '中国人有自己的奥德赛', '西藏吉隆泥石流已致3死265失联', '学校不会教但很重要的事', '和平精英地铁逃生', '津巴布韦背后的黄金梦', '米哈游新作源初之结解析', '异克斯小队最新PV', '有兽焉', '动物朋克最新实机PV', 'Donk一图双五杀', '湮灭之潮全新宣传片', '警惕演唱会门票低价帮抢套路'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
