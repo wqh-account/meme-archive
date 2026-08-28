@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r11',
+    name: '币圈富豪孙宇晨手撕景甜，索赔3千…',
+    emoji: '🔥',
+    date: '2026-08-28',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：币圈富豪孙宇晨手撕景甜，索赔3千万彩礼，娱乐圈+金融圈惊天巨瓜！。',
+    animation: 'shake',
+    animText: '币圈富豪孙宇晨手撕景甜…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1N1tF6SE2S',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r16',
     name: '世界伊始——《伊莫》全球上线定档…',
     emoji: '⚡',
@@ -35,21 +50,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '《动物朋克》最新预告&实机演示 …',
-    emoji: '📺',
-    date: '2026-08-28',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：《动物朋克》最新预告&实机演示 | 国产动作新游登陆科隆展。',
-    animation: 'textPop',
-    animText: '《动物朋克》最新预告&实机演示…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1jfhA6EEMw',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r11',
     name: '【独家】时光代理人 第三季 Pa…',
     emoji: '🔥',
@@ -62,6 +62,21 @@ const RECENT_MEMES = [
     emojis: ['🔥', '⚡'],
     color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV1YfhG6gEEc',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '我被100名警察追捕，抓到我赢5…',
+    emoji: '🎯',
+    date: '2026-08-28',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：我被100名警察追捕，抓到我赢50万美金！。',
+    animation: 'emojiRain',
+    animText: '我被100名警察追捕…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1bMhV6PEtE',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,63 +95,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r21',
-    name: '《背心尊者》',
-    emoji: '🔥',
+    id: 'r13',
+    name: '当你突然发现父母是亿万富翁',
+    emoji: '🎮',
     date: '2026-08-28',
-    hot: 80,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：《背心尊者》。',
-    animation: 'ring',
-    animText: '《背心尊者》',
-    emojis: ['🔥', '⚡'],
+    desc: 'B站今日热门第13名：当你突然发现父母是亿万富翁。',
+    animation: 'flower',
+    animText: '当你突然发现父母是亿万富…',
+    emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1KMhF6dEt1',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '土木终于迎来第二春！我下跪道歉！…',
-    emoji: '📺',
-    date: '2026-08-28',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：土木终于迎来第二春！我下跪道歉！！！。',
-    animation: 'textPop',
-    animText: '土木终于迎来第二春！我下跪道歉…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1oi4R6nEd1',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '小时候开智之前',
-    emoji: '⚡',
-    date: '2026-08-28',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：小时候开智之前。',
-    animation: 'dance',
-    animText: '小时候开智之前',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1AwhA6tEmN',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '难过',
-    emoji: '🍿',
-    date: '2026-08-28',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：难过。',
-    animation: 'emojiRain',
-    animText: '难过',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1jY4R6WEme',
+    videoUrl: 'https://www.bilibili.com/video/BV1MMhw6eEMt',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -154,6 +124,36 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1Uf8R6jEoC',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r20',
+    name: '《背心尊者》',
+    emoji: '🎯',
+    date: '2026-08-28',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：《背心尊者》。',
+    animation: 'flower',
+    animText: '《背心尊者》',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1KMhF6dEt1',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r22',
+    name: '美术展里的假人模型，为何变成了真…',
+    emoji: '🎬',
+    date: '2026-08-28',
+    hot: 79,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第22名：美术展里的假人模型，为何变成了真人尸体...？。',
+    animation: 'textPop',
+    animText: '美术展里的假人模型，为何变成了真人尸体...…',
+    emojis: ['🎬', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1NC4Z6VEUQ',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '李强抵达西藏吉隆指导抢险救灾工作', '肥嘟嘟赏析外卖逆天评论', 'GTA6', 'TXT在上海打八段锦了', '时光照相馆收留夏斐', '沈逸王骁聊中美AI泡沫', 'BLG第三赛段常规赛收官Vlog', '电影空枪真实观后感', '才浅打翻黄金吓坏于谦', '经济学模拟器之通货膨胀', '杭州警方通报女子称在电梯遭骚扰', '伊莫科隆定档PV'
+  'Monki让蔚蓝边际别唱歌了', '擎天柱配音演员去世', '雷霆姐妹花随机旅行之潮汕', '土木学生迎来第二春', 'JENNIE新歌MV', 'GTA6', '中国男篮大胜卡塔尔', '美联储主席迎来关键演讲', '台风沙德尔', '扶不扶的困局为何难解决', '杭州警方通报女子称在电梯遭骚扰', '当我给外星人送外卖'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
