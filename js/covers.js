@@ -9,6 +9,6 @@ window.COVERS = {
   "BV1AFhA6fEGK": "images/covers/BV1AFhA6fEGK.jpg",
   "BV1AG4U6CEhZ": "images/covers/BV1AG4U6CEhZ.jpg",
   "BV1gk4X6zEm5": "images/covers/BV1gk4X6zEm5.jpg",
-  "BV1be426SEn7": "images/covers/BV1be426SEn7.jpg",
+  "BV1o74y6XEcM": "images/covers/BV1o74y6XEcM.jpg",
   "BV1dTtc6eEno": "images/covers/BV1dTtc6eEno.jpg",
 };
