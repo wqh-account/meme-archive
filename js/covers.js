@@ -3,9 +3,8 @@
 window.COVERS = {
   "BV1u4tt6iEvf": "images/covers/BV1u4tt6iEvf.jpg",
   "BV1eHt86mErz": "images/covers/BV1eHt86mErz.jpg",
-  "BV1WPt86FETB": "images/covers/BV1WPt86FETB.jpg",
-  "BV1Aj4D6UEHB": "images/covers/BV1Aj4D6UEHB.jpg",
+  "BV1YNtb66ErA": "images/covers/BV1YNtb66ErA.jpg",
+  "BV1e6tb61ETL": "images/covers/BV1e6tb61ETL.jpg",
   "BV15Wt86jEFH": "images/covers/BV15Wt86jEFH.jpg",
-  "BV1swt86hE64": "images/covers/BV1swt86hE64.jpg",
-  "BV1CGtp66EEM": "images/covers/BV1CGtp66EEM.jpg",
+  "BV1mit86ME4z": "images/covers/BV1mit86ME4z.jpg",
 };
