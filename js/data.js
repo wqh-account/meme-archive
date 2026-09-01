@@ -5,18 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r18',
-    name: '李炮儿在李炮儿模仿大赛中获得了第…',
-    emoji: '🏆',
+    id: 'r23',
+    name: '鸿蒙这些底层套件，才是穿戴App…',
+    emoji: '🎮',
     date: '2026-09-01',
-    hot: 83,
+    hot: 78,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：李炮儿在李炮儿模仿大赛中获得了第二名。',
-    animation: 'shake',
-    animText: '李炮儿在李炮儿模仿大赛中…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1u4tt6iEvf',
+    desc: 'B站今日热门第23名：鸿蒙这些底层套件，才是穿戴App的“开挂”密码。',
+    animation: 'dance',
+    animText: '鸿蒙这些底层套件，才是穿…',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1dMtA6rEoJ',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -32,6 +32,36 @@ const RECENT_MEMES = [
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1eHt86mErz',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '李炮儿在李炮儿模仿大赛中获得了第…',
+    emoji: '🏆',
+    date: '2026-09-01',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：李炮儿在李炮儿模仿大赛中获得了第二名。',
+    animation: 'shake',
+    animText: '李炮儿在李炮儿模仿大赛中…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1u4tt6iEvf',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '第一期（上）：败走华容道 关羽义…',
+    emoji: '🎯',
+    date: '2026-09-01',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：第一期（上）：败走华容道 关羽义释曹操【时差五小时3】。',
+    animation: 'emojiRain',
+    animText: '第一期上：败走华容道…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV19o4k6EEXD',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,63 +95,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r21',
-    name: '漂亮的恶意01|误入充满恶意的顶…',
-    emoji: '🔥',
+    id: 'r14',
+    name: '这也能装？给车内塞一套工作站！小…',
+    emoji: '🎵',
     date: '2026-09-01',
-    hot: 80,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：漂亮的恶意01|误入充满恶意的顶级财阀校园，川渝转学生表示，她真的只想好好学习！。',
+    desc: 'B站今日热门第14名：这也能装？给车内塞一套工作站！小米澎程N90 Max用车体验！。',
     animation: 'ring',
-    animText: '漂亮的恶意01|误入充满恶意的顶级财阀校园…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Aj4D6UEHB',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '当你穿进老钱班34',
-    emoji: '🎬',
-    date: '2026-09-01',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：当你穿进老钱班34。',
-    animation: 'textPop',
-    animText: '当你穿进老钱班34',
-    emojis: ['🎬', '⚡'],
+    animText: '这也能装？给车内塞一套工作站…',
+    emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1e6tb61ETL',
+    videoUrl: 'https://www.bilibili.com/video/BV1k2t86hEuD',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '四千人失踪，尼泊尔终究不放开接受…',
-    emoji: '🎯',
+    id: 'r14',
+    name: '《明日方舟：终末地》干员叙事 […',
+    emoji: '🎵',
     date: '2026-09-01',
-    hot: 81,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：四千人失踪，尼泊尔终究不放开接受外国援助。',
-    animation: 'flower',
-    animText: '四千人失踪，尼泊尔终究不…',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV15Wt86jEFH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '罢黜百官',
-    emoji: '🔥',
-    date: '2026-09-01',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：罢黜百官。',
+    desc: 'B站今日热门第14名：《明日方舟：终末地》干员叙事 [提弗洛斯：萨米维格的孩子]。',
     animation: 'ring',
-    animText: '罢黜百官',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1mit86ME4z',
+    animText: '《明日方舟：终末地》干员叙事…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1uht86rEDA',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -140,18 +140,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '全程高能！队友接连失踪？活着并逃…',
-    emoji: '🔥',
+    id: 'r20',
+    name: '四千人失踪，尼泊尔终究不放开接受…',
+    emoji: '🎯',
     date: '2026-09-01',
-    hot: 90,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：全程高能！队友接连失踪？活着并逃离这里！！！「逃离疯人院」。',
-    animation: 'shake',
-    animText: '全程高能！队友接连失踪…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1CGtp66EEM',
+    desc: 'B站今日热门第20名：四千人失踪，尼泊尔终究不放开接受外国援助。',
+    animation: 'flower',
+    animText: '四千人失踪，尼泊尔终究不…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV15Wt86jEFH',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'UP主自制AI韩剧 漂亮的恶意', '南方多省面临持续台风雨', '长鑫毛利率超过海力士美光', '杨瀚森绝杀', '南方开学vs北方开学', '救援人员在口岸联检大楼地毯式搜救', '绿龙锁定四强', '恐怖版植僵新植物寒冰上尉', '一饭封神大厨私藏宝藏小店', '开学自我介绍指南', '华强见宋老虎但是唱跳RAP', '在MC里玩逃离疯人院'
+  '实测勇哥自营食堂', '万字复盘LGD战胜TES', '德约科维奇时隔11年重返中网', '铁豆钢蛋终于见到胡彦斌了', '直击西藏吉隆泥石流救援现场', '美军高层集体表态伊朗打不动了', '西藏吉隆举行泥石流灾害哀悼活动', '救援人员在口岸联检大楼地毯式搜救', '乌克兰无人军火阅兵', '华强买瓜 但郝哥能控制AI', '剑网3十七周年演唱会全程回顾', '花少2全网重新考古'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
