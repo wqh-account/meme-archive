@@ -5,36 +5,6 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r22',
-    name: '从最期待变最难绷，一个城市还没做…',
-    emoji: '🎬',
-    date: '2026-09-01',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：从最期待变最难绷，一个城市还没做完就做第二个，没任何公开测试就宣布上线日期，无限大能好好把游戏做完吗？。',
-    animation: 'textPop',
-    animText: '从最期待变最难绷，一个城市还没做完就做第二个…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Y2tb6rEj7',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '《安心安全 | 安心安全》MV …',
-    emoji: '📺',
-    date: '2026-09-01',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：《安心安全 | 安心安全》MV ：日本制造最重视的就是企业形象。',
-    animation: 'textPop',
-    animText: '《安心安全 | 安心安全》MV…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1WPt86FETB',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r44',
     name: '西西弗斯推的石头，居然是孙悟空.…',
     emoji: '🎵',
@@ -50,33 +20,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '第一期（上）：败走华容道 关羽义…',
-    emoji: '🎯',
+    id: 'r14',
+    name: '这也能装？给车内塞一套工作站！小…',
+    emoji: '🎵',
     date: '2026-09-01',
-    hot: 91,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：第一期（上）：败走华容道 关羽义释曹操【时差五小时3】。',
-    animation: 'emojiRain',
-    animText: '第一期上：败走华容道…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV19o4k6EEXD',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r23',
-    name: '为了测试这台7座车，我们找来了最…',
-    emoji: '🎮',
-    date: '2026-09-01',
-    hot: 78,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第23名：为了测试这台7座车，我们找来了最难伺候的6种人！。',
-    animation: 'dance',
-    animText: '为了测试这台7座车，我们找来了最难伺候的6种人…',
-    emojis: ['🎮', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV17Jta6oEyE',
+    desc: 'B站今日热门第14名：这也能装？给车内塞一套工作站！小米澎程N90 Max用车体验！。',
+    animation: 'ring',
+    animText: '这也能装？给车内塞一套工作站…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1k2t86hEuD',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,48 +50,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r16',
-    name: '1.6万人同唱，龚琳娜现场全开麦…',
-    emoji: '⚡',
+    id: 'r14',
+    name: '巴塞罗那的小偷把我带到了欧洲，让…',
+    emoji: '🎵',
     date: '2026-09-01',
-    hot: 85,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：1.6万人同唱，龚琳娜现场全开麦！《剑网3》十七周年庆典全程回顾上线。',
+    desc: 'B站今日热门第14名：巴塞罗那的小偷把我带到了欧洲，让我在纽北被围了起来。',
+    animation: 'ring',
+    animText: '巴塞罗那的小偷把我带到了欧洲…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1ej4Q6qEb8',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '《安心安全 | 安心安全》MV …',
+    emoji: '📺',
+    date: '2026-09-01',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：《安心安全 | 安心安全》MV ：日本制造最重视的就是企业形象。',
+    animation: 'textPop',
+    animText: '《安心安全 | 安心安全》MV…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1WPt86FETB',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r23',
+    name: '为了测试这台7座车，我们找来了最…',
+    emoji: '🎮',
+    date: '2026-09-01',
+    hot: 78,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第23名：为了测试这台7座车，我们找来了最难伺候的6种人！。',
     animation: 'dance',
-    animText: '1.6万人同唱，龚琳娜现场全开麦…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1FXt864EDe',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '【铁豆钢蛋】你好 斌斌！',
-    emoji: '🍿',
-    date: '2026-09-01',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：【铁豆钢蛋】你好 斌斌！。',
-    animation: 'emojiRain',
-    animText: '铁豆钢蛋你好 斌斌！',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1KxtY6kEwY',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '这是个辅助万豪！？',
-    emoji: '🏆',
-    date: '2026-09-01',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：这是个辅助万豪！？。',
-    animation: 'shake',
-    animText: '这是个辅助万豪！？',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1y3tp63ET8',
+    animText: '为了测试这台7座车，我们找来了最难伺候的6种人…',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV17Jta6oEyE',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -154,6 +109,51 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1YNtb66ErA',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r22',
+    name: '从零开始，黑龙江发现废弃石头屋改…',
+    emoji: '🎬',
+    date: '2026-09-01',
+    hot: 79,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第22名：从零开始，黑龙江发现废弃石头屋改造寒冬避难所，首场暴风雪来之前要做好准备，提前存储物资。',
+    animation: 'textPop',
+    animText: '从零开始，黑龙江发现废弃石头屋改造寒冬避难所…',
+    emojis: ['🎬', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1BLt86QECJ',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '李炮儿在李炮儿模仿大赛中获得了第…',
+    emoji: '🏆',
+    date: '2026-09-01',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：李炮儿在李炮儿模仿大赛中获得了第二名。',
+    animation: 'shake',
+    animText: '李炮儿在李炮儿模仿大赛中…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1u4tt6iEvf',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r19',
+    name: '【铁豆钢蛋】你好 斌斌！',
+    emoji: '🎤',
+    date: '2026-09-01',
+    hot: 82,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第19名：【铁豆钢蛋】你好 斌斌！。',
+    animation: 'fire',
+    animText: '铁豆钢蛋你好 斌斌！',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1KxtY6kEwY',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '揭开赚欧元花欧元的骗局', '实测勇哥自营食堂', 'IG王者荣耀分部成立', '铁豆钢蛋终于见到胡彦斌了', '德约科维奇时隔11年重返中网', '美国中期选举特朗普能赢吗', 'JackeyLove单曲大喻治水', '用AI手搓异世界剧集', 'UP主动画幽差第二集', 'KPL系列团综回归', '花少2全网重新考古', '8月全球时政财经热点回顾'
+  'T1锁定S16名额', '何同学眼中的库克时代', '罗永浩对话手工耿', 'GEN战胜KT赛后数据', '奥特曼谈OpenAI新模型Astra', '大漠叔叔日本皇宫找中国文物', 'GEN晋级S16世界赛', '沙特为何想从能源国家转型', '纯手搓初音生贺定格动画', '未来或可靠口服降糖菌控血糖', '济南RW侠 成都AG超玩会', '三角洲群星新赛季前瞻直播'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
