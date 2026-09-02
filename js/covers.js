@@ -1,14 +1,14 @@
 /* 自动生成: py fetch-covers.py 可重新抓取 */
 /* B站封面已本地化: images/covers/{BV}.jpg，绕开防盗链 */
 window.COVERS = {
+  "BV1jVtt6LEjP": "images/covers/BV1jVtt6LEjP.jpg",
+  "BV1RhtV6iEt3": "images/covers/BV1RhtV6iEt3.jpg",
+  "BV1Vot56BEHd": "images/covers/BV1Vot56BEHd.jpg",
+  "BV1VRtG6wErp": "images/covers/BV1VRtG6wErp.jpg",
+  "BV1h3tg6XEHz": "images/covers/BV1h3tg6XEHz.jpg",
+  "BV1eGtG6fEJe": "images/covers/BV1eGtG6fEJe.jpg",
   "BV1a3th65EQb": "images/covers/BV1a3th65EQb.jpg",
-  "BV1GStg6oEQe": "images/covers/BV1GStg6oEQe.jpg",
-  "BV17Jta6oEyE": "images/covers/BV17Jta6oEyE.jpg",
-  "BV1BLt86QECJ": "images/covers/BV1BLt86QECJ.jpg",
-  "BV1bLth6rE1T": "images/covers/BV1bLth6rE1T.jpg",
-  "BV1yF8h6BEWL": "images/covers/BV1yF8h6BEWL.jpg",
-  "BV1G7tG6tEwL": "images/covers/BV1G7tG6tEwL.jpg",
-  "BV1AvtW6yEan": "images/covers/BV1AvtW6yEan.jpg",
-  "BV1n5t366E6q": "images/covers/BV1n5t366E6q.jpg",
-  "BV15bt36cERX": "images/covers/BV15bt36cERX.jpg",
+  "BV19Utg6tEJm": "images/covers/BV19Utg6tEJm.jpg",
+  "BV1ZJtu6tEyd": "images/covers/BV1ZJtu6tEyd.jpg",
+  "BV1wHtL6HEL2": "images/covers/BV1wHtL6HEL2.jpg",
 };
