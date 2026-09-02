@@ -20,33 +20,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '这也能装？给车内塞一套工作站！小…',
-    emoji: '🎵',
-    date: '2026-09-02',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：这也能装？给车内塞一套工作站！小米澎程N90 Max用车体验！。',
-    animation: 'ring',
-    animText: '这也能装？给车内塞一套工作站…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1k2t86hEuD',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
+    id: 'r45',
     name: '绝活',
     emoji: '📺',
     date: '2026-09-02',
-    hot: 86,
+    hot: 56,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：绝活。',
-    animation: 'textPop',
+    desc: 'B站今日热门第45名：绝活。',
+    animation: 'emojiRain',
     animText: '绝活',
     emojis: ['📺', '⚡'],
-    color: '#f368e0',
+    color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1GStg6oEQe',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r23',
+    name: '为了测试这台7座车，我们找来了最…',
+    emoji: '🎮',
+    date: '2026-09-02',
+    hot: 78,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第23名：为了测试这台7座车，我们找来了最难伺候的6种人！。',
+    animation: 'dance',
+    animText: '为了测试这台7座车，我们找来了最难伺候的6种人…',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV17Jta6oEyE',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,33 +65,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r22',
-    name: '【魔女养成计划6】当“中国制造”…',
-    emoji: '🎬',
+    id: 'r17',
+    name: '【蕾米埃尔】：入木三分，原来是字…',
+    emoji: '🍿',
     date: '2026-09-02',
-    hot: 79,
+    hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：【魔女养成计划6】当“中国制造”出现在幻想世界里，嘿嘿 【up动画】。',
-    animation: 'textPop',
-    animText: '魔女养成计划6当“中国制造”出现在幻想世界里…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1BXjA6HEQ7',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r23',
-    name: '【何同学】库克时代',
-    emoji: '🎮',
-    date: '2026-09-02',
-    hot: 78,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第23名：【何同学】库克时代。',
-    animation: 'dance',
-    animText: '何同学库克时代',
-    emojis: ['🎮', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1G7tG6tEwL',
+    desc: 'B站今日热门第17名：【蕾米埃尔】：入木三分，原来是字面意思？。',
+    animation: 'emojiRain',
+    animText: '蕾米埃尔：入木三分，原来是字面意思…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1bLth6rE1T',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,33 +95,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '【蕾米埃尔】：入木三分，原来是字…',
-    emoji: '🍿',
+    id: 'r16',
+    name: '【何同学】库克时代',
+    emoji: '⚡',
     date: '2026-09-02',
-    hot: 84,
+    hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：【蕾米埃尔】：入木三分，原来是字面意思？。',
-    animation: 'emojiRain',
-    animText: '蕾米埃尔：入木三分，原来是字面意思…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1bLth6rE1T',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '三年之期已到，恭迎世一上归位！【…',
-    emoji: '🎵',
-    date: '2026-09-02',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：三年之期已到，恭迎世一上归位！【第6集】。',
-    animation: 'ring',
-    animText: '三年之期已到，恭迎世一上归位…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1eHt86mErz',
+    desc: 'B站今日热门第16名：【何同学】库克时代。',
+    animation: 'dance',
+    animText: '何同学库克时代',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1G7tG6tEwL',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -154,6 +124,36 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1AvtW6yEan',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r18',
+    name: '开疆拓土特朗普，可算美国总统GO…',
+    emoji: '🏆',
+    date: '2026-09-02',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：开疆拓土特朗普，可算美国总统GOAT？。',
+    animation: 'shake',
+    animText: '开疆拓土特朗普，可算美国总统GOAT…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1n5t366E6q',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '“我现在被撞了，你意思是我活该吗…',
+    emoji: '⚡',
+    date: '2026-09-02',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：“我现在被撞了，你意思是我活该吗？”女子骑电动自行车横穿机动车道，交警：全责！。',
+    animation: 'dance',
+    animText: '“我现在被撞了，你意思是我活该吗…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV15bt36cERX',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '当西西弗斯遇见孙悟空', '杨瀚森', '杨鸣', '罗永浩对话手工耿', 'T1锁定S16名额', '何同学眼中的库克时代', '台风沙德尔为何卷土重来', '7岁UP主开箱10万粉证书', 'UP主用100天手搓AI桌宠', 'NCTWISH中文课堂', '济南RW侠 成都AG超玩会', '花少2全网重新考古'
+  '当西西弗斯遇见孙悟空', '杨瀚森', '杨鸣', '校园贷如何将学生逼入深渊', '何同学眼中的库克时代', 'T1锁定S16名额', '罗永浩对话手工耿', '华强买瓜 但是喝醉了', '台风沙德尔为何卷土重来', '复盘杨瀚森绝杀黎巴嫩队', 'MMO游戏为什么没人做了', '花少2全网重新考古'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
