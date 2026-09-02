@@ -1,2 +1,2 @@
 ﻿// 预测 API 地址配置（由 health-check.ps1 / start-predict-tunnel.ps1 自动更新）
-window.PREDICT_API = "https://actor-mpg-inform-james.trycloudflare.com/api";
+window.PREDICT_API = "https://code-pharmacy-institutional-pot.trycloudflare.com/api";
