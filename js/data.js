@@ -5,21 +5,6 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r15',
-    name: '【IGN独家】《鸣潮》共鸣者「心…',
-    emoji: '📺',
-    date: '2026-09-04',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：【IGN独家】《鸣潮》共鸣者「心」、「锁暝」演示。',
-    animation: 'textPop',
-    animText: 'IGN独家《鸣潮》共鸣者「心」…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Q5tG6bEX3',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r13',
     name: '网络热传生物鉴定 第63期',
     emoji: '🎮',
@@ -35,18 +20,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '致热爱捉宠的你——《伊莫》幕后制…',
-    emoji: '🎯',
+    id: 'r15',
+    name: '【IGN独家】《鸣潮》共鸣者「心…',
+    emoji: '📺',
     date: '2026-09-04',
-    hot: 81,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：致热爱捉宠的你——《伊莫》幕后制作纪录片。',
-    animation: 'flower',
-    animText: '致热爱捉宠的你——《伊莫…',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV12ctX68Ex6',
+    desc: 'B站今日热门第15名：【IGN独家】《鸣潮》共鸣者「心」、「锁暝」演示。',
+    animation: 'textPop',
+    animText: 'IGN独家《鸣潮》共鸣者「心」…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1Q5tG6bEX3',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '“我从小抽核弹长大的”，抽一个可…',
+    emoji: '🔥',
+    date: '2026-09-04',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：“我从小抽核弹长大的”，抽一个可变形核弹发射井模型。',
+    animation: 'shake',
+    animText: '“我从小抽核弹长大的”…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1abtE6VE2f',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,18 +95,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '“我从小抽核弹长大的”，抽一个可…',
-    emoji: '🔥',
+    id: 'r24',
+    name: '女子打119报警后 上传火警视频…',
+    emoji: '🎵',
     date: '2026-09-04',
-    hot: 90,
+    hot: 77,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：“我从小抽核弹长大的”，抽一个可变形核弹发射井模型。',
-    animation: 'shake',
-    animText: '“我从小抽核弹长大的”…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1abtE6VE2f',
+    desc: 'B站今日热门第24名：女子打119报警后 上传火警视频却跳转出开屏广告。',
+    animation: 'emojiRain',
+    animText: '女子打119报警后 上传…',
+    emojis: ['🎵', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1e3td6nEEw',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -125,32 +125,32 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r23',
-    name: '吓哭了！电影级大招，心月狐直接给…',
-    emoji: '🎮',
+    id: 'r20',
+    name: '致热爱捉宠的你——《伊莫》幕后制…',
+    emoji: '🎯',
     date: '2026-09-04',
-    hot: 78,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第23名：吓哭了！电影级大招，心月狐直接给我干到无限城了！！！？。',
-    animation: 'dance',
-    animText: '吓哭了！电影级大招，心月狐直接给我干到无限城了…',
-    emojis: ['🎮', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Pxt96AETY',
+    desc: 'B站今日热门第20名：致热爱捉宠的你——《伊莫》幕后制作纪录片。',
+    animation: 'flower',
+    animText: '致热爱捉宠的你——《伊莫…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV12ctX68Ex6',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r24',
+    id: 'r21',
     name: '“修仙也爱拍照”',
-    emoji: '🎵',
+    emoji: '🔥',
     date: '2026-09-04',
-    hot: 77,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：“修仙也爱拍照”。',
-    animation: 'emojiRain',
+    desc: 'B站今日热门第21名：“修仙也爱拍照”。',
+    animation: 'ring',
     animText: '“修仙也爱拍照”',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1Ugtb6TE9R',
     source: 'B站今日热门（实时抓取）'
   },
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '外星小偷 吃苦星球', '沙德尔带来九省特大暴雨', 'WE BLG', '广州TTG 成都AG超玩会', '重案六组', 'WSBK法国站本周开赛', '怎么看加拿大强硬回应美国', '时光代理人', '王楚淇专访索尔斯克亚', '造车能否依赖仿真实验', '鸣潮心月狐实机演示', '极乐净土但黄色三巨头'
+  '外星小偷 吃苦星球', '沙德尔带来九省特大暴雨', 'WE BLG', '重案六组', '广州TTG 成都AG超玩会', 'WSBK法国站本周开赛', '国产盾构机如何领先世界', '伦纳德事件对快船有何影响', '哈基米的胆子真是肥嘟嘟的', '造车能否依赖仿真实验', '鸣潮心月狐实机演示', '时光代理人'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
