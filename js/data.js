@@ -21,16 +21,31 @@ const RECENT_MEMES = [
   },
   {
     id: 'r25',
-    name: '全B站最垃圾的一期视频',
+    name: '午夜轮班，伪人超市',
     emoji: '📺',
     date: '2026-09-05',
     hot: 76,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：全B站最垃圾的一期视频。',
+    desc: 'B站今日热门第25名：午夜轮班，伪人超市。',
     animation: 'shake',
-    animText: '全B站最垃圾的一期视频',
+    animText: '午夜轮班，伪人超市',
     emojis: ['📺', '⚡'],
     color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV16Htm6rE8n',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r26',
+    name: '全B站最垃圾的一期视频',
+    emoji: '⚡',
+    date: '2026-09-05',
+    hot: 75,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第26名：全B站最垃圾的一期视频。',
+    animation: 'fire',
+    animText: '全B站最垃圾的一期视频',
+    emojis: ['⚡', '⚡'],
+    color: '#feca57',
     videoUrl: 'https://www.bilibili.com/video/BV1sxtk6YEGp',
     source: 'B站今日热门（实时抓取）'
   },
@@ -51,17 +66,17 @@ const RECENT_MEMES = [
   },
   {
     id: 'r11',
-    name: '慢下来，就会死！',
+    name: '又来新新新人！',
     emoji: '🔥',
     date: '2026-09-05',
     hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：慢下来，就会死！。',
+    desc: 'B站今日热门第11名：又来新新新人！。',
     animation: 'shake',
-    animText: '慢下来，就会死！',
+    animText: '又来新新新人！',
     emojis: ['🔥', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1T2ti6REsF',
+    videoUrl: 'https://www.bilibili.com/video/BV1F6t266EYV',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,6 +95,21 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r11',
+    name: '旗腹姬蜂是蟑螂杀手',
+    emoji: '🔥',
+    date: '2026-09-05',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：旗腹姬蜂是蟑螂杀手。',
+    animation: 'shake',
+    animText: '旗腹姬蜂是蟑螂杀手',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1qCt96DEpj',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r18',
     name: '花600天做一道菜，切开的瞬间发…',
     emoji: '🏆',
@@ -95,63 +125,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r19',
-    name: '旗腹姬蜂是蟑螂杀手',
-    emoji: '🎤',
+    id: 'r20',
+    name: '对面一个牢玩家李白，打我们这边4…',
+    emoji: '🎯',
     date: '2026-09-05',
-    hot: 82,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：旗腹姬蜂是蟑螂杀手。',
-    animation: 'fire',
-    animText: '旗腹姬蜂是蟑螂杀手',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1qCt96DEpj',
+    desc: 'B站今日热门第20名：对面一个牢玩家李白，打我们这边4个牢玩家。',
+    animation: 'flower',
+    animText: '对面一个牢玩家李白，打我…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1NAtr68EaE',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '“请与我一同，战胜时间的伟力。”',
-    emoji: '🎵',
+    id: 'r21',
+    name: '慢下来，就会死！',
+    emoji: '🔥',
     date: '2026-09-05',
-    hot: 87,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：“请与我一同，战胜时间的伟力。”。',
+    desc: 'B站今日热门第21名：慢下来，就会死！。',
     animation: 'ring',
-    animText: '“请与我一同，战胜时间的伟力…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1NQti6HEaC',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '接了好多蝌蚪…',
-    emoji: '📺',
-    date: '2026-09-05',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：接了好多蝌蚪…。',
-    animation: 'textPop',
-    animText: '接了好多蝌蚪…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1mT4X6aEKp',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '这次是真玩爽了',
-    emoji: '⚡',
-    date: '2026-09-05',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：这次是真玩爽了。',
-    animation: 'dance',
-    animText: '这次是真玩爽了',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1e8tR6EER5',
+    animText: '慢下来，就会死！',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1T2ti6REsF',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '凡人', '撞羊群赔8万为何带不走羊', '长江存储冲击全球第一', '烽火职业联赛夏季赛', 'TES IG', '蓝战非勇闯拉斯维加斯', '起底早春晴朗里的职场PUA', '皇马进攻问题责任在谁', '军训教官遇到武状元', 'UP主实测GPT6', '如何评价许晴花少2表现', '小Q解说联合国秘书长竞选大会'
+  'IG战胜TES赛后数据', '张雪机车冲击第七冠', '圆脸谈爱沙尼亚防长引咎辞职', '明日方舟仙术杯', '大学校徽应该怎么设计', '怎么看AI或解决七大数学难题之一', '凡人', '烽火职业联赛夏季赛', '中国公民讲述尼泊尔泥石流获救经历', '逐帧解读花学历史事件', 'TES IG', '火影手游晓朱鼬技能全爆料'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
