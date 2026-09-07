@@ -20,21 +20,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r2',
-    name: '华强买瓜，但死神来了',
-    emoji: '🎬',
-    date: '2026-09-07',
-    hot: 99,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第2名：华强买瓜，但死神来了。',
-    animation: 'dance',
-    animText: '华强买瓜，但死神来了',
-    emojis: ['🎬', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1UBbL6YEtN',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r17',
     name: '当你吃出口腔溃疡时体内正在发生什…',
     emoji: '🍿',
@@ -47,6 +32,21 @@ const RECENT_MEMES = [
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
     videoUrl: 'https://www.bilibili.com/video/BV145t66AEfZ',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '华强买瓜，但死神来了',
+    emoji: '🏆',
+    date: '2026-09-07',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：华强买瓜，但死神来了。',
+    animation: 'shake',
+    animText: '华强买瓜，但死神来了',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1UBbL6YEtN',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,6 +65,36 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r13',
+    name: '【招笑版】新僵尸1:健忘撑杆跳',
+    emoji: '🎮',
+    date: '2026-09-07',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：【招笑版】新僵尸1:健忘撑杆跳。',
+    animation: 'flower',
+    animText: '招笑版新僵尸1:健忘撑杆…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1Ygbj6rEQP',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '怎么有网友让我走到西藏啊…',
+    emoji: '🎮',
+    date: '2026-09-07',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：怎么有网友让我走到西藏啊…。',
+    animation: 'flower',
+    animText: '怎么有网友让我走到西藏啊…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1eBbH6ZEL9',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r14',
     name: '三年之期已到，恭迎世一上归位！【…',
     emoji: '🎵',
@@ -77,21 +107,6 @@ const RECENT_MEMES = [
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1GAbW68EcH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '《崩坏：星穹铁道》千星纪游PV—…',
-    emoji: '🎬',
-    date: '2026-09-07',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：《崩坏：星穹铁道》千星纪游PV——「深水区」。',
-    animation: 'textPop',
-    animText: '《崩坏：星穹铁道》千星纪…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1sAbL6tEEC',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,48 +125,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '【招笑版】新僵尸1:健忘撑杆跳',
-    emoji: '🎮',
+    id: 'r22',
+    name: '《崩坏：星穹铁道》千星纪游PV—…',
+    emoji: '🎬',
     date: '2026-09-07',
-    hot: 88,
+    hot: 79,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：【招笑版】新僵尸1:健忘撑杆跳。',
-    animation: 'flower',
-    animText: '招笑版新僵尸1:健忘撑杆…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1Ygbj6rEQP',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '我把汉堡搬到了星星上',
-    emoji: '🎵',
-    date: '2026-09-07',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：我把汉堡搬到了星星上。',
-    animation: 'ring',
-    animText: '我把汉堡搬到了星星上',
-    emojis: ['🎵', '⚡'],
+    desc: 'B站今日热门第22名：《崩坏：星穹铁道》千星纪游PV——「深水区」。',
+    animation: 'textPop',
+    animText: '《崩坏：星穹铁道》千星纪…',
+    emojis: ['🎬', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Xdt26bECx',
+    videoUrl: 'https://www.bilibili.com/video/BV1sAbL6tEEC',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r19',
-    name: '全网首发！爆肝3天！S11新NP…',
-    emoji: '🎤',
+    id: 'r12',
+    name: '【早期视频】逃离电视宝宝联机，绝…',
+    emoji: '🎬',
     date: '2026-09-07',
-    hot: 82,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：全网首发！爆肝3天！S11新NPC佐拉、唐吉任务线全流程攻略！完成后送口琴和火箭！可演奏可互动可入局！单人几乎无法完成！。',
+    desc: 'B站今日热门第12名：【早期视频】逃离电视宝宝联机，绝命逃亡。',
     animation: 'fire',
-    animText: '全网首发！爆肝3天！S11新NPC佐拉…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1X5bE62EbZ',
+    animText: '早期视频逃离电视宝宝联机…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1Utbp6WE2s',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '北京JDG 广州TTG', 'BY2来下一个是谁当裁判了', '华强买瓜但死神来了', 'LGD战胜NIP赛后数据', '央视曝光水质检测企业造假', '大范围降温要来了', '张雪机车法国站第二回合季军', '埃弗顿2-2曼联', '美国的战火石油与选票', 'UP主挑战搬空汉堡王', 'WE IG', 'LGD NIP'
+  '华强买瓜但死神来了', '北京JDG 广州TTG', 'BY2来下一个是谁当裁判了', '央视曝光水质检测企业造假', 'LGD战胜NIP赛后数据', '大范围降温要来了', '张雪机车法国站第二回合季军', '怎么看工行农行募资2600亿', '埃弗顿2-2曼联', '白岩松谈孩子玩坏珍贵蛇标本', 'WE IG', 'LGD NIP'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
