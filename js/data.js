@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r1',
+    name: '孤岛小夫 第三集',
+    emoji: '🔥',
+    date: '2026-09-08',
+    hot: 100,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第1名：孤岛小夫 第三集。',
+    animation: 'textPop',
+    animText: '孤岛小夫 第三集',
+    emojis: ['🔥', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1wKbs67Emc',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r16',
     name: '立志成为恶兽第三集【AI全民制作…',
     emoji: '⚡',
@@ -20,33 +35,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r16',
-    name: '全网首发！周年庆解密我们搞出来啦…',
-    emoji: '⚡',
-    date: '2026-09-08',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：全网首发！周年庆解密我们搞出来啦！居然是双模式！全服活动！这下知道为什么S11叫群星了，快来投稿！。',
-    animation: 'dance',
-    animText: '全网首发！周年庆解密我们搞出来啦…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1JEbK6xEeK',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r17',
-    name: '孤岛小夫 第三集',
+    name: '假如你生活在十万人的宿舍',
     emoji: '🍿',
     date: '2026-09-08',
     hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：孤岛小夫 第三集。',
+    desc: 'B站今日热门第17名：假如你生活在十万人的宿舍。',
     animation: 'emojiRain',
-    animText: '孤岛小夫 第三集',
+    animText: '假如你生活在十万人的宿舍',
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1wKbs67Emc',
+    videoUrl: 'https://www.bilibili.com/video/BV138bP6gEvx',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,51 +65,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '出界就死（2）',
-    emoji: '🍿',
-    date: '2026-09-08',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：出界就死（2）。',
-    animation: 'emojiRain',
-    animText: '出界就死2',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1KFtr6aEoc',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '沙特良子大胃袋年入千万，从底层苦…',
-    emoji: '🔥',
-    date: '2026-09-08',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：沙特良子大胃袋年入千万，从底层苦力到吃播顶流。',
-    animation: 'shake',
-    animText: '沙特良子大胃袋年入千万…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1hhbs6FE3w',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '乌克兰的军统和中统内斗',
-    emoji: '🎬',
-    date: '2026-09-08',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：乌克兰的军统和中统内斗。',
-    animation: 'fire',
-    animText: '乌克兰的军统和中统内斗',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1Akbw6WECj',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r21',
     name: '地表42度，美国飞行员开战斗机冲…',
     emoji: '🔥',
@@ -125,18 +80,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r21',
-    name: '总裁，在上海20平的“姐”景房别…',
-    emoji: '🔥',
+    id: 'r16',
+    name: '全网首发！周年庆解密我们搞出来啦…',
+    emoji: '⚡',
     date: '2026-09-08',
-    hot: 80,
+    hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：总裁，在上海20平的“姐”景房别墅您喜欢吗？。',
-    animation: 'ring',
-    animText: '总裁，在上海20平的“姐”景房别墅您喜欢吗…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1NPbL6oE8d',
+    desc: 'B站今日热门第16名：全网首发！周年庆解密我们搞出来啦！居然是双模式！全服活动！这下知道为什么S11叫群星了，快来投稿！。',
+    animation: 'dance',
+    animText: '全网首发！周年庆解密我们搞出来啦…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1JEbK6xEeK',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -154,6 +109,51 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1EqbN6sEkU',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r14',
+    name: '和偷外卖的较量一番',
+    emoji: '🎵',
+    date: '2026-09-08',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：和偷外卖的较量一番。',
+    animation: 'ring',
+    animText: '和偷外卖的较量一番',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1f4bH6NEu6',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '出界就死（2）',
+    emoji: '📺',
+    date: '2026-09-08',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：出界就死（2）。',
+    animation: 'textPop',
+    animText: '出界就死2',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1KFtr6aEoc',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r21',
+    name: '总裁，在上海20平的“姐”景房别…',
+    emoji: '🔥',
+    date: '2026-09-08',
+    hot: 80,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第21名：总裁，在上海20平的“姐”景房别墅您喜欢吗？。',
+    animation: 'ring',
+    animText: '总裁，在上海20平的“姐”景房别墅您喜欢吗…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1NPbL6oE8d',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '郑钦文再次上演让5追7', '如何看德选择党斩获历史性胜利', '郑钦文重返美网八强', '锐评BLG零封AL', '机械臂为啥没人要了', '小米N90实车抢先深度体验', '一张地图何以引发国际对峙', '苹果和OpenAI为啥反目成仇', '绿龙BLAST波尔图夺冠', 'BLG AL', '张雪机车法国站第二回合季军', '当普罗米修斯遇到愚公移山'
+  '郑钦文再次上演让5追7', '如何看德选择党斩获历史性胜利', '郑钦文重返美网八强', '锐评BLG零封AL', '机械臂为啥没人要了', '小米N90实车抢先深度体验', '一张地图何以引发国际对峙', '全球变暖如何影响你我', '绿龙BLAST波尔图夺冠', '迪迦奥特曼30岁了', '张雪机车法国站第二回合季军', 'China GT赛车起火车手弃赛救人'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
