@@ -21,32 +21,17 @@ const RECENT_MEMES = [
   },
   {
     id: 'r10',
-    name: '「小白」iPhone Duo真机…',
+    name: '【影视飓风】iPhone Duo…',
     emoji: '🎯',
     date: '2026-09-10',
     hot: 91,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：「小白」iPhone Duo真机体验：苹果折叠终于来了！。',
+    desc: 'B站今日热门第10名：【影视飓风】iPhone Duo折叠屏真机上手。',
     animation: 'emojiRain',
-    animText: '「小白」iPhone…',
+    animText: '影视飓风iPhone…',
     emojis: ['🎯', '⚡'],
     color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1LJYb6ZE1m',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '《未眠野》首曝PV | 万物都在…',
-    emoji: '🔥',
-    date: '2026-09-10',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：《未眠野》首曝PV | 万物都在回应，世界没有答案。',
-    animation: 'shake',
-    animText: '《未眠野》首曝PV |…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV18gtJ6LECq',
+    videoUrl: 'https://www.bilibili.com/video/BV12PYh62E3c',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,6 +65,21 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r10',
+    name: '「小白」iPhone Duo真机…',
+    emoji: '🎯',
+    date: '2026-09-10',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：「小白」iPhone Duo真机体验：苹果折叠终于来了！。',
+    animation: 'emojiRain',
+    animText: '「小白」iPhone…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1LJYb6ZE1m',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r13',
     name: '这才是iphone折叠机啊！',
     emoji: '🎮',
@@ -95,33 +95,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '⚡️ 嘉 豪 の 小 曲 ⚡️',
-    emoji: '🎯',
-    date: '2026-09-10',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：⚡️ 嘉 豪 の 小 曲 ⚡️。',
-    animation: 'emojiRain',
-    animText: '⚡️ 嘉 豪 の 小…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1KeY466Ekf',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r11',
-    name: '开学这么爽怎么不早说？',
+    name: '《未眠野》首曝PV | 万物都在…',
     emoji: '🔥',
     date: '2026-09-10',
     hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：开学这么爽怎么不早说？。',
+    desc: 'B站今日热门第11名：《未眠野》首曝PV | 万物都在回应，世界没有答案。',
     animation: 'shake',
-    animText: '开学这么爽怎么不早说？',
+    animText: '《未眠野》首曝PV |…',
     emojis: ['🔥', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1dkbA6GESu',
+    videoUrl: 'https://www.bilibili.com/video/BV18gtJ6LECq',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -137,6 +122,21 @@ const RECENT_MEMES = [
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV152b56uEgF',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '⚡️ 嘉 豪 の 小 曲 ⚡️',
+    emoji: '🎯',
+    date: '2026-09-10',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：⚡️ 嘉 豪 の 小 曲 ⚡️。',
+    animation: 'emojiRain',
+    animText: '⚡️ 嘉 豪 の 小…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1KeY466Ekf',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'iPhone Duo折叠屏真机上手', 'iPhone18系列新颜色', '速通苹果发布会', '康康爷爷离世', 'iPhone18上手体验', '我国首个百米水深油气原位扩容平台投用', '央视评停捐后遭催捐', '洲彦祖回归三角洲', '未眠野首曝PV', '当不同学科老师过教师节', 'iphone折叠机小剧场', '开学宿舍爆改海洋馆'
+  'iPhone Duo有折痕吗', 'iPhone Duo折叠屏真机上手', 'iPhone全系列新机现场上手', '康康爷爷离世', '我国首个百米水深油气原位扩容平台投用', '央视评停捐后遭催捐', '洲彦祖回归三角洲', '未眠野首曝PV', '苹果入局折叠屏市场有何影响', '特朗普关税政策现状如何', 'iPhone18上手体验', 'iphone折叠机小剧场'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
