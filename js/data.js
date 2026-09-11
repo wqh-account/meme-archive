@@ -5,36 +5,6 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r14',
-    name: '刘慈欣原著授权 |《流浪地球：望…',
-    emoji: '🎵',
-    date: '2026-09-11',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：刘慈欣原著授权 |《流浪地球：望日》首支预告片。',
-    animation: 'ring',
-    animText: '刘慈欣原著授权 |《流浪地球…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1tSYx66EvP',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r26',
-    name: '《崩坏：星穹铁道》砂金•戏浪角色…',
-    emoji: '⚡',
-    date: '2026-09-11',
-    hot: 75,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：《崩坏：星穹铁道》砂金•戏浪角色PV——「独家爆料」。',
-    animation: 'fire',
-    animText: '《崩坏：星穹铁道》砂金•…',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1yjYx6AEp7',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r30',
     name: '【招笑版】新植物9:力竭豌豆【b…',
     emoji: '🎯',
@@ -47,6 +17,36 @@ const RECENT_MEMES = [
     emojis: ['🎯', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1sbbj6bEut',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r31',
+    name: '传奇历史人物志——达尔文',
+    emoji: '🔥',
+    date: '2026-09-11',
+    hot: 70,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第31名：传奇历史人物志——达尔文。',
+    animation: 'emojiRain',
+    animText: '传奇历史人物志——达尔文',
+    emojis: ['🔥', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1AcYK6kEf5',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '刘慈欣原著授权 |《流浪地球：望…',
+    emoji: '🎵',
+    date: '2026-09-11',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：刘慈欣原著授权 |《流浪地球：望日》首支预告片。',
+    animation: 'ring',
+    animText: '刘慈欣原著授权 |《流浪地球…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1tSYx66EvP',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,51 +65,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '【糖果】人类就要冲出太阳系了！然…',
-    emoji: '🎬',
-    date: '2026-09-11',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：【糖果】人类就要冲出太阳系了！然后被宇宙嫌弃了。',
-    animation: 'fire',
-    animText: '糖果人类就要冲出太阳系了…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1WuYh6VEaS',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r45',
-    name: '热烈欢迎欧阳娜娜！我们的第二位0…',
-    emoji: '📺',
-    date: '2026-09-11',
-    hot: 56,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第45名：热烈欢迎欧阳娜娜！我们的第二位00后嘉宾～看看喜欢搞婚庆的娜娜带了什么可爱（但没用）的小东西呢？。',
-    animation: 'emojiRain',
-    animText: '热烈欢迎欧阳娜娜！我们的第二位00后嘉宾～看看喜欢搞婚庆的娜娜带了什么可爱但没用的小东西呢…',
-    emojis: ['📺', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1YkYx6LEun',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
-    name: '「小白」iPhone Duo真机…',
-    emoji: '🎯',
-    date: '2026-09-11',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：「小白」iPhone Duo真机体验：苹果折叠终于来了！。',
-    animation: 'emojiRain',
-    animText: '「小白」iPhone…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1LJYb6ZE1m',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r14',
     name: '三年之期已到，恭迎世一上归位！【…',
     emoji: '🎵',
@@ -122,6 +77,21 @@ const RECENT_MEMES = [
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1CDYg69EGL',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '【糖果】人类就要冲出太阳系了！然…',
+    emoji: '🎬',
+    date: '2026-09-11',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：【糖果】人类就要冲出太阳系了！然后被宇宙嫌弃了。',
+    animation: 'fire',
+    animText: '糖果人类就要冲出太阳系了…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1WuYh6VEaS',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -140,18 +110,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r24',
-    name: '大厅单挑炸鱼的来',
-    emoji: '🎵',
+    id: 'r26',
+    name: '《崩坏：星穹铁道》砂金•戏浪角色…',
+    emoji: '⚡',
     date: '2026-09-11',
-    hot: 77,
+    hot: 75,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：大厅单挑炸鱼的来。',
-    animation: 'emojiRain',
-    animText: '大厅单挑炸鱼的来',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1NiY46uEBh',
+    desc: 'B站今日热门第26名：《崩坏：星穹铁道》砂金•戏浪角色PV——「独家爆料」。',
+    animation: 'fire',
+    animText: '《崩坏：星穹铁道》砂金•…',
+    emojis: ['⚡', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1yjYx6AEp7',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r27',
+    name: '鼠鼠勇闯长弓溪谷！！！',
+    emoji: '🍿',
+    date: '2026-09-11',
+    hot: 74,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第27名：鼠鼠勇闯长弓溪谷！！！。',
+    animation: 'flower',
+    animText: '鼠鼠勇闯长弓溪谷！！！',
+    emojis: ['🍿', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1AcYK6kEiq',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '只不过是学会了化妆，对象非说我整…',
+    emoji: '🎯',
+    date: '2026-09-11',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：只不过是学会了化妆，对象非说我整容了……。',
+    animation: 'flower',
+    animText: '只不过是学会了化妆，对象…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV14NYg6xEdH',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '习近平对青岛货轮火灾作出指示', '长征四号乙一箭六星发射成功', '直到坏蛋都变成糖果', '流浪地球望日首曝PV', '时光代理人', '洛克开学季四大学院选择', '打工人视角看早春晴朗', 'Caps名人堂纪录片', 'AL vs IG数据前瞻', '别这么说教师节版', '教师节黄金乌龙', '锐评2026苹果秋季发布会'
+  '习近平对青岛货轮火灾作出指示', '长征四号乙一箭六星发射成功', '直到坏蛋都变成糖果', 'Caps名人堂纪录片', 'AL vs IG数据前瞻', '洛克开学季四大学院选择', '时光代理人', 'UP主谈教师离职心路历程', '别这么说教师节版', 'UP主创意手搓MJ热单', '万象棋有自己的主打哥', '包贝尔事件背后的行业影响'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
