@@ -5,48 +5,48 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r25',
-    name: '换一种心跳，感受世界的奇妙——《…',
-    emoji: '📺',
+    id: 'r1',
+    name: '《对三骗王炸》',
+    emoji: '🔥',
     date: '2026-09-11',
-    hot: 76,
+    hot: 100,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：换一种心跳，感受世界的奇妙——《伊莫》联结玩法实机。',
-    animation: 'shake',
-    animText: '换一种心跳，感受世界的奇…',
-    emojis: ['📺', '⚡'],
+    desc: 'B站今日热门第1名：《对三骗王炸》。',
+    animation: 'textPop',
+    animText: '《对三骗王炸》',
+    emojis: ['🔥', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1kMYb6KEQ9',
+    videoUrl: 'https://www.bilibili.com/video/BV1bxYV6BEwS',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r21',
+    name: '【月行水上】SR-EX-1至SR…',
+    emoji: '🔥',
+    date: '2026-09-11',
+    hot: 80,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第21名：【月行水上】SR-EX-1至SR-EX-8突袭 摆完挂机 简单好抄。',
+    animation: 'ring',
+    animText: '月行水上SR-EX-1至SR-EX-8突袭…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV18bYL65E54',
     source: 'B站今日热门（实时抓取）'
   },
   {
     id: 'r17',
-    name: '“我儿子可能还是个gay....…',
+    name: '快点快点再快点！高速变道会发生什…',
     emoji: '🍿',
     date: '2026-09-11',
     hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：“我儿子可能还是个gay....”。',
+    desc: 'B站今日热门第17名：快点快点再快点！高速变道会发生什么？。',
     animation: 'emojiRain',
-    animText: '“我儿子可能还是个gay…',
+    animText: '快点快点再快点！高速变道会发生什么…',
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1LYbH6wE2Q',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r26',
-    name: '当我把“大地”穿在身上｜结合自然…',
-    emoji: '⚡',
-    date: '2026-09-11',
-    hot: 75,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：当我把“大地”穿在身上｜结合自然元素还原绝美大地女神。',
-    animation: 'fire',
-    animText: '当我把“大地”穿在身上｜…',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1uFYg6fETn',
+    videoUrl: 'https://www.bilibili.com/video/BV1swYM6SEBd',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,33 +65,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '【英雄联盟】打了 15 年， 对…',
-    emoji: '🔥',
+    id: 'r25',
+    name: '换一种心跳，感受世界的奇妙——《…',
+    emoji: '📺',
     date: '2026-09-11',
-    hot: 90,
+    hot: 76,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：【英雄联盟】打了 15 年， 对决还在继续。。',
+    desc: 'B站今日热门第25名：换一种心跳，感受世界的奇妙——《伊莫》联结玩法实机。',
     animation: 'shake',
-    animText: '英雄联盟打了 15 年…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV16uYK6TEqe',
+    animText: '换一种心跳，感受世界的奇…',
+    emojis: ['📺', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1kMYb6KEQ9',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '【warma/怒九】出国！去逛全…',
-    emoji: '🎯',
+    id: 'r26',
+    name: '当我把“大地”穿在身上｜结合自然…',
+    emoji: '⚡',
     date: '2026-09-11',
-    hot: 91,
+    hot: 75,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：【warma/怒九】出国！去逛全球最大的游戏展吧！。',
-    animation: 'emojiRain',
-    animText: 'warma/怒九出国…',
-    emojis: ['🎯', '⚡'],
+    desc: 'B站今日热门第26名：当我把“大地”穿在身上｜结合自然元素还原绝美大地女神。',
+    animation: 'fire',
+    animText: '当我把“大地”穿在身上｜…',
+    emojis: ['⚡', '⚡'],
     color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1fsYG6JErA',
+    videoUrl: 'https://www.bilibili.com/video/BV1uFYg6fETn',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r19',
+    name: '差一天就能看到糖花の“监狱vlo…',
+    emoji: '🎤',
+    date: '2026-09-11',
+    hot: 82,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第19名：差一天就能看到糖花の“监狱vlog”了。',
+    animation: 'fire',
+    animText: '差一天就能看到糖花の“监…',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV12HYu6REYk',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -111,6 +126,21 @@ const RECENT_MEMES = [
   },
   {
     id: 'r14',
+    name: '麒麟9050 Pro性能解析：G…',
+    emoji: '🎵',
+    date: '2026-09-11',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：麒麟9050 Pro性能解析：GPU提升很大！华为Mate XT 2 非凡大师 展翼三折叠。',
+    animation: 'ring',
+    animText: '麒麟9050 Pro性能解析…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV15fYL69EKz',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
     name: '刘慈欣原著授权 |《流浪地球：望…',
     emoji: '🎵',
     date: '2026-09-11',
@@ -124,36 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1tSYx66EvP',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r14',
-    name: '三年之期已到，恭迎世一上归位！【…',
-    emoji: '🎵',
-    date: '2026-09-11',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：三年之期已到，恭迎世一上归位！【第8集】。',
-    animation: 'ring',
-    animText: '三年之期已到，恭迎世一上归位…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1CDYg69EGL',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r30',
-    name: '【招笑版】新植物9:力竭豌豆【b…',
-    emoji: '🎯',
-    date: '2026-09-11',
-    hot: 71,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第30名：【招笑版】新植物9:力竭豌豆【bilibilionly同人扶持计划】。',
-    animation: 'dance',
-    animText: '招笑版新植物9:力竭豌豆…',
-    emojis: ['🎯', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1sbbj6bEut',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '黑洞里有恒星吗', '美陆军部长辞职真相是什么', '吃光红利的驾校会消失吗', '周杰伦西西里MV', '油价飙涨推升加息预期', '在爸妈小卖部上班的快乐日常', '老头环褪色者版59分钟实机', 'F1西班牙站发布会看点', '外国UP主挑战背滕王阁序免门票', 'ChatGPT Pro 200美元档停售', '扮成乞丐回校看老师', '第37届银河奖获奖名单揭晓'
+  '徐静雨对线追梦格林', 'FPX AQ', '中国低保体系是如何建立的', '烽火职业联赛夏季赛', '国家对成品油价格实施调控', '天下足球 罗贝里十年之约', '三角洲夏季赛季后赛刺激赛制', '东北超半决赛', '皇马巴萨为何是国家德比', '我国的反诈系统有多强', '周杰伦西西里MV', '第37届银河奖获奖名单揭晓'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
