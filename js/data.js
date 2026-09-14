@@ -5,48 +5,63 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r24',
-    name: '【英雄联盟公益纪录片】逆风局的6…',
-    emoji: '🎵',
+    id: 'r20',
+    name: '【萌黄一槽】夺走你的心！角都[晓…',
+    emoji: '🎯',
     date: '2026-09-14',
-    hot: 77,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：【英雄联盟公益纪录片】逆风局的623326个英雄时刻。',
-    animation: 'emojiRain',
-    animText: '英雄联盟公益纪录片逆风局…',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1DJYe6AEgP',
+    desc: 'B站今日热门第20名：【萌黄一槽】夺走你的心！角都[晓·北]全技能爆料。',
+    animation: 'flower',
+    animText: '萌黄一槽夺走你的心！角都…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1seY16pEh9',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r25',
-    name: '绝密大学是洲同学的来',
-    emoji: '📺',
+    id: 'r21',
+    name: '和五月天阿信见了他',
+    emoji: '🔥',
     date: '2026-09-14',
-    hot: 76,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：绝密大学是洲同学的来。',
-    animation: 'shake',
-    animText: '绝密大学是洲同学的来',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1kzYe6JENC',
+    desc: 'B站今日热门第21名：和五月天阿信见了他。',
+    animation: 'ring',
+    animText: '和五月天阿信见了他',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV17PYC6KEXu',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r26',
-    name: '还原我吃完菌子做的噩梦',
-    emoji: '⚡',
+    id: 'r12',
+    name: '“死亡不是终点，遗忘才是。” |…',
+    emoji: '🎬',
     date: '2026-09-14',
-    hot: 75,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：还原我吃完菌子做的噩梦。',
+    desc: 'B站今日热门第12名：“死亡不是终点，遗忘才是。” | 《老秦》原创AI短片【AI全民制作人】。',
     animation: 'fire',
-    animText: '还原我吃完菌子做的噩梦',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1JJYd6rEwA',
+    animText: '“死亡不是终点，遗忘才是…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1PYYo6XEW9',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '锵锵锵',
+    emoji: '🎮',
+    date: '2026-09-14',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：锵锵锵。',
+    animation: 'flower',
+    animText: '锵锵锵',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1tsY16bEwp',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -66,17 +81,32 @@ const RECENT_MEMES = [
   },
   {
     id: 'r13',
-    name: '吃一把拇指西瓜以为香甜爆汁，结果…',
+    name: '我来接受中国朋友们的挑战啦！',
     emoji: '🎮',
     date: '2026-09-14',
     hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：吃一把拇指西瓜以为香甜爆汁，结果……【主播说三农】。',
+    desc: 'B站今日热门第13名：我来接受中国朋友们的挑战啦！。',
     animation: 'flower',
-    animText: '吃一把拇指西瓜以为香甜爆汁…',
+    animText: '我来接受中国朋友们的挑战啦…',
     emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1wZYY6EE6m',
+    videoUrl: 'https://www.bilibili.com/video/BV1qdY76eE46',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '老外不吃蛋黄？我得给他们好好纠正…',
+    emoji: '🏆',
+    date: '2026-09-14',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：老外不吃蛋黄？我得给他们好好纠正一下。',
+    animation: 'shake',
+    animText: '老外不吃蛋黄？我得给他们…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1GKYE6oEKy',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,18 +125,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '“死亡不是终点，遗忘才是。” |…',
-    emoji: '🎬',
+    id: 'r16',
+    name: '也许，世界本该如此',
+    emoji: '⚡',
     date: '2026-09-14',
-    hot: 89,
+    hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：“死亡不是终点，遗忘才是。” | 《老秦》原创AI短片【AI全民制作人】。',
-    animation: 'fire',
-    animText: '“死亡不是终点，遗忘才是…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1PYYo6XEW9',
+    desc: 'B站今日热门第16名：也许，世界本该如此。',
+    animation: 'dance',
+    animText: '也许，世界本该如此',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1PKY96yEhL',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -124,36 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1uKY26hETJ',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r11',
-    name: '那些年为了听歌做过的事？你中了几…',
-    emoji: '🔥',
-    date: '2026-09-14',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：那些年为了听歌做过的事？你中了几个？也许那首歌才能带我们回到过去。。。。',
-    animation: 'shake',
-    animText: '那些年为了听歌做过的事…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1rvYa65E1Z',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '关于在教室发现一只野生大老鼠后续…',
-    emoji: '🍿',
-    date: '2026-09-14',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：关于在教室发现一只野生大老鼠后续3。',
-    animation: 'emojiRain',
-    animText: '关于在教室发现一只野生大…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1GRYa68EAU',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '英语和历史是否该成为主科', 'BLG为何不敌AL', '刘华强世界巡演', '多车队宣布永久退出China GT', '美联储9月加息概率逼近90%', 'AI短片人生反悔局', '985本硕UP主重读大学', '燕云十六声联动麦当劳pv', '手把手教学百万英镑牛排套餐', '徐静雨在库里中国行投篮19中0', '一部手机看金砖国家合作前景', '开学后的家长群belike'
+  'IG如何能挺进世界赛', '平陆运河9月16日建成通航', '花少2暖气事件', '当369和Karsa角色互换', '张本煜大战刘旸教主', '上5休1上5休3上3休7上3休1', '亚运会王者荣耀国家队名单公布', '985本硕UP主重读大学', '花少8地陪争议', '花少8会打破偶数季魔咒吗', '火影手游晓北角都技能全爆料', 'UP主手搓可以吃的AI月球'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
