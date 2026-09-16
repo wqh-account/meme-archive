@@ -20,18 +20,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r31',
-    name: '童年的捕虫网，依然在我们的手里—…',
-    emoji: '🔥',
+    id: 'r15',
+    name: '同事一起旅游，但是互相都在算计',
+    emoji: '📺',
     date: '2026-09-16',
-    hot: 70,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第31名：童年的捕虫网，依然在我们的手里——《伊莫》PC端预下载现已开启！。',
-    animation: 'emojiRain',
-    animText: '童年的捕虫网，依然在我们的手里——《伊莫》PC端预下载现已开启…',
-    emojis: ['🔥', '⚡'],
+    desc: 'B站今日热门第15名：同事一起旅游，但是互相都在算计。',
+    animation: 'textPop',
+    animText: '同事一起旅游，但是互相都…',
+    emojis: ['📺', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Dve565ENK',
+    videoUrl: 'https://www.bilibili.com/video/BV1Umen68ELj',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -50,33 +50,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '我的移动野生动物拍摄基地，小米澎…',
-    emoji: '🎬',
+    id: 'r23',
+    name: '重返渴望现场｜百事可乐音乐盛典完…',
+    emoji: '🎮',
     date: '2026-09-16',
-    hot: 89,
+    hot: 78,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：我的移动野生动物拍摄基地，小米澎程N90 Max 探索版担当的起吗？。',
-    animation: 'fire',
-    animText: '我的移动野生动物拍摄基地…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1owYC6iEtf',
+    desc: 'B站今日热门第23名：重返渴望现场｜百事可乐音乐盛典完整回放正式上线！。',
+    animation: 'dance',
+    animText: '重返渴望现场｜百事可乐音乐盛典完整回放正式上线…',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1uKY26hETJ',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '同事一起旅游，但是互相都在算计',
-    emoji: '📺',
+    id: 'r13',
+    name: '迎接崭新的融合超级机枪豌豆！【b…',
+    emoji: '🎮',
     date: '2026-09-16',
-    hot: 86,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：同事一起旅游，但是互相都在算计。',
-    animation: 'textPop',
-    animText: '同事一起旅游，但是互相都…',
-    emojis: ['📺', '⚡'],
+    desc: 'B站今日热门第13名：迎接崭新的融合超级机枪豌豆！【bilibilionly同人扶持计划】。',
+    animation: 'flower',
+    animText: '迎接崭新的融合超级机枪豌豆…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1VXe768Emt',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r31',
+    name: '童年的捕虫网，依然在我们的手里—…',
+    emoji: '🔥',
+    date: '2026-09-16',
+    hot: 70,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第31名：童年的捕虫网，依然在我们的手里——《伊莫》PC端预下载现已开启！。',
+    animation: 'emojiRain',
+    animText: '童年的捕虫网，依然在我们的手里——《伊莫》PC端预下载现已开启…',
+    emojis: ['🔥', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Umen68ELj',
+    videoUrl: 'https://www.bilibili.com/video/BV1Dve565ENK',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r32',
+    name: '得来全部费功夫',
+    emoji: '🎬',
+    date: '2026-09-16',
+    hot: 69,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第32名：得来全部费功夫。',
+    animation: 'shake',
+    animText: '得来全部费功夫',
+    emojis: ['🎬', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1opej6cECD',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,36 +140,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '《复联5》剧情全泄露！太真了！谨…',
-    emoji: '🎯',
-    date: '2026-09-16',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：《复联5》剧情全泄露！太真了！谨慎观看！。',
-    animation: 'emojiRain',
-    animText: '《复联5》剧情全泄露…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1uAeE6XEgH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '《上吊比赛》',
-    emoji: '🔥',
-    date: '2026-09-16',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：《上吊比赛》。',
-    animation: 'shake',
-    animText: '《上吊比赛》',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1Sae56jE15',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r15',
     name: '【独家/完结】《百日成王》第25…',
     emoji: '📺',
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '韩国为何又要恢复使用汉字', '锐评花少8到底缺了什么', '美债收益率破5%市场反应如何', '我国成功发射一箭10星', 'S16 LCK战队有哪些看点', '复盘花少3赖雨濛被嘘事件', '日本梅毒疫情有多严重', '铁头如何从打假走向犯罪', 'UP主实测Claude Opus5.2', '曝Claude Opus 5.2开启灰测', '花少2团队抱团争议', 'AI巨头为何呼吁踩刹车'
+  '韩国为何又要恢复使用汉字', '从杨希看吕孟洋留洋前景', 'LPL官宣S16资格赛赛程', '我国成功发射一箭10星', '锐评花少8到底缺了什么', '复盘花少3赖雨濛被嘘事件', '日本梅毒疫情有多严重', '铁头如何从打假走向犯罪', '美债收益率破5%市场反应如何', 'UP主实测Claude Opus5.2', '花少2团队抱团争议', '有用版PVZ新植物怕死樱桃'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
