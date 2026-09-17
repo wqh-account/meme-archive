@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r19',
+    name: '《原神》沃雅妮莎角色PV——「心…',
+    emoji: '🎤',
+    date: '2026-09-17',
+    hot: 82,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第19名：《原神》沃雅妮莎角色PV——「心之声」。',
+    animation: 'fire',
+    animText: '《原神》沃雅妮莎角色PV…',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV13Xew6LE7T',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r13',
     name: '折叠还是直板？iPhone 18…',
     emoji: '🎮',
@@ -17,6 +32,36 @@ const RECENT_MEMES = [
     emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1cSec6tEux',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '英国可能解体又不太可能',
+    emoji: '🎵',
+    date: '2026-09-17',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：英国可能解体又不太可能。',
+    animation: 'ring',
+    animText: '英国可能解体又不太可能',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1iQeM6uEEH',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '天津漫展手机事件',
+    emoji: '📺',
+    date: '2026-09-17',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：天津漫展手机事件。',
+    animation: 'textPop',
+    animText: '天津漫展手机事件',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1YaeN6xEWR',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -36,47 +81,47 @@ const RECENT_MEMES = [
   },
   {
     id: 'r14',
-    name: '天津漫展手机事件',
+    name: '烂烂烂烂烂烂活',
     emoji: '🎵',
     date: '2026-09-17',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：天津漫展手机事件。',
+    desc: 'B站今日热门第14名：烂烂烂烂烂烂活。',
     animation: 'ring',
-    animText: '天津漫展手机事件',
+    animText: '烂烂烂烂烂烂活',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1YaeN6xEWR',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '烂烂烂烂烂烂活',
-    emoji: '📺',
-    date: '2026-09-17',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：烂烂烂烂烂烂活。',
-    animation: 'textPop',
-    animText: '烂烂烂烂烂烂活',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
     videoUrl: 'https://www.bilibili.com/video/BV1t6ex66EKs',
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r15',
+    name: '各省的刻板印象这一块',
+    emoji: '📺',
+    date: '2026-09-17',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：各省的刻板印象这一块。',
+    animation: 'textPop',
+    animText: '各省的刻板印象这一块',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1PneF6bELe',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r16',
-    name: 'iPhone18 Pro性能分析…',
+    name: '《你爸带你忆苦思甜》',
     emoji: '⚡',
     date: '2026-09-17',
     hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：iPhone18 Pro性能分析：五年来最强的芯片升级！。',
+    desc: 'B站今日热门第16名：《你爸带你忆苦思甜》。',
     animation: 'dance',
-    animText: 'iPhone18 Pro性能分析…',
+    animText: '《你爸带你忆苦思甜》',
     emojis: ['⚡', '⚡'],
     color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1oZeA6fERD',
+    videoUrl: 'https://www.bilibili.com/video/BV1Y4ec6VEFc',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -96,62 +141,17 @@ const RECENT_MEMES = [
   },
   {
     id: 'r22',
-    name: '60后老妈深度豆包手机助手半个月…',
+    name: '不是不够努力：拆解后发国家工业化…',
     emoji: '🎬',
     date: '2026-09-17',
     hot: 79,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：60后老妈深度豆包手机助手半个月!表示真香!。',
+    desc: 'B站今日热门第22名：不是不够努力：拆解后发国家工业化的结构性枷锁。',
     animation: 'textPop',
-    animText: '60后老妈深度豆包手机助…',
+    animText: '不是不够努力：拆解后发国…',
     emojis: ['🎬', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV19LY16vE3s',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
-    name: '《鸣潮》动画短片 | 寻心',
-    emoji: '🎯',
-    date: '2026-09-17',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：《鸣潮》动画短片 | 寻心。',
-    animation: 'emojiRain',
-    animText: '《鸣潮》动画短片 |…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1WAec6fE5N',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '三年之期已到，恭迎世一上归位！【…',
-    emoji: '🎵',
-    date: '2026-09-17',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：三年之期已到，恭迎世一上归位！【第9集】。',
-    animation: 'ring',
-    animText: '三年之期已到，恭迎世一上归位…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1h4ec6VEs3',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '《原神》薇斯纳角色PV——「『风…',
-    emoji: '🔥',
-    date: '2026-09-17',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：《原神》薇斯纳角色PV——「『风』行迷踪」。',
-    animation: 'ring',
-    animText: '《原神》薇斯纳角色PV—…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1sjen6QEQ7',
+    videoUrl: 'https://www.bilibili.com/video/BV1rWeF6xEHW',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'iPhone18 Pro性能分析', '一条视频梳理梅姨拐卖儿童案', 'DDR5内存颗粒价格达到历史峰值', '南医大坠亡事件导师学生聊天记录', '2026无畏契约全球冠军赛主题曲', '平陆运河为何称得上世纪工程', 'U23国足逆转朝鲜', '鸣潮动画短片寻心', '联合国新版世界地图怎么回事', '如何看模型训练师发出AI风险警告', '平陆运河开通带来哪些新机遇', '我国火箭单次海上发射载荷重量创新高'
+  '我国成功发射天仪51和52卫星', '琵琶曲原作者入驻B站', '三地联手向英国发出什么信号', '老番茄联动噜咪真人挑战', '曼联主帅卡里克战术有问题吗', '囚徒摩旅黄金大环线', '美联储10月还会加息吗', '新人UP主张云雷报道', '四川茂县山体滑坡 无人员伤亡', '亚运板球是什么运动', '2026无畏契约冠军套预告', '我国火箭单次海上发射载荷重量创新高'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
