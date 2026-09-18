@@ -5,48 +5,48 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r1',
+    name: '《虱子大开口》',
+    emoji: '🔥',
+    date: '2026-09-18',
+    hot: 100,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第1名：《虱子大开口》。',
+    animation: 'textPop',
+    animText: '《虱子大开口》',
+    emojis: ['🔥', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV12Yeg6FE9q',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r14',
-    name: '听说你最近一段时间一直在找我？【…',
+    name: 'Tropical fruit s…',
     emoji: '🎵',
     date: '2026-09-18',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：听说你最近一段时间一直在找我？【AI全民制作人】。',
+    desc: 'B站今日热门第14名：Tropical fruit slicing animation。',
     animation: 'ring',
-    animText: '听说你最近一段时间一直在找我…',
+    animText: 'Tropical fruit…',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Yieu6uEUU',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '揭秘硫磺竹笋，二氧化硫含量惊人，…',
-    emoji: '📺',
-    date: '2026-09-18',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：揭秘硫磺竹笋，二氧化硫含量惊人，这样的竹笋能吃吗？恳请当地彻查硫磺竹笋，保障食品安全。',
-    animation: 'textPop',
-    animText: '揭秘硫磺竹笋，二氧化硫含量惊人…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1T2er6QE4b',
+    videoUrl: 'https://www.bilibili.com/video/BV1ZueH6LEa6',
     source: 'B站今日热门（实时抓取）'
   },
   {
     id: 'r21',
-    name: '我只是想煮一个鸡蛋，互联网却想教…',
+    name: '第二赛季更新前瞻PV「奥托皮亚·…',
     emoji: '🔥',
     date: '2026-09-18',
     hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：我只是想煮一个鸡蛋，互联网却想教我做人❤️。',
+    desc: 'B站今日热门第21名：第二赛季更新前瞻PV「奥托皮亚·地下之王」。',
     animation: 'ring',
-    animText: '我只是想煮一个鸡蛋，互联…',
+    animText: '第二赛季更新前瞻PV「奥…',
     emojis: ['🔥', '⚡'],
     color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1vdeJ6KEkR',
+    videoUrl: 'https://www.bilibili.com/video/BV1A2ec68ENE',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,36 +80,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: 'Tropical fruit s…',
-    emoji: '🎵',
-    date: '2026-09-18',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：Tropical fruit slicing animation。',
-    animation: 'ring',
-    animText: 'Tropical fruit…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1ZueH6LEa6',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '这里只有一个是真的张起灵',
-    emoji: '📺',
-    date: '2026-09-18',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：这里只有一个是真的张起灵。',
-    animation: 'textPop',
-    animText: '这里只有一个是真的张起灵',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1uheG6gERq',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r30',
     name: '【1931.9.18-2026.…',
     emoji: '🎯',
@@ -125,33 +95,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r12',
+    name: '反骨娘娘团：胖橘宜修出门，娘娘团…',
+    emoji: '🎬',
+    date: '2026-09-18',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：反骨娘娘团：胖橘宜修出门，娘娘团放肆嗨。',
+    animation: 'fire',
+    animText: '反骨娘娘团：胖橘宜修出门…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV124eK6mE5U',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r15',
-    name: '“当确实型人格遇上反驳型人格”',
+    name: '《篡改正史 | 正史改竄》MV：…',
     emoji: '📺',
     date: '2026-09-18',
     hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：“当确实型人格遇上反驳型人格”。',
+    desc: 'B站今日热门第15名：《篡改正史 | 正史改竄》MV：本案，审查不合格【AI MV大赛】。',
     animation: 'textPop',
-    animText: '“当确实型人格遇上反驳型…',
+    animText: '《篡改正史 | 正史改竄》MV…',
     emojis: ['📺', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1rYYa61E3T',
+    videoUrl: 'https://www.bilibili.com/video/BV15Be361EbR',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r18',
-    name: '甄姬：没见第一波线，第二波直接来…',
-    emoji: '🏆',
+    id: 'r20',
+    name: '威龙带娃日记5：哈基蜂你这家伙竟…',
+    emoji: '🎯',
     date: '2026-09-18',
-    hot: 83,
+    hot: 81,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：甄姬：没见第一波线，第二波直接来8个？！。',
-    animation: 'shake',
-    animText: '甄姬：没见第一波线，第二波直接来8个…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1VfeJ6PE12',
+    desc: 'B站今日热门第20名：威龙带娃日记5：哈基蜂你这家伙竟如此富有。',
+    animation: 'flower',
+    animText: '威龙带娃日记5：哈基蜂你…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV16Weu67ECS',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '【年会不能停！2】刘马组合升职无…',
+    emoji: '⚡',
+    date: '2026-09-18',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：【年会不能停！2】刘马组合升职无限流。',
+    animation: 'dance',
+    animText: '年会不能停！2刘马组合升…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1fxen6yEf3',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '英伟达收购最大开源AI平台', '一次看懂TES与IG的深层博弈', 'iPhone18首发日直营店实探', '开学各省刻板印象belike', '40万亿美债谁还在买', '凌玲 听说你一直在找我', 'iPhone18Pro影像实测', 'FBI为何放宽招聘红线', '深挖美巨头呼吁放缓AI目的', '如何看AI开始刷榜数学难题', '我国成功发射天仪51和52卫星', 'IG不敌TES问题出在哪'
+  '日本被吐槽为亚运会最烂东道主', '中国男篮半场落后19分', 'Zhuo将迎来自己首届S赛', 'UP动画幽差', '九一八事变爆发95周年', '不在乎任何人真的会活得很爽吗', '姆巴佩想把金球奖带回伯纳乌', '琵琶曲AI人物替换怎么做', '丹东烤肉海鲜自由是什么体验', 'AI时代数学专业还有优势吗', 'WE JDG', '我国成功发射天仪51和52卫星'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
