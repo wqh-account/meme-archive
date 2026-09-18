@@ -20,6 +20,21 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r15',
+    name: '揭秘硫磺竹笋，二氧化硫含量惊人，…',
+    emoji: '📺',
+    date: '2026-09-18',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：揭秘硫磺竹笋，二氧化硫含量惊人，这样的竹笋能吃吗？恳请当地彻查硫磺竹笋，保障食品安全。',
+    animation: 'textPop',
+    animText: '揭秘硫磺竹笋，二氧化硫含量惊人…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1T2er6QE4b',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r21',
     name: '我只是想煮一个鸡蛋，互联网却想教…',
     emoji: '🔥',
@@ -32,21 +47,6 @@ const RECENT_MEMES = [
     emojis: ['🔥', '⚡'],
     color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1vdeJ6KEkR',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r30',
-    name: '【1931.9.18-2026.…',
-    emoji: '🎯',
-    date: '2026-09-18',
-    hot: 71,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第30名：【1931.9.18-2026.9.18】九一八事变爆发95周年，请留一分钟。',
-    animation: 'dance',
-    animText: '1931.9.18-2026.9.18九一八事变爆发95周年…',
-    emojis: ['🎯', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1gCeu6eEpx',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,33 +65,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '这里只有一个是真的张起灵',
-    emoji: '🎬',
+    id: 'r11',
+    name: '【纪录片】生命奇观2 01 内蒙…',
+    emoji: '🔥',
     date: '2026-09-18',
-    hot: 89,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：这里只有一个是真的张起灵。',
-    animation: 'fire',
-    animText: '这里只有一个是真的张起灵',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1uheG6gERq',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '互相求婚？美国女孩和我为什么要这…',
-    emoji: '🏆',
-    date: '2026-09-18',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：互相求婚？美国女孩和我为什么要这样做。',
+    desc: 'B站今日热门第11名：【纪录片】生命奇观2 01 内蒙古高原。',
     animation: 'shake',
-    animText: '互相求婚？美国女孩和我为…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1Nqeg6tEBo',
+    animText: '纪录片生命奇观2 01…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1PUej65E41',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,48 +95,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '中式魅魔挑战（你能闯到第几关？）',
-    emoji: '🎮',
+    id: 'r15',
+    name: '这里只有一个是真的张起灵',
+    emoji: '📺',
     date: '2026-09-18',
-    hot: 88,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：中式魅魔挑战（你能闯到第几关？）。',
-    animation: 'flower',
-    animText: '中式魅魔挑战你能闯到第几关…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1gveN6WEpC',
+    desc: 'B站今日热门第15名：这里只有一个是真的张起灵。',
+    animation: 'textPop',
+    animText: '这里只有一个是真的张起灵',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1uheG6gERq',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '阿祖从军记（二）',
-    emoji: '🎵',
+    id: 'r30',
+    name: '【1931.9.18-2026.…',
+    emoji: '🎯',
     date: '2026-09-18',
-    hot: 87,
+    hot: 71,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：阿祖从军记（二）。',
-    animation: 'ring',
-    animText: '阿祖从军记二',
-    emojis: ['🎵', '⚡'],
+    desc: 'B站今日热门第30名：【1931.9.18-2026.9.18】九一八事变爆发95周年，请留一分钟。',
+    animation: 'dance',
+    animText: '1931.9.18-2026.9.18九一八事变爆发95周年…',
+    emojis: ['🎯', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1aweu6aE3v',
+    videoUrl: 'https://www.bilibili.com/video/BV1gCeu6eEpx',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '我疯了！挑战1比1还原海绵宝宝浴…',
-    emoji: '🍿',
+    id: 'r15',
+    name: '“当确实型人格遇上反驳型人格”',
+    emoji: '📺',
     date: '2026-09-18',
-    hot: 84,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：我疯了！挑战1比1还原海绵宝宝浴室，打造专属菠萝屋。',
-    animation: 'emojiRain',
-    animText: '我疯了！挑战1比1还原海绵宝宝浴室…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1j2e76eEPb',
+    desc: 'B站今日热门第15名：“当确实型人格遇上反驳型人格”。',
+    animation: 'textPop',
+    animText: '“当确实型人格遇上反驳型…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1rYYa61E3T',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '甄姬：没见第一波线，第二波直接来…',
+    emoji: '🏆',
+    date: '2026-09-18',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：甄姬：没见第一波线，第二波直接来8个？！。',
+    animation: 'shake',
+    animText: '甄姬：没见第一波线，第二波直接来8个…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1VfeJ6PE12',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '数学家为何集体反对AI暴力破解', 'IG不敌TES问题出在哪', '宁德时代日赚超2亿合理吗', '勿忘九一八', 'UP主指挥GPT6定时泡咖啡', '曼城5-0诺维奇', 'iPhone18新机验机教程', 'TES战胜IG战术复盘', '萨迪克贝3年5550万续约鹈鹕', '李大霄评美股高开', '我国成功发射天仪51和52卫星', '平陆运河为何称得上世纪工程'
+  '英伟达收购最大开源AI平台', '一次看懂TES与IG的深层博弈', 'iPhone18首发日直营店实探', '开学各省刻板印象belike', '40万亿美债谁还在买', '凌玲 听说你一直在找我', 'iPhone18Pro影像实测', 'FBI为何放宽招聘红线', '深挖美巨头呼吁放缓AI目的', '如何看AI开始刷榜数学难题', '我国成功发射天仪51和52卫星', 'IG不敌TES问题出在哪'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
