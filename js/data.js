@@ -5,6 +5,36 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r1',
+    name: '好久不见啊，佐助',
+    emoji: '🔥',
+    date: '2026-09-23',
+    hot: 100,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第1名：好久不见啊，佐助。',
+    animation: 'textPop',
+    animText: '好久不见啊，佐助',
+    emojis: ['🔥', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1B1hJ6wEwe',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '骁龙8 Elite Extrem…',
+    emoji: '🍿',
+    date: '2026-09-23',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：骁龙8 Elite Extreme Gen6前瞻上手：高通新旗舰手机来啦！。',
+    animation: 'emojiRain',
+    animText: '骁龙8 Elite Extreme…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV17uhW6VE2R',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r17',
     name: '比电影更夸张？专业保镖到底在做什…',
     emoji: '🍿',
@@ -17,36 +47,6 @@ const RECENT_MEMES = [
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
     videoUrl: 'https://www.bilibili.com/video/BV1J7hE6aEDQ',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '好久不见啊，佐助',
-    emoji: '🏆',
-    date: '2026-09-23',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：好久不见啊，佐助。',
-    animation: 'shake',
-    animText: '好久不见啊，佐助',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1B1hJ6wEwe',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '《柯洁围棋入门课》',
-    emoji: '🎤',
-    date: '2026-09-23',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：《柯洁围棋入门课》。',
-    animation: 'fire',
-    animText: '《柯洁围棋入门课》',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1YDhJ6ZEL6',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,18 +65,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '《原神》角色预告-「沃雅妮莎：此…',
-    emoji: '🎵',
+    id: 'r23',
+    name: '《柯洁围棋入门课》',
+    emoji: '🎮',
     date: '2026-09-23',
-    hot: 87,
+    hot: 78,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：《原神》角色预告-「沃雅妮莎：此夜共沦」。',
+    desc: 'B站今日热门第23名：《柯洁围棋入门课》。',
+    animation: 'dance',
+    animText: '《柯洁围棋入门课》',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '狼王传奇系列1-11集合集【AI…',
+    emoji: '🎯',
+    date: '2026-09-23',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：狼王传奇系列1-11集合集【AI全民制作人】。',
+    animation: 'flower',
+    animText: '狼王传奇系列1-11集合…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1BreB6tEWT',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r21',
+    name: '复仇者联盟',
+    emoji: '🔥',
+    date: '2026-09-23',
+    hot: 80,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第21名：复仇者联盟。',
     animation: 'ring',
-    animText: '《原神》角色预告-「沃雅妮莎…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1BqhB6nEdN',
+    animText: '复仇者联盟',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1pYhJ63EA7',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,36 +140,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '狼王传奇系列1-11集合集【AI…',
-    emoji: '🎯',
-    date: '2026-09-23',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：狼王传奇系列1-11集合集【AI全民制作人】。',
-    animation: 'flower',
-    animText: '狼王传奇系列1-11集合…',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1BreB6tEWT',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '【硬核】俄乌打了四年多，到底谁在…',
-    emoji: '⚡',
-    date: '2026-09-23',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：【硬核】俄乌打了四年多，到底谁在买单？。',
-    animation: 'dance',
-    animText: '硬核俄乌打了四年多，到底谁在买单…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1SUhe6xEM2',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r16',
     name: '财神窦占龙 第8集 同舟【8月国…',
     emoji: '⚡',
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '六小龄童重回荧幕', '名古屋亚运会为何频频被吐槽', '詹姆斯会在76人扮演什么角色', '世界技能大赛各国选手采访', '谁是NBA新赛季最差球队', '中国女排横扫日本夺冠', '存储缺货或引爆专利战', '当美院人玩涂鸦躲猫猫真人版', '洪知秀韦礼安中文合作曲', '乌海军称与俄首次无人艇海战', '柯洁围棋入门课', '莫斯科遭最大规模无人机袭击'
+  '六小龄童重回荧幕', '名古屋亚运会为何频频被吐槽', '谁是NBA新赛季最差球队', '詹姆斯会在76人扮演什么角色', '钟薛高复活后为何开启降价', '中国女排横扫日本夺冠', '存储缺货或引爆专利战', '当美院人玩涂鸦躲猫猫真人版', '洪知秀韦礼安中文合作曲', '锐评湾区升明月歌手现场', '柯洁围棋入门课', '莫斯科遭最大规模无人机袭击'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
