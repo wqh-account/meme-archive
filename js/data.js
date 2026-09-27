@@ -5,18 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r11',
-    name: '《 假 期 热 梗 现 状 》',
+    id: 'r1',
+    name: '时间不多喽',
     emoji: '🔥',
     date: '2026-09-27',
-    hot: 90,
+    hot: 100,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：《 假 期 热 梗 现 状 》。',
-    animation: 'shake',
-    animText: '《 假 期 热 梗 现…',
+    desc: 'B站今日热门第1名：时间不多喽。',
+    animation: 'textPop',
+    animText: '时间不多喽',
     emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1vyaA6QE2X',
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1xuhR6yEM3',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -35,21 +35,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r24',
-    name: '【独家】《凡人修仙传之慕兰之战》…',
-    emoji: '🎵',
-    date: '2026-09-27',
-    hot: 77,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：【独家】《凡人修仙传之慕兰之战》第17集【总第193集】。',
-    animation: 'emojiRain',
-    animText: '独家《凡人修仙传之慕兰之…',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV17BaA6dERY',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r14',
     name: '【招笑版】新植物14:"魅惑"菇',
     emoji: '🎵',
@@ -65,18 +50,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '戒赌吧覆灭！1400万赌徒抱团救…',
-    emoji: '🍿',
+    id: 'r11',
+    name: '【独家】牧神记 第102集 大尊',
+    emoji: '🔥',
     date: '2026-09-27',
-    hot: 84,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：戒赌吧覆灭！1400万赌徒抱团救赎，吧主将他们卖给赌场！【神奇组织17】。',
-    animation: 'emojiRain',
-    animText: '戒赌吧覆灭！1400万赌徒抱团救赎…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV17WhX6xEWn',
+    desc: 'B站今日热门第11名：【独家】牧神记 第102集 大尊。',
+    animation: 'shake',
+    animText: '独家牧神记 第102集…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV152aA6nEz4',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '【说唱】不是，酒保怎么比我先醉啊…',
+    emoji: '📺',
+    date: '2026-09-27',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：【说唱】不是，酒保怎么比我先醉啊…。',
+    animation: 'textPop',
+    animText: '说唱不是，酒保怎么比我先…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1JnhX6tEWP',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '《 假 期 热 梗 现 状 》',
+    emoji: '🔥',
+    date: '2026-09-27',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：《 假 期 热 梗 现 状 》。',
+    animation: 'shake',
+    animText: '《 假 期 热 梗 现…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1vyaA6QE2X',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,33 +110,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '【苏星河车机】别急着说你用过豆包…',
-    emoji: '🎵',
+    id: 'r12',
+    name: '《以片换物- -洗剪吹》 再不疯…',
+    emoji: '🎬',
     date: '2026-09-27',
-    hot: 87,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：【苏星河车机】别急着说你用过豆包，我这个你真没见过。',
-    animation: 'ring',
-    animText: '苏星河车机别急着说你用过豆包…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV126ht6qESe',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r31',
-    name: '一条视频涨粉20w？油管vlog…',
-    emoji: '🔥',
-    date: '2026-09-27',
-    hot: 70,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第31名：一条视频涨粉20w？油管vlog大神的拍摄焚决我给你们问出来了！。',
-    animation: 'emojiRain',
-    animText: '一条视频涨粉20w？油管vlog大神的拍摄焚决我给你们问出来了…',
-    emojis: ['🔥', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1LthR6hEzm',
+    desc: 'B站今日热门第12名：《以片换物- -洗剪吹》 再不疯狂就老了  借一场大笑，释放藏起来的自己。。',
+    animation: 'fire',
+    animText: '《以片换物- -洗剪吹》…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1JSau6kEou',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '中美元首华盛顿会晤', '中美达成八点成果共识', '林诗栋蒯曼战胜王楚钦孙颖莎', '秦牧大尊功法对决', 'LOUD lukxo冠军赛专访', '英格兰2-3西班牙', 'EDG为何惨遭LOUD横扫', 'LOUD EDG', '月饼守恒定律', '张雪机车意大利站正赛一集锦', '刘欢去世', '自己做月饼过中秋什么体验'
+  '中美元首华盛顿会晤', '中美达成八点成果共识', '林诗栋蒯曼战胜王楚钦孙颖莎', '锐评VCTCN各队伍表现', '秦牧大尊功法对决', '曼城115项违规有何影响', 'AI怎么让NS方程爆炸的', '月饼守恒定律', 'LOUD lukxo冠军赛专访', '库里降薪续约如何影响勇士', '刘欢去世', '三角洲干员故事PV'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
