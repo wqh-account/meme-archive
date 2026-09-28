@@ -1,2 +1,2 @@
-// 线上无后端：走同源 /api（404/超时即回退仓库内静态快照 data/predict/*.json）
-window.PREDICT_API = "/api";
+﻿// 预测 API 地址配置（由 health-check.ps1 / start-predict-tunnel.ps1 自动更新）
+window.PREDICT_API = "https://percent-felt-requires-biodiversity.trycloudflare.com/api";
