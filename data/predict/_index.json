@@ -1,0 +1,25 @@
+{
+ "generated_at": "2026-09-28 18:43",
+ "files": {
+  "categories.json": {
+   "path": "/categories",
+   "items": 10
+  },
+  "hot_today.json": {
+   "path": "/hot_today",
+   "items": 91
+  },
+  "models.json": {
+   "path": "/models",
+   "items": 0
+  },
+  "account.json": {
+   "path": "/account?platform=douyin",
+   "items": 0
+  },
+  "forecast_bili.json": {
+   "path": "/forecast?source=bili&horizon=7",
+   "items": 7
+  }
+ }
+}
