@@ -265,7 +265,33 @@ const COLORS = { hist: "#1E4D8A", pred: "#CC5500", band: "#FF9A4D" };
 
 const SRC_NAMES = { bili: "B站", douyin: "抖音", weibo: "微博" };
 
-async function fetchJSON(url) {
+/* 静态快照兜底：线上(GitHub Pages)没有后端，隧道域名随时失效。
+   先拉实时 API，超时/失败就用仓库里的同源快照，保证页面永远有内容。 */
+const SNAPSHOT = {
+  "/categories": "data/predict/categories.json",
+  "/hot_today": "data/predict/hot_today.json",
+  "/models": "data/predict/models.json",
+  "/account": "data/predict/account.json",
+  "/forecast": "data/predict/forecast_bili.json",
+};
+const SNAP_TIMEOUT = 4000;
+
+function snapPath(url) {
+  try {
+    const p = new URL(url, location.href).pathname;
+    const m = p.match(/\/api(\/[a-z_]+)$/);
+    return m ? m[1] : null;
+  } catch (_) { return null; }
+}
+
+function withTimeout(p, ms) {
+  return Promise.race([
+    p,
+    new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), ms)),
+  ]);
+}
+
+async function fetchRemote(url) {
   const r = await fetch(url);
   if (!r.ok) {
     let msg = "HTTP " + r.status;
@@ -273,6 +299,28 @@ async function fetchJSON(url) {
     throw new Error(msg);
   }
   return r.json();
+}
+
+async function fetchSnapshot(p) {
+  const r = await fetch(p + "?v=" + Date.now());
+  if (!r.ok) throw new Error("snapshot HTTP " + r.status);
+  const d = await r.json();
+  if (d && d._snapshot) console.info("[snapshot]", p, d._snapshot);
+  return d;
+}
+
+async function fetchJSON(url) {
+  const snap = SNAPSHOT[snapPath(url)];
+  try {
+    return await withTimeout(fetchRemote(url), SNAP_TIMEOUT);
+  } catch (e) {
+    if (!snap) throw e;
+    try {
+      return await fetchSnapshot(snap);
+    } catch (_) {
+      throw e;
+    }
+  }
 }
 
 /* ---- 分类按钮 ---- */
