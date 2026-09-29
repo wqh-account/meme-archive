@@ -5,36 +5,6 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r10',
-    name: '自制【飞行滑板】体感控制，科幻进…',
-    emoji: '🎯',
-    date: '2026-09-29',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：自制【飞行滑板】体感控制，科幻进入现实。',
-    animation: 'emojiRain',
-    animText: '自制飞行滑板体感控制…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1euaq6CEKR',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '闪存，涨价和三万个零件：为什么偏…',
-    emoji: '🔥',
-    date: '2026-09-29',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：闪存，涨价和三万个零件：为什么偏偏今年都在涨？。',
-    animation: 'shake',
-    animText: '闪存，涨价和三万个零件…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1rHh16CEfm',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r26',
     name: '自学动画 爆肝俩月 自创一集《猫…',
     emoji: '⚡',
@@ -50,18 +20,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '【剧情】终极恶女（2014）01…',
-    emoji: '📺',
+    id: 'r21',
+    name: '【补档】CN零杠八单曲《大家一起…',
+    emoji: '🔥',
     date: '2026-09-29',
-    hot: 86,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：【剧情】终极恶女（2014）01【那维勋 / 蔡函岑】。',
+    desc: 'B站今日热门第21名：【补档】CN零杠八单曲《大家一起十六强》完整版。',
+    animation: 'ring',
+    animText: '补档CN零杠八单曲《大家…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1CDai6dEv9',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r22',
+    name: '你管这叫只会一点点？？？',
+    emoji: '🎬',
+    date: '2026-09-29',
+    hot: 79,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第22名：你管这叫只会一点点？？？。',
     animation: 'textPop',
-    animText: '剧情终极恶女201401那维勋…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV15ieC6TEq3',
+    animText: '你管这叫只会一点点？？？',
+    emojis: ['🎬', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1jXat6WEwR',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '😨“后室里的乌鲁鲁2”😰',
+    emoji: '🎵',
+    date: '2026-09-29',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：😨“后室里的乌鲁鲁2”😰。',
+    animation: 'ring',
+    animText: '😨“后室里的乌鲁鲁2”…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1LraY6KES1',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,33 +80,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r10',
-    name: '车上带着100度的电，为什么小电…',
-    emoji: '🎯',
+    id: 'r17',
+    name: '定了！所有异人玩家请记住这三个日…',
+    emoji: '🍿',
     date: '2026-09-29',
-    hot: 91,
+    hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：车上带着100度的电，为什么小电瓶还会出问题？【差评君】。',
+    desc: 'B站今日热门第17名：定了！所有异人玩家请记住这三个日子！。',
     animation: 'emojiRain',
-    animText: '车上带着100度的电…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1Ghht6yEPX',
+    animText: '定了！所有异人玩家请记住这三个日子…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1sCa36sEDq',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '三幻魔集结！超越神的力量！【水无…',
-    emoji: '🎬',
+    id: 'r21',
+    name: '15分钟讲清楚油管vlog大神的…',
+    emoji: '🔥',
     date: '2026-09-29',
-    hot: 89,
+    hot: 80,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：三幻魔集结！超越神的力量！【水无月菌】。',
-    animation: 'fire',
-    animText: '三幻魔集结！超越神的力量…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV14Qah6DEBL',
+    desc: 'B站今日热门第21名：15分钟讲清楚油管vlog大神的幕后焚决…。',
+    animation: 'ring',
+    animText: '15分钟讲清楚油管vlo…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1LthR6hEzm',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -125,18 +125,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r21',
-    name: '【补档】CN零杠八单曲《大家一起…',
+    id: 'r11',
+    name: '把ARRI装进口袋之后：荣耀 M…',
     emoji: '🔥',
     date: '2026-09-29',
-    hot: 80,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：【补档】CN零杠八单曲《大家一起十六强》完整版。',
-    animation: 'ring',
-    animText: '补档CN零杠八单曲《大家…',
+    desc: 'B站今日热门第11名：把ARRI装进口袋之后：荣耀 Magic 9系列首发体验。',
+    animation: 'shake',
+    animText: '把ARRI装进口袋之后…',
     emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1CDai6dEv9',
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1TQah6DEAv',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'AI短片无敌超人', '弹窗广告为何专挑老年人下手', '比利时0-1法国', '回顾刘欢经典影视剧音乐', '大降温来了', '不同家庭过小长假', '手搓琵琶曲MC动画版', '香港为什么要搞五年规划', '斯诺克深圳公开赛赵心童爆冷出局', '一碗豆沫喝出8000年农业史', '中国队王者荣耀项目卫冕夺金', '原神六周年主题曲'
+  'UP主手搓动画猫和老鼠', '美航母发生舰载机着舰事故', '我国将绘制完成新一代全火星地质图', '爆肝465张手绘自制EVA定格动画', 'AI在物理领域能走多远', '76人定妆照詹姆斯稳居C位', 'KPL系列团综巴黎篇章上线', '复联4新彩蛋讲了什么', '假如将植物大战僵尸做成短片', '沉浸式体验修家电师傅', 'AI短片无敌超人', '中国队王者荣耀项目卫冕夺金'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
