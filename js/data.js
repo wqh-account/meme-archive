@@ -35,6 +35,66 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r12',
+    name: '《最绝望の小兵》',
+    emoji: '🎬',
+    date: '2026-09-30',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：《最绝望の小兵》。',
+    animation: 'fire',
+    animText: '《最绝望の小兵》',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1odan6TEgR',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '【给阿嬷的情书】做人得有情义',
+    emoji: '🎮',
+    date: '2026-09-30',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：【给阿嬷的情书】做人得有情义。',
+    animation: 'flower',
+    animText: '给阿嬷的情书做人得有情义',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1BGa361E2B',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '手机的研究',
+    emoji: '🎵',
+    date: '2026-09-30',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：手机的研究。',
+    animation: 'ring',
+    animText: '手机的研究',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1hXaA6jEoF',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '男子醉酒弄丢手机，一群小朋友路边…',
+    emoji: '🎯',
+    date: '2026-09-30',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：男子醉酒弄丢手机，一群小朋友路边等待归还，失主带孩子们到小卖部“随便拿，叔叔买单”。',
+    animation: 'flower',
+    animText: '男子醉酒弄丢手机，一群小朋友路边等待归还…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1Eca56DE4c',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r13',
     name: '【鸣潮】心月狐攻略！双体系大C …',
     emoji: '🎮',
@@ -50,93 +110,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r13',
+    name: '深不可测的恐惧：斯克拉奇溪，溯源…',
+    emoji: '🎮',
+    date: '2026-09-30',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：深不可测的恐惧：斯克拉奇溪，溯源之惧 第六章。',
+    animation: 'flower',
+    animText: '深不可测的恐惧：斯克拉奇溪…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1Gtap6NEPB',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r14',
-    name: '【剧情】长生契（2026）11【…',
+    name: '《善》善良是什么',
     emoji: '🎵',
     date: '2026-09-30',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：【剧情】长生契（2026）11【方逸伦 / 谢可寅】。',
+    desc: 'B站今日热门第14名：《善》善良是什么。',
     animation: 'ring',
-    animText: '剧情长生契202611方逸伦…',
+    animText: '《善》善良是什么',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV13Uem6yEzo',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '【矢量突破#3】拟生态全关卡 摆…',
-    emoji: '🎬',
-    date: '2026-09-30',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：【矢量突破#3】拟生态全关卡 摆完挂机 简单好抄 核心突破/特别战线。',
-    animation: 'fire',
-    animText: '矢量突破#3拟生态全关卡…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV17dan6MECs',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '手机的研究',
-    emoji: '🎮',
-    date: '2026-09-30',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：手机的研究。',
-    animation: 'flower',
-    animText: '手机的研究',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1hXaA6jEoF',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r20',
-    name: '“柳条人年年立起，没人记得这火燃…',
-    emoji: '🎯',
-    date: '2026-09-30',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：“柳条人年年立起，没人记得这火燃了几世”。',
-    animation: 'flower',
-    animText: '“柳条人年年立起，没人记…',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1Jda36jENB',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '参数天花乱坠，实测原形毕露！12…',
-    emoji: '🎮',
-    date: '2026-09-30',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：参数天花乱坠，实测原形毕露！12款热门空气炸锅，谁是不虚标实力派？。',
-    animation: 'flower',
-    animText: '参数天花乱坠，实测原形毕露…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1NKaV6bEv2',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '什么叫勇者跟被救的公主二阶段打起…',
-    emoji: '🏆',
-    date: '2026-09-30',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：什么叫勇者跟被救的公主二阶段打起来了？。',
-    animation: 'shake',
-    animText: '什么叫勇者跟被救的公主二阶段打起来了…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV16gap62EPJ',
+    videoUrl: 'https://www.bilibili.com/video/BV1ygaL6YEbx',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '给阿嬷的情书', '山河永念英魂不朽', '解放军喊话驱离菲律宾飞机', '我国将对居民购房实施贷款贴息', '有兽焉', '门捷列夫世界巡演', '金球奖评选应该遵循什么标准', '西班牙4-1克罗地亚', 'G2官宣SunPayus离队', '今天是烈士纪念日', '鸣潮性能优化后各平台表现', '玛雅文明还有多少未解之谜'
+  '杜兰特来B站了', '给阿嬷的情书', '最强厄尔尼诺会带来什么影响', 'NRG Ethan冠军赛专访', 'COD23最新预告片', '门捷列夫世界巡演', '国内景区审美为何总被诟病', '今天是烈士纪念日', '冰冰冰是啥梗', '石屋庇护所深山过冬实录', '鸣潮心月狐角色养成攻略', 'UP主7天穿越哀牢山'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
