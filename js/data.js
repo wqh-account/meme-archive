@@ -5,21 +5,6 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r26',
-    name: '《明日方舟》SideStory「…',
-    emoji: '⚡',
-    date: '2026-10-03',
-    hot: 75,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：《明日方舟》SideStory「昨日海」活动宣传PV。',
-    animation: 'fire',
-    animText: '《明日方舟》SideSt…',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1Rxam6kEtU',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r22',
     name: '4名枪匪闯入豪宅，中国男子4秒1…',
     emoji: '🎬',
@@ -36,17 +21,32 @@ const RECENT_MEMES = [
   },
   {
     id: 'r23',
-    name: '真是一场爽快的战斗【rs】',
+    name: '《霸凌の意志》',
     emoji: '🎮',
     date: '2026-10-03',
     hot: 78,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第23名：真是一场爽快的战斗【rs】。',
+    desc: 'B站今日热门第23名：《霸凌の意志》。',
     animation: 'dance',
-    animText: '真是一场爽快的战斗rs',
+    animText: '《霸凌の意志》',
     emojis: ['🎮', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1ukHb6XEkU',
+    videoUrl: 'https://www.bilibili.com/video/BV1KmHb6JEFS',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r24',
+    name: '可恶的蚊子你也有今天',
+    emoji: '🎵',
+    date: '2026-10-03',
+    hot: 77,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第24名：可恶的蚊子你也有今天。',
+    animation: 'emojiRain',
+    animText: '可恶的蚊子你也有今天',
+    emojis: ['🎵', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1GBa66HEC7',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,78 +65,78 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r25',
-    name: '生活中的保命小技巧全集',
-    emoji: '📺',
-    date: '2026-10-03',
-    hot: 76,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：生活中的保命小技巧全集。',
-    animation: 'shake',
-    animText: '生活中的保命小技巧全集',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1KhaE62EFH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r26',
-    name: '从今往后，我只吃小孩菜',
-    emoji: '⚡',
-    date: '2026-10-03',
-    hot: 75,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第26名：从今往后，我只吃小孩菜。',
-    animation: 'fire',
-    animText: '从今往后，我只吃小孩菜',
-    emojis: ['⚡', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1Rna36gEj9',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r24',
-    name: '你敢信？我在太平洋赶海竟然发现上…',
-    emoji: '🎵',
-    date: '2026-10-03',
-    hot: 77,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：你敢信？我在太平洋赶海竟然发现上百斤重的巨型砗磲！这么大的家伙，吃起来什么味道？。',
-    animation: 'emojiRain',
-    animText: '你敢信？我在太平洋赶海竟然发现上百斤重的巨型砗磲…',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1zTar6hEZo',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r11',
-    name: '【水手】|“低山臭水遇知音 末法…',
-    emoji: '🔥',
-    date: '2026-10-03',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：【水手】|“低山臭水遇知音 末法时代双子星”|【双子星の小曲】。',
-    animation: 'shake',
-    animText: '水手|“低山臭水遇知音…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV19dat6nE9F',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r16',
-    name: '一场不按计划发生的旅行【出发吧少…',
+    name: '【warma/怒九】我们俩第一次…',
     emoji: '⚡',
     date: '2026-10-03',
     hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：一场不按计划发生的旅行【出发吧少年 02】。',
+    desc: 'B站今日热门第16名：【warma/怒九】我们俩第一次出国！。',
     animation: 'dance',
-    animText: '一场不按计划发生的旅行出发吧少年…',
+    animText: 'warma/怒九我们俩第一次出国…',
     emojis: ['⚡', '⚡'],
     color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1bWaD6rE1u',
+    videoUrl: 'https://www.bilibili.com/video/BV15rHv6mE3T',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '中国同桌会飞（同桌请假就这么耍起',
+    emoji: '📺',
+    date: '2026-10-03',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：中国同桌会飞（同桌请假就这么耍起。',
+    animation: 'textPop',
+    animText: '中国同桌会飞同桌请假就这…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1vjar6sEBc',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '狡猾3：最有魅力之人！！！',
+    emoji: '🎯',
+    date: '2026-10-03',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：狡猾3：最有魅力之人！！！。',
+    animation: 'emojiRain',
+    animText: '狡猾3：最有魅力之人…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1s5Hh6SEHZ',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '人狐情未了！谁不想要一个狐仙女友…',
+    emoji: '🍿',
+    date: '2026-10-03',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：人狐情未了！谁不想要一个狐仙女友啊！。',
+    animation: 'emojiRain',
+    animText: '人狐情未了！谁不想要一个狐仙女友啊…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1hFHh6FE41',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r21',
+    name: '美国中期选举临近，懂王一根筋最多…',
+    emoji: '🔥',
+    date: '2026-10-03',
+    hot: 80,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第21名：美国中期选举临近，懂王一根筋最多可以几头堵？丨中国坐标。',
+    animation: 'ring',
+    animText: '美国中期选举临近，懂王一根筋最多可以几头堵…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1viaJ6wEgw',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '凡人', '假期必备无敌小孩菜', 'BC已经正式计入亚洲赛区', '国内景区审美降级有多严重', 'Anthropic两万亿估值怎么算出来的', '国足不敌巴勒斯坦差距出在哪', '熊出没13电影片名揭秘', '怎么看VCTCN四队全部淘汰', '景人人人人人人人人区', '日本亚运会出了哪些状况', '康康回应EDG淘汰', '三角洲特种级武器改法教学'
+  'KC NS', '亚运会国足夺铜牌', '凡人', 'TYLOO 0-2 Falcons', '邓肯聊中国神探', '日本亚运会出了哪些状况', '琵琶曲但极乐净土', '八角如何成为食物香料', '假期必备无敌小孩菜', 'VCTCN表现为何引争议', '德玛西亚杯', '北京JDG 上海EDG.M'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
