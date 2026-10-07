@@ -5,6 +5,36 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r13',
+    name: '《原神》剧情PV-「往日」',
+    emoji: '🎮',
+    date: '2026-10-07',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：《原神》剧情PV-「往日」。',
+    animation: 'flower',
+    animText: '《原神》剧情PV-「往日…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1F8aJ6TEKz',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '【算命TV】反封建迷信第一人重拳…',
+    emoji: '🎯',
+    date: '2026-10-07',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：【算命TV】反封建迷信第一人重拳出击（字面意思）。',
+    animation: 'flower',
+    animText: '算命TV反封建迷信第一人…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1Hqpw6KEw7',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r16',
     name: '烧 心 大 赛 ！【AI全民制作…',
     emoji: '⚡',
@@ -17,51 +47,6 @@ const RECENT_MEMES = [
     emojis: ['⚡', '⚡'],
     color: '#5f27cd',
     videoUrl: 'https://www.bilibili.com/video/BV1xNH46gEkv',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '去台湾地区管辖的马祖列岛旅行..…',
-    emoji: '🍿',
-    date: '2026-10-07',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：去台湾地区管辖的马祖列岛旅行...。',
-    animation: 'emojiRain',
-    animText: '去台湾地区管辖的马祖列岛…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1XGpF6CEwq',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r29',
-    name: 'VCTCN冠军赛单曲《朝天门·改…',
-    emoji: '🎤',
-    date: '2026-10-07',
-    hot: 72,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第29名：VCTCN冠军赛单曲《朝天门·改》【bilibili次元干杯】。',
-    animation: 'textPop',
-    animText: 'VCTCN冠军赛单曲《朝…',
-    emojis: ['🎤', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1hvpc6mELd',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '当你意识到来不及写国庆作业时',
-    emoji: '🎵',
-    date: '2026-10-07',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：当你意识到来不及写国庆作业时。',
-    animation: 'ring',
-    animText: '当你意识到来不及写国庆作…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1UqH46jEef',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,18 +65,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r29',
+    name: 'VCTCN冠军赛单曲《朝天门·改…',
+    emoji: '🎤',
+    date: '2026-10-07',
+    hot: 72,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第29名：VCTCN冠军赛单曲《朝天门·改》【bilibili次元干杯】。',
+    animation: 'textPop',
+    animText: 'VCTCN冠军赛单曲《朝…',
+    emojis: ['🎤', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1hvpc6mELd',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r23',
+    name: '《明日方舟：终末地》核心章节「丹…',
+    emoji: '🎮',
+    date: '2026-10-07',
+    hot: 78,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第23名：《明日方舟：终末地》核心章节「丹青渡」版本PV。',
+    animation: 'dance',
+    animText: '《明日方舟：终末地》核心…',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1NCHf6eE6j',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r14',
-    name: '《明日方舟：终末地》汤汤EP -…',
+    name: '【我在现代当幽差】：赶着去投胎啊…',
     emoji: '🎵',
     date: '2026-10-07',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：《明日方舟：终末地》汤汤EP - 一诺为家。',
+    desc: 'B站今日热门第14名：【我在现代当幽差】：赶着去投胎啊！！！！【UP动画】。',
     animation: 'ring',
-    animText: '《明日方舟：终末地》汤汤EP…',
+    animText: '我在现代当幽差：赶着去投胎啊…',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1BCpw6cEuo',
+    videoUrl: 'https://www.bilibili.com/video/BV1VRpw69E6V',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '破案',
+    emoji: '📺',
+    date: '2026-10-07',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：破案。',
+    animation: 'textPop',
+    animText: '破案',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1SJpw62E5y',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,48 +140,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r18',
-    name: '人生中最幸福的瞬间合集',
-    emoji: '🏆',
+    id: 'r17',
+    name: '去台湾地区管辖的马祖列岛旅行..…',
+    emoji: '🍿',
     date: '2026-10-07',
-    hot: 83,
+    hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：人生中最幸福的瞬间合集。',
-    animation: 'shake',
-    animText: '人生中最幸福的瞬间合集',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV19DaU65EXC',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '破案',
-    emoji: '🎤',
-    date: '2026-10-07',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：破案。',
-    animation: 'fire',
-    animText: '破案',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1SJpw62E5y',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '带三个姑娘相亲，现场真炸裂，这就…',
-    emoji: '🎮',
-    date: '2026-10-07',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：带三个姑娘相亲，现场真炸裂，这就是乡村爱情故事吗？。',
-    animation: 'flower',
-    animText: '带三个姑娘相亲，现场真炸裂…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1ZfHs6sEHf',
+    desc: 'B站今日热门第17名：去台湾地区管辖的马祖列岛旅行...。',
+    animation: 'emojiRain',
+    animText: '去台湾地区管辖的马祖列岛…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1XGpF6CEwq',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'C罗发长文回应离队风波', '有兽焉', 'UP主带邓超当一天剑客', '缅北电诈窝点距国境线仅200米', '缅北电诈覆灭纪实之犁庭扫穴', '阿根廷3-0贝宁', 'PVZ小动画硬币劫案', '中国人在外国旅游的口碑', 'AI短片生化危机爆发夜前传', '直击国庆返程高峰', '终末地汤汤EP一诺为家', '终末地丹青渡版本PV'
+  'KSG 长沙TES.A', '非洲二手市场找到中国高中校服', 'OpenAI发布722篇数学论文', '铁豆钢蛋杯之歌王争霸赛', '如何看待巴西大选首轮结果', '阿根廷3-0贝宁', '直击国庆返程高峰', 'C罗发长文回应离队风波', '诺贝尔化学奖今日揭晓', '工科生自制7机组合体飞行器', 'BRO NAVI', '缅北电诈覆灭纪实之犁庭扫穴'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
