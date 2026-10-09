@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r18',
+    name: '极极极极，极限战场👉🏻首曝极…',
+    emoji: '🏆',
+    date: '2026-10-09',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：极极极极，极限战场👉🏻首曝极首测，所见极所玩。',
+    animation: 'shake',
+    animText: '极极极极，极限战场👉🏻首曝极首测…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1PTHS6MEC5',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r21',
     name: '2026英雄联盟全球总决赛主题曲…',
     emoji: '🔥',
@@ -35,21 +50,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '一起生！一起熟！猕猴桃为啥这么团…',
-    emoji: '🍿',
-    date: '2026-10-09',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：一起生！一起熟！猕猴桃为啥这么团结？猕猴桃园结义了吗？【主播说三农】。',
-    animation: 'emojiRain',
-    animText: '一起生！一起熟！猕猴桃为啥这么团结…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1Y6H96cEkz',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r11',
     name: '【独家】时光代理人 第三季 Pa…',
     emoji: '🔥',
@@ -65,63 +65,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r32',
-    name: '听完通透了！上饶天选之子《升本后…',
+    id: 'r12',
+    name: '法国最近太烧心了',
     emoji: '🎬',
     date: '2026-10-09',
-    hot: 69,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第32名：听完通透了！上饶天选之子《升本后醒来》“好的本科他不会比专科差”。',
-    animation: 'shake',
-    animText: '听完通透了！上饶天选之子…',
-    emojis: ['🎬', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1mbHC6ZEkv',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r33',
-    name: '“我穿越成了一棵树。”',
-    emoji: '🎮',
-    date: '2026-10-09',
-    hot: 68,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第33名：“我穿越成了一棵树。”。',
+    desc: 'B站今日热门第12名：法国最近太烧心了。',
     animation: 'fire',
-    animText: '“我穿越成了一棵树。”',
-    emojis: ['🎮', '⚡'],
+    animText: '法国最近太烧心了',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1gTHd6aE5e',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r24',
+    name: '成功埋下机车种子，弥补曾经对年少…',
+    emoji: '🎵',
+    date: '2026-10-09',
+    hot: 77,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第24名：成功埋下机车种子，弥补曾经对年少不可得之物的遗憾。',
+    animation: 'emojiRain',
+    animText: '成功埋下机车种子，弥补曾…',
+    emojis: ['🎵', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1b4HC6FEBD',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '影视飓风的直升机？怪东西分享9.…',
+    emoji: '🍿',
+    date: '2026-10-09',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：影视飓风的直升机？怪东西分享9.0。',
+    animation: 'emojiRain',
+    animText: '影视飓风的直升机？怪东西…',
+    emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1qsHQ6YEs4',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '【初九】《第五人格》祭司仿妆来咯…',
-    emoji: '📺',
-    date: '2026-10-09',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：【初九】《第五人格》祭司仿妆来咯～。',
-    animation: 'textPop',
-    animText: '初九《第五人格》祭司仿妆…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1YsH16uEFn',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '2026英雄联盟全球总决赛主题曲…',
-    emoji: '🔥',
-    date: '2026-10-09',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：2026英雄联盟全球总决赛主题曲《KNOW MY NAME》（以我之名）。',
-    animation: 'ring',
-    animText: '2026英雄联盟全球总决赛主题曲《KNOW…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV12NHQ6jEU3',
+    videoUrl: 'https://www.bilibili.com/video/BV1gHps6yEHL',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -140,18 +125,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '【EPL表演赛】全明星大乱斗2.…',
-    emoji: '📺',
+    id: 'r14',
+    name: '三年之期已到，恭迎世一上归位！【…',
+    emoji: '🎵',
     date: '2026-10-09',
-    hot: 86,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：【EPL表演赛】全明星大乱斗2.0。',
-    animation: 'textPop',
-    animText: 'EPL表演赛全明星大乱斗…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1GpHR6aEQz',
+    desc: 'B站今日热门第14名：三年之期已到，恭迎世一上归位！【第13集】。',
+    animation: 'ring',
+    animText: '三年之期已到，恭迎世一上归位…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV12gpt6UER4',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '神仙也要办破地狱仪式？“无人可葬…',
+    emoji: '🎯',
+    date: '2026-10-09',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：神仙也要办破地狱仪式？“无人可葬”的诡异葬礼，竟然藏着惊天阴谋！【提瓦特说书人·璃月篇】。',
+    animation: 'emojiRain',
+    animText: '神仙也要办破地狱仪式…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1y3HQ6GEaf',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '英雄联盟S16主题曲MV', '数学协会抵制OpenAI公开论文', 'UP主体验印度婆罗门生活', '曝Zuian还有机会打S16', '詹姆斯76人首秀10分5助攻', '网传成都一小区楼顶埋7岁男童为谣言', 'FPS新游极限战场首曝PV', 'UP主在李玉刚演唱会被点名', 'OpenAI为何撤回3篇数学论文', '王钰栋 有信心进世界杯', '纽约全明星', '影之刃零试玩报告'
+  '重庆狼队 南通Hero久竞', '金秋尝蟹的白色固体能吃吗', '法国债务规模为何持续攀升', 'T1 PRX', '联大一般性辩论有何看点', '网传成都一小区楼顶埋7岁男童为谣言', 'S16有自己的AI短剧', '郑钦文重返中网四强', '俄罗斯鼠疫新闻为何广泛流传', '人民日报专访刘慈欣', '绝区零3.3版本前瞻', '王曼昱4-0申裕斌'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
