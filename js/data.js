@@ -20,6 +20,21 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r25',
+    name: '《司机の噩梦》',
+    emoji: '📺',
+    date: '2026-10-11',
+    hot: 76,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第25名：《司机の噩梦》。',
+    animation: 'shake',
+    animText: '《司机の噩梦》',
+    emojis: ['📺', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1rxp86jEYH',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
     name: '如果把我和男朋友这几年的约会地点…',
     emoji: '🎤',
@@ -35,18 +50,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '《司机の噩梦》',
-    emoji: '🎯',
+    id: 'r12',
+    name: '虽然命还在，但是鱼没了啊！！！【…',
+    emoji: '🎬',
     date: '2026-10-11',
-    hot: 81,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：《司机の噩梦》。',
-    animation: 'flower',
-    animText: '《司机の噩梦》',
-    emojis: ['🎯', '⚡'],
+    desc: 'B站今日热门第12名：虽然命还在，但是鱼没了啊！！！【AI全民制作人】。',
+    animation: 'fire',
+    animText: '虽然命还在，但是鱼没了啊…',
+    emojis: ['🎬', '⚡'],
     color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1rxp86jEYH',
+    videoUrl: 'https://www.bilibili.com/video/BV1xTpG6iEbV',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,33 +80,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r19',
-    name: 'deepseek 翻唱《人是猫》…',
-    emoji: '🎤',
+    id: 'r14',
+    name: '哪一行都不好干（84）',
+    emoji: '🎵',
     date: '2026-10-11',
-    hot: 82,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：deepseek 翻唱《人是猫》完整版，大肥鱼觉得人和猫一样可爱,所以人是猫。',
-    animation: 'fire',
-    animText: 'deepseek 翻唱《人是猫》完整版…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1XXHD6sEe7',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '从什么时候开始，报喜不报忧成了本…',
-    emoji: '🍿',
-    date: '2026-10-11',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：从什么时候开始，报喜不报忧成了本能？｜暗叫 - きくお。',
-    animation: 'emojiRain',
-    animText: '从什么时候开始，报喜不报忧成了本能…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1hxHR68E24',
+    desc: 'B站今日热门第14名：哪一行都不好干（84）。',
+    animation: 'ring',
+    animText: '哪一行都不好干84',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1fopY6QEmP',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,33 +110,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '【春物语】我的婚后生活果然有问题…',
-    emoji: '🎵',
+    id: 'r29',
+    name: '内蒙古包头一婚礼主持人发现新人买…',
+    emoji: '🎤',
     date: '2026-10-11',
-    hot: 87,
+    hot: 72,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：【春物语】我的婚后生活果然有问题 第4话：小町的加分作战，加上前社长的经验。。',
-    animation: 'ring',
-    animText: '春物语我的婚后生活果然有问题…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1qkpa6VENV',
+    desc: 'B站今日热门第29名：内蒙古包头一婚礼主持人发现新人买的礼炮里塞满纸钱和骂人纸条，婚礼主持人：发现及时，没使用。',
+    animation: 'textPop',
+    animText: '内蒙古包头一婚礼主持人发现新人买的礼炮里塞满纸钱和骂人纸条…',
+    emojis: ['🎤', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1nUpb6kEUK',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '哪一行都不好干（84）',
-    emoji: '📺',
+    id: 'r16',
+    name: '杀人经历写进小说，意外成为名作家…',
+    emoji: '⚡',
     date: '2026-10-11',
-    hot: 86,
+    hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：哪一行都不好干（84）。',
-    animation: 'textPop',
-    animText: '哪一行都不好干84',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1fopY6QEmP',
+    desc: 'B站今日热门第16名：杀人经历写进小说，意外成为名作家？现实比剧更离奇！万字解析《悬案：旅馆案》下。',
+    animation: 'dance',
+    animText: '杀人经历写进小说，意外成为名作家…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1Hrp46zEWf',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '管泽元Bin聊S赛新版本', '美军拟直播枪决罪犯有哪些争议', '美国公布了六代机哪些新消息', '重庆狼队 济南RW侠', '郑钦文首进中网女单决赛', '杜兰特徐静雨签和解协议', '雨爱司凤版MV', '印度买卖军火骗了哪些人', '解析韩立绝境求生名场面', '这司凤音乐听着真烧心', '杜兰特中国赛砍15分', '金秋尝蟹的白色固体能吃吗'
+  '林诗栋退出亚锦赛男单混双', '管泽元Bin聊S赛新版本', '美军拟直播枪决罪犯有哪些争议', '美国公布了六代机哪些新消息', '重庆狼队 济南RW侠', '郑钦文首进中网女单决赛', '杜兰特徐静雨签和解协议', '原生家庭对心理健康的影响', '雨爱司凤版MV', '印度买卖军火骗了哪些人', '韩立', '杜兰特中国赛砍15分'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
