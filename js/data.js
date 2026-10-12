@@ -65,33 +65,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r12',
-    name: '“上大学该谈个女朋友了”。我呀？…',
-    emoji: '🎬',
+    id: 'r11',
+    name: '在 学 校 最 害 怕 的 声 …',
+    emoji: '🔥',
     date: '2026-10-12',
-    hot: 89,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：“上大学该谈个女朋友了”。我呀？我去谈恋爱啊？！那无敌了……。',
-    animation: 'fire',
-    animText: '“上大学该谈个女朋友了”…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1uvpg6zEdw',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '如果把我和男朋友这几年的约会地点…',
-    emoji: '🎤',
-    date: '2026-10-12',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：如果把我和男朋友这几年的约会地点列出来。',
-    animation: 'fire',
-    animText: '如果把我和男朋友这几年的…',
-    emojis: ['🎤', '⚡'],
+    desc: 'B站今日热门第11名：在 学 校 最 害 怕 的 声 音？。',
+    animation: 'shake',
+    animText: '在 学 校 最 害 怕…',
+    emojis: ['🔥', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV16xpt6BE6t',
+    videoUrl: 'https://www.bilibili.com/video/BV1cjpv6fEgz',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -111,6 +96,36 @@ const RECENT_MEMES = [
   },
   {
     id: 'r13',
+    name: '《生》生命是什么',
+    emoji: '🎮',
+    date: '2026-10-12',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：《生》生命是什么。',
+    animation: 'flower',
+    animText: '《生》生命是什么',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1zVpJ6yEi3',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '“上大学该谈个女朋友了”。我呀？…',
+    emoji: '🎬',
+    date: '2026-10-12',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：“上大学该谈个女朋友了”。我呀？我去谈恋爱啊？！那无敌了……。',
+    animation: 'fire',
+    animText: '“上大学该谈个女朋友了”…',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1uvpg6zEdw',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
     name: '新人第1次编曲耶',
     emoji: '🎮',
     date: '2026-10-12',
@@ -122,21 +137,6 @@ const RECENT_MEMES = [
     emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1oQHR6rEBB',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '倒查三年流水，顶级商K集体关门！…',
-    emoji: '📺',
-    date: '2026-10-12',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：倒查三年流水，顶级商K集体关门！商K经济终于崩盘了？。',
-    animation: 'textPop',
-    animText: '倒查三年流水，顶级商K集体关门…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1Wqp46GEbP',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '欣小萌王骁重走奥德赛回家路', '杭州商K大面积关停的背后', '成都AG超玩会 长沙TES.A', '德比斯提前夺得年度亚军', '郑钦文中网夺冠', '回顾郑钦文中网夺冠之路', 'G2 T1', '中国辣都江西萍乡有多辣', '宋雨琦银河之舞绝美4K直拍', 'F1新加坡站正赛集锦', '俄罗斯不明肺炎为何引发关注', '秦牧'
+  '杭州商K大面积关停的背后', '成都AG超玩会 长沙TES.A', '欣小萌王骁重走奥德赛回家路', 'G2 T1', '德比斯提前夺得年度亚军', '郑钦文中网夺冠', '回顾郑钦文中网夺冠之路', '世界周刊回顾迪拜航空安全事件', '皮特VS鸡哥', '命案撕开的账单', '秦牧', 'F1新加坡站正赛集锦'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
