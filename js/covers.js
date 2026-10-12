@@ -5,10 +5,10 @@ window.COVERS = {
   "BV1QmpE6aEA7": "images/covers/BV1QmpE6aEA7.jpg",
   "BV1mopE6xEqv": "images/covers/BV1mopE6xEqv.jpg",
   "BV1P2pY68EDr": "images/covers/BV1P2pY68EDr.jpg",
-  "BV1uvpg6zEdw": "images/covers/BV1uvpg6zEdw.jpg",
-  "BV16xpt6BE6t": "images/covers/BV16xpt6BE6t.jpg",
+  "BV1cjpv6fEgz": "images/covers/BV1cjpv6fEgz.jpg",
   "BV1xTpG6iEbV": "images/covers/BV1xTpG6iEbV.jpg",
+  "BV1zVpJ6yEi3": "images/covers/BV1zVpJ6yEi3.jpg",
+  "BV1uvpg6zEdw": "images/covers/BV1uvpg6zEdw.jpg",
   "BV1oQHR6rEBB": "images/covers/BV1oQHR6rEBB.jpg",
-  "BV1Wqp46GEbP": "images/covers/BV1Wqp46GEbP.jpg",
   "BV1Jjpg6QEkh": "images/covers/BV1Jjpg6QEkh.jpg",
 };
