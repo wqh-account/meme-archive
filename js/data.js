@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r14',
+    name: '40岁，我还能“飞驰人生”吗？',
+    emoji: '🎵',
+    date: '2026-10-15',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：40岁，我还能“飞驰人生”吗？。',
+    animation: 'ring',
+    animText: '40岁，我还能“飞驰人生”吗…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1hqpZ6kEdc',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r13',
     name: '也是当上外卖大法官了【第二集】',
     emoji: '🎮',
@@ -17,36 +32,6 @@ const RECENT_MEMES = [
     emojis: ['🎮', '⚡'],
     color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1d4p26SExE',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '《明日方舟：终末地》干员叙事 […',
-    emoji: '🎵',
-    date: '2026-10-15',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：《明日方舟：终末地》干员叙事 [祀：洒扫庭除]。',
-    animation: 'ring',
-    animText: '《明日方舟：终末地》干员叙事…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1fspq6cEty',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r25',
-    name: '【Re:从零开始的AI学习】第一…',
-    emoji: '📺',
-    date: '2026-10-15',
-    hot: 76,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI。',
-    animation: 'shake',
-    animText: 'Re:从零开始的AI学习第一季总集篇｜从入门到用好…',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1VZWc6dECG',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,6 +50,51 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r14',
+    name: '《明日方舟：终末地》干员叙事 […',
+    emoji: '🎵',
+    date: '2026-10-15',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：《明日方舟：终末地》干员叙事 [祀：洒扫庭除]。',
+    animation: 'ring',
+    animText: '《明日方舟：终末地》干员叙事…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1fspq6cEty',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r15',
+    name: '百斤玉米 擒巨物',
+    emoji: '📺',
+    date: '2026-10-15',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：百斤玉米 擒巨物。',
+    animation: 'textPop',
+    animText: '百斤玉米 擒巨物',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1Nppn6tEhW',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r25',
+    name: '【Re:从零开始的AI学习】第一…',
+    emoji: '📺',
+    date: '2026-10-15',
+    hot: 76,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第25名：【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI。',
+    animation: 'shake',
+    animText: 'Re:从零开始的AI学习第一季总集篇｜从入门到用好…',
+    emojis: ['📺', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1VZWc6dECG',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r15',
     name: '77天1400公里独自横穿羌塘，…',
     emoji: '📺',
@@ -80,48 +110,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r16',
-    name: '百斤玉米 擒巨物',
-    emoji: '⚡',
+    id: 'r14',
+    name: '“什么情况？杀不死？”“月君，笔…',
+    emoji: '🎵',
     date: '2026-10-15',
-    hot: 85,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：百斤玉米 擒巨物。',
-    animation: 'dance',
-    animText: '百斤玉米 擒巨物',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1Nppn6tEhW',
+    desc: 'B站今日热门第14名：“什么情况？杀不死？”“月君，笔记的储备还充足吗？”。',
+    animation: 'ring',
+    animText: '“什么情况？杀不死？”“月君…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Sepk6bEZC',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
+    id: 'r15',
     name: '大庆，一座孤独的城市',
-    emoji: '🍿',
+    emoji: '📺',
     date: '2026-10-15',
-    hot: 84,
+    hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：大庆，一座孤独的城市。',
-    animation: 'emojiRain',
+    desc: 'B站今日热门第15名：大庆，一座孤独的城市。',
+    animation: 'textPop',
     animText: '大庆，一座孤独的城市',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1Pupy6sExt',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r23',
-    name: '2026全球总决赛LPL赛区出征…',
-    emoji: '🎮',
-    date: '2026-10-15',
-    hot: 78,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第23名：2026全球总决赛LPL赛区出征片《风起今朝》。',
-    animation: 'dance',
-    animText: '2026全球总决赛LPL…',
-    emojis: ['🎮', '⚡'],
+    emojis: ['📺', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV132pr6aEXS',
+    videoUrl: 'https://www.bilibili.com/video/BV1Pupy6sExt',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -139,21 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1kKWA6uEyr',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r14',
-    name: '再访',
-    emoji: '🎵',
-    date: '2026-10-15',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：再访。',
-    animation: 'ring',
-    animText: '再访',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV149WF6zEw2',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '朱雀二号改进型遥四运载火箭发射成功', 'Karsa终于跟RNG老队友重逢', '杭州LGD.NBW战胜重庆狼队赛后数据', '欧元新皮肤投票成二创大赛', '美国9月CPI超预期能否影响加息', '大范围雨雪将至山东', '获赠大熊猫需要满足哪些条件', '美国禁用氢化植物油是谣言吗', '广东地区什么时候才能入秋', '如何从零开始学习AI', '用西班牙语打开迪士尼', '土豆能代替米饭用来减肥吗'
+  '杭州LGD.NBW战胜重庆狼队赛后数据', '朱雀二号改进型遥四运载火箭发射成功', '欧元新皮肤投票成二创大赛', 'Karsa终于跟RNG老队友重逢', '美国9月CPI超预期能否影响加息', '大范围雨雪将至山东', 'IG世界赛出征拍摄花絮', '美国禁用氢化植物油是谣言吗', '广东地区什么时候才能入秋', 'S16全球总决赛入围赛首轮抽签结果', '用西班牙语打开迪士尼', '土豆能代替米饭用来减肥吗'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
