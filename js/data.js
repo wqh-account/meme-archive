@@ -20,36 +20,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '“以善为饵，比恶更恶”',
-    emoji: '🎮',
-    date: '2026-10-17',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：“以善为饵，比恶更恶”。',
-    animation: 'flower',
-    animText: '“以善为饵，比恶更恶”',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1q3pS6tE4J',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '我造了一块会飞的滑板...',
-    emoji: '🎮',
-    date: '2026-10-17',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：我造了一块会飞的滑板...。',
-    animation: 'flower',
-    animText: '我造了一块会飞的滑板..…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1KiJk67EQ9',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r22',
     name: '真让她成气候了？这可能是全网最通…',
     emoji: '🎬',
@@ -65,18 +35,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r18',
-    name: '营销噱头还是黑科技?Roadst…',
-    emoji: '🏆',
+    id: 'r17',
+    name: '让人生理性厌恶的两口子黄子韬徐艺…',
+    emoji: '🍿',
     date: '2026-10-17',
-    hot: 83,
+    hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：营销噱头还是黑科技?Roadster 2造车门槛是什么？专利、商业解读。',
-    animation: 'shake',
-    animText: '营销噱头还是黑科技?Roadster…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV15BJX6dEoR',
+    desc: 'B站今日热门第17名：让人生理性厌恶的两口子黄子韬徐艺洋。',
+    animation: 'emojiRain',
+    animText: '让人生理性厌恶的两口子黄…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1ukJD6LE2P',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -92,6 +62,51 @@ const RECENT_MEMES = [
     emojis: ['🔥', '⚡'],
     color: '#ff9ff3',
     videoUrl: 'https://www.bilibili.com/video/BV1s7JX6gELt',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '朱棣：“我的侄子走丢了，有好心人…',
+    emoji: '🔥',
+    date: '2026-10-17',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：朱棣：“我的侄子走丢了，有好心人能帮帮我吗？”。',
+    animation: 'shake',
+    animText: '朱棣：“我的侄子走丢了…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1HCpS6iEXh',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '【绝密大坝】猛攻哥来了！！！',
+    emoji: '🎬',
+    date: '2026-10-17',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：【绝密大坝】猛攻哥来了！！！。',
+    animation: 'fire',
+    animText: '绝密大坝猛攻哥来了！！！',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1SDJC6dEKH',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '营销噱头还是黑科技?Roadst…',
+    emoji: '🏆',
+    date: '2026-10-17',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：营销噱头还是黑科技?Roadster 2造车门槛是什么？专利、商业解读。',
+    animation: 'shake',
+    animText: '营销噱头还是黑科技?Roadster…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV15BJX6dEoR',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -111,32 +126,17 @@ const RECENT_MEMES = [
   },
   {
     id: 'r17',
-    name: '【绝密大坝】猛攻哥来了！！！',
+    name: '再给我一个好吗',
     emoji: '🍿',
     date: '2026-10-17',
     hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：【绝密大坝】猛攻哥来了！！！。',
+    desc: 'B站今日热门第17名：再给我一个好吗。',
     animation: 'emojiRain',
-    animText: '绝密大坝猛攻哥来了！！！',
+    animText: '再给我一个好吗',
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1SDJC6dEKH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '《 官 宣 》',
-    emoji: '🏆',
-    date: '2026-10-17',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：《 官 宣 》。',
-    animation: 'shake',
-    animText: '《 官 宣 》',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1BkJm6mEMf',
+    videoUrl: 'https://www.bilibili.com/video/BV1g2JX6HEHX',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'S16', '大范围雨雪将至', 'S16入围赛首日有多离谱', '塞尔达传说时之笛上手前瞻', '美国重申六代机2028年首飞', '英伟达美国官网下架RTX5090', '真人演绎扫码免费领陷阱', '重庆狼队 深圳DYG', '玉芬啊玉芬什么梗', 'iPhone Duo选购指南', '李秀满新女团成员盛艾敬争议', '世界周侃谈黑客袭击法国超市冰柜'
+  'S16', '大范围雨雪将至', 'S16入围赛首日有多离谱', '真人演绎扫码免费领陷阱', '塞尔达传说时之笛上手前瞻', '英伟达美国官网下架RTX5090', '美国重申六代机2028年首飞', '玉芬啊玉芬什么梗', '世界周侃谈黑客袭击法国超市冰柜', 'iPhone Duo选购指南', '李秀满新女团成员盛艾敬争议', '懒人炒面规矩立住不烧心'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
