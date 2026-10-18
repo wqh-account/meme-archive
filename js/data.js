@@ -36,21 +36,6 @@ const RECENT_MEMES = [
   },
   {
     id: 'r14',
-    name: '一口气看完故宫角楼建造全过程',
-    emoji: '🎵',
-    date: '2026-10-18',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：一口气看完故宫角楼建造全过程。',
-    animation: 'ring',
-    animText: '一口气看完故宫角楼建造全…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1t9pr6oE2i',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
     name: '【使命召唤23：现代战争4】4K…',
     emoji: '🎵',
     date: '2026-10-18',
@@ -62,6 +47,36 @@ const RECENT_MEMES = [
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1seJb63ENu',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '友情提示：没点艺术细胞的人刷不到…',
+    emoji: '🎯',
+    date: '2026-10-18',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：友情提示：没点艺术细胞的人刷不到这条视频！。',
+    animation: 'flower',
+    animText: '友情提示：没点艺术细胞的人刷不到这条视频…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1WwJy6EEMg',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '一口气看完故宫角楼建造全过程',
+    emoji: '🎵',
+    date: '2026-10-18',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：一口气看完故宫角楼建造全过程。',
+    animation: 'ring',
+    animText: '一口气看完故宫角楼建造全…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1t9pr6oE2i',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -80,78 +95,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '历经一个月！我们做到了！！',
-    emoji: '🔥',
-    date: '2026-10-18',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：历经一个月！我们做到了！！。',
-    animation: 'shake',
-    animText: '历经一个月！我们做到了…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1dWJv6GEoH',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '我是人类',
-    emoji: '🎬',
-    date: '2026-10-18',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：我是人类。',
-    animation: 'fire',
-    animText: '我是人类',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1gKJ86JEuP',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '欠钱不还却有钱出道？是谁又在给老…',
-    emoji: '🔥',
-    date: '2026-10-18',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：欠钱不还却有钱出道？是谁又在给老赖之女洗白？深扒李秀满新女团成员盛艾敬！。',
-    animation: 'ring',
-    animText: '欠钱不还却有钱出道？是谁又在给老赖之女洗白…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1s7JX6gELt',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '【毕导】不做诺奖科普的第一年，科…',
-    emoji: '🎬',
-    date: '2026-10-18',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：【毕导】不做诺奖科普的第一年，科普博主我还会做多久？。',
-    animation: 'fire',
-    animText: '毕导不做诺奖科普的第一年…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1cpJ86BEys',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r14',
-    name: '“优秀的作品都在讲同一件事”',
+    name: '我是人类',
     emoji: '🎵',
     date: '2026-10-18',
     hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：“优秀的作品都在讲同一件事”。',
+    desc: 'B站今日热门第14名：我是人类。',
     animation: 'ring',
-    animText: '“优秀的作品都在讲同一件…',
+    animText: '我是人类',
     emojis: ['🎵', '⚡'],
     color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1wbpR6HE1g',
+    videoUrl: 'https://www.bilibili.com/video/BV1gKJ86JEuP',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '提示：本视频可以呼吸  《无呼吸…',
+    emoji: '🎯',
+    date: '2026-10-18',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：提示：本视频可以呼吸  《无呼吸义务》。',
+    animation: 'emojiRain',
+    animText: '提示：本视频可以呼吸…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1quJb6tEGe',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '🛳️杀死伪人🛳️',
+    emoji: '🔥',
+    date: '2026-10-18',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：🛳️杀死伪人🛳️。',
+    animation: 'shake',
+    animText: '🛳️杀死伪人🛳️',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1czJB6fErF',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r20',
+    name: '当Up五年了，终于还是决定勇敢迈…',
+    emoji: '🎯',
+    date: '2026-10-18',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：当Up五年了，终于还是决定勇敢迈出这一步。',
+    animation: 'flower',
+    animText: '当Up五年了，终于还是决…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV13Gpn6NEsH',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'MVK FUR', '英伟达称RTX5090没有停产', 'TES出征前队内秘聊', '张雪机车收官战第一回合第10', '小沈阳唐九洲颜安在梅边好惊艳', '北京WB 济南RW侠', '灭霸 打响指我也认', '张雪机车赫雷斯站看点速览', '休宁凯和羊PD喝豆汁', '泽连斯基沉默回应替罪羊言论', '央视记者再走长征路', '用DeepSeek翻唱人是猫'
+  'MVK FUR', '英伟达称RTX5090没有停产', '小沈阳唐九洲颜安在梅边好惊艳', '张雪机车收官战第一回合第10', 'TES出征前队内秘聊', '泽连斯基沉默回应替罪羊言论', '近期电竞赛事热门事件盘点', '灭霸 打响指我也认', '休宁凯和羊PD喝豆汁', 'NBA东部常规赛各队问题是什么', '央视记者再走长征路', '凡人天恨老怪为何而来'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
