@@ -5,78 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r1',
-    name: '《绝区零》先导演示丨挽昼',
-    emoji: '🔥',
+    id: 'r18',
+    name: '220w死神薯片vs世界12级薄…',
+    emoji: '🏆',
     date: '2026-10-25',
-    hot: 100,
+    hot: 83,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第1名：《绝区零》先导演示丨挽昼。',
-    animation: 'textPop',
-    animText: '《绝区零》先导演示丨挽昼',
-    emojis: ['🔥', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1U3n46GEzY',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '穿越战锤24年，你终靠实力拿下星…',
-    emoji: '🔥',
-    date: '2026-10-25',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：穿越战锤24年，你终靠实力拿下星球总督王座，你的余生会如何度过？。',
-    animation: 'ring',
-    animText: '穿越战锤24年，你终靠实力拿下星球总督王座…',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1DaHw6yEj4',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '人性、欲望与奇观，自驾拉斯维加斯…',
-    emoji: '⚡',
-    date: '2026-10-25',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：人性、欲望与奇观，自驾拉斯维加斯，现实夜之城什么样？。',
-    animation: 'dance',
-    animText: '人性、欲望与奇观，自驾拉斯维加斯…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV12qnt6VEM1',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r25',
-    name: ' 【独家】《凡人修仙传之慕兰之战…',
-    emoji: '📺',
-    date: '2026-10-25',
-    hot: 76,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名： 【独家】《凡人修仙传之慕兰之战》第21集【总第197集】。',
+    desc: 'B站今日热门第18名：220w死神薯片vs世界12级薄荷糖，终极冰火挑战！。',
     animation: 'shake',
-    animText: ' 独家《凡人修仙传之慕兰…',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1ojn86vEeU',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '《明日方舟》2026「感谢庆典」…',
-    emoji: '🎬',
-    date: '2026-10-25',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：《明日方舟》2026「感谢庆典」活动宣传PV。',
-    animation: 'textPop',
-    animText: '《明日方舟》2026「感…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1fjHP6eECY',
+    animText: '220w死神薯片vs世界12级薄荷糖…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1agHN64ErV',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,6 +35,36 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r14',
+    name: '《绝区零》先导演示丨挽昼',
+    emoji: '🎵',
+    date: '2026-10-25',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：《绝区零》先导演示丨挽昼。',
+    animation: 'ring',
+    animText: '《绝区零》先导演示丨挽昼',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1U3n46GEzY',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r25',
+    name: ' 【独家】《凡人修仙传之慕兰之战…',
+    emoji: '📺',
+    date: '2026-10-25',
+    hot: 76,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第25名： 【独家】《凡人修仙传之慕兰之战》第21集【总第197集】。',
+    animation: 'shake',
+    animText: ' 独家《凡人修仙传之慕兰…',
+    emojis: ['📺', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1ojn86vEeU',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r17',
     name: '我花了3个月！把MC爆改成别的游…',
     emoji: '🍿',
@@ -107,6 +77,21 @@ const RECENT_MEMES = [
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
     videoUrl: 'https://www.bilibili.com/video/BV1UnHN6SECP',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r21',
+    name: '穿越战锤24年，你终靠实力拿下星…',
+    emoji: '🔥',
+    date: '2026-10-25',
+    hot: 80,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第21名：穿越战锤24年，你终靠实力拿下星球总督王座，你的余生会如何度过？。',
+    animation: 'ring',
+    animText: '穿越战锤24年，你终靠实力拿下星球总督王座…',
+    emojis: ['🔥', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1DaHw6yEj4',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -125,18 +110,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r19',
-    name: '11天，我们干掉祸害20多年的传…',
-    emoji: '🎤',
+    id: 'r13',
+    name: '⚡⚡逆 天 复 仇 者⚡⚡',
+    emoji: '🎮',
     date: '2026-10-25',
-    hot: 82,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：11天，我们干掉祸害20多年的传销头目！。',
-    animation: 'fire',
-    animText: '11天，我们干掉祸害20多年的传销头目…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1oTnW67E4n',
+    desc: 'B站今日热门第13名：⚡⚡逆 天 复 仇 者⚡⚡。',
+    animation: 'flower',
+    animText: '⚡⚡逆 天 复 仇 者⚡…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1BZn86qE9n',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '《纯阳真气》',
+    emoji: '🎵',
+    date: '2026-10-25',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：《纯阳真气》。',
+    animation: 'ring',
+    animText: '《纯阳真气》',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV111na6WExX',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'HLE GEN', '黄仁勋称内存近期不会供应过剩', '柴西探索现实版夜之城', 'IG TSW', '凡人魏无涯为何选择弃城', '绝区零挽昼实机首曝', 'DK T1', '速通中土网友对线大战', 'UP主起底20多年的传销头目', 'TES AL', '实现财富自由到底要多少钱', '热火连败问题到底出在谁'
+  'BLG TLAW', 'iPhone Duo能否撕掉磨砂膜', '黄仁勋称内存近期不会供应过剩', 'DK T1', '太空视角俯瞰我国宝岛台湾', 'UP主起底20多年的传销头目', 'IG TSW', '速通中土网友对线大战', '柴西探索现实版夜之城', 'HLE GEN', '清华数学教授如何反思AI冲击', '绝区零挽昼实机首曝'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
