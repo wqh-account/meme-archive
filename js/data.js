@@ -20,21 +20,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '《鸣潮》世界观PV | 超验TR…',
-    emoji: '🔥',
-    date: '2026-10-26',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：《鸣潮》世界观PV | 超验TRANSCENDO。',
-    animation: 'shake',
-    animText: '《鸣潮》世界观PV |…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1p8nh61Efm',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r22',
     name: '日本人吃自助不好意思多要跟我外国…',
     emoji: '🎬',
@@ -47,6 +32,21 @@ const RECENT_MEMES = [
     emojis: ['🎬', '⚡'],
     color: '#54a0ff',
     videoUrl: 'https://www.bilibili.com/video/BV1EzH56bE5k',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r23',
+    name: '愚蠢鬼',
+    emoji: '🎮',
+    date: '2026-10-26',
+    hot: 78,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第23名：愚蠢鬼。',
+    animation: 'dance',
+    animText: '愚蠢鬼',
+    emojis: ['🎮', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1q5HV6dEzo',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,63 +65,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r13',
-    name: '写了全国所有省份的love me…',
-    emoji: '🎮',
+    id: 'r18',
+    name: '中国90%的人都听过的童年阴影B…',
+    emoji: '🏆',
     date: '2026-10-26',
-    hot: 88,
+    hot: 83,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：写了全国所有省份的love me！。',
-    animation: 'flower',
-    animText: '写了全国所有省份的love…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1w2Hw6KE1j',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '人生最有意义的15分钟',
-    emoji: '🎵',
-    date: '2026-10-26',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：人生最有意义的15分钟。',
-    animation: 'ring',
-    animText: '人生最有意义的15分钟',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1MiHP6DEi2',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r12',
-    name: '【导演作/官方授权】用半年! 制…',
-    emoji: '🎬',
-    date: '2026-10-26',
-    hot: 89,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第12名：【导演作/官方授权】用半年! 制作「脑洞学生会」片尾影像。',
-    animation: 'fire',
-    animText: '导演作/官方授权用半年!…',
-    emojis: ['🎬', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1cZHK65ELz',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '马尔芙小姐，我能请你共舞一曲吗？…',
-    emoji: '📺',
-    date: '2026-10-26',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：马尔芙小姐，我能请你共舞一曲吗？｜PV。',
-    animation: 'textPop',
-    animText: '马尔芙小姐，我能请你共舞一曲吗…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1kZHK6VEgZ',
+    desc: 'B站今日热门第18名：中国90%的人都听过的童年阴影BGM！20年后我终于扒出了它的真身……SCARSONG终极溯源！【互联网大冒险】。',
+    animation: 'shake',
+    animText: '中国90%的人都听过的童年阴影BGM…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1xqH36AEPX',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -140,18 +95,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r20',
+    name: '吴站长携天津站男团激情演唱《Up…',
+    emoji: '🎯',
+    date: '2026-10-26',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：吴站长携天津站男团激情演唱《Uptown Funk》。',
+    animation: 'flower',
+    animText: '吴站长携天津站男团激情演唱《Uptown…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1FtHg6nEE2',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '土豆革命：为什么改变世界的，偏偏…',
+    emoji: '🎮',
+    date: '2026-10-26',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：土豆革命：为什么改变世界的，偏偏是一颗土豆？。',
+    animation: 'flower',
+    animText: '土豆革命：为什么改变世界的…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1xvH36eE1P',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '双人抬棺',
+    emoji: '🎵',
+    date: '2026-10-26',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：双人抬棺。',
+    animation: 'ring',
+    animText: '双人抬棺',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1c5HK6CEPu',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r15',
-    name: '《罗德岛学院》——早八！',
+    name: '马尔芙小姐，我能请你共舞一曲吗？…',
     emoji: '📺',
     date: '2026-10-26',
     hot: 86,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：《罗德岛学院》——早八！。',
+    desc: 'B站今日热门第15名：马尔芙小姐，我能请你共舞一曲吗？｜PV。',
     animation: 'textPop',
-    animText: '《罗德岛学院》——早八！',
+    animText: '马尔芙小姐，我能请你共舞一曲吗…',
     emojis: ['📺', '⚡'],
     color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1m9HG6gE4g',
+    videoUrl: 'https://www.bilibili.com/video/BV1kZHK6VEgZ',
     source: 'B站今日热门（实时抓取）'
   },
 ];
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'LYON GEN', '英伟达老显卡算力被破解了吗', '卫星互联网低轨28组卫星成功发射', 'TES G2', '7天3个国家3场大选即将开幕', '狂飙版Trouble Maker', '这就是IG', '曼联0-3伯恩茅斯', '字母哥加盟热火为何遭三连败', '管泽元见证TES创造奇迹', '1小时看懂王虹挂谷猜想', 'MKOI DK'
+  'LYON GEN', '7天3个国家3场大选即将开幕', '卫星互联网低轨28组卫星成功发射', 'TES G2', '0基础如何选购人生第一辆车', '曼联0-3伯恩茅斯', '这就是IG', '字母哥加盟热火为何遭三连败', '张雪回应刷新吉尼斯纪录', '1小时看懂王虹挂谷猜想', '王者荣耀新英雄姜姜', '狂飙版Trouble Maker'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
