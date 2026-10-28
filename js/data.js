@@ -5,6 +5,21 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r11',
+    name: '姆巴佩发表涉华不当言论！全网封杀…',
+    emoji: '🔥',
+    date: '2026-10-28',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：姆巴佩发表涉华不当言论！全网封杀！没有中国市场，姆巴佩会失去什么？。',
+    animation: 'shake',
+    animText: '姆巴佩发表涉华不当言论…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1XSxT6GEwQ',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
     name: '被人买凶杀死的自媒体人徽剑【热点…',
     emoji: '🎤',
@@ -35,21 +50,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r11',
-    name: '姆巴佩发表涉华不当言论！全网封杀…',
-    emoji: '🔥',
-    date: '2026-10-28',
-    hot: 90,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第11名：姆巴佩发表涉华不当言论！全网封杀！没有中国市场，姆巴佩会失去什么？。',
-    animation: 'shake',
-    animText: '姆巴佩发表涉华不当言论…',
-    emojis: ['🔥', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1XSxT6GEwQ',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r10',
     name: '第9期（上）：收官高能局！阿瓦隆…',
     emoji: '🎯',
@@ -65,78 +65,78 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r24',
-    name: '《阴阳师》UR大天狗·高天铁羽C…',
-    emoji: '🎵',
-    date: '2026-10-28',
-    hot: 77,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第24名：《阴阳师》UR大天狗·高天铁羽CG丨飞羽凌云（CV：前野智昭）。',
-    animation: 'emojiRain',
-    animText: '《阴阳师》UR大天狗·高天铁羽CG丨飞羽凌云CV…',
-    emojis: ['🎵', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1KFxK6ZEUk',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r25',
+    id: 'r11',
     name: '《胡闹厨房》',
-    emoji: '📺',
+    emoji: '🔥',
     date: '2026-10-28',
-    hot: 76,
+    hot: 90,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名：《胡闹厨房》。',
+    desc: 'B站今日热门第11名：《胡闹厨房》。',
     animation: 'shake',
     animText: '《胡闹厨房》',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
     videoUrl: 'https://www.bilibili.com/video/BV1Xun96tEjo',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r15',
-    name: '万字复盘AL惨败北美16强回家！…',
-    emoji: '📺',
+    id: 'r12',
+    name: '疯狂十六强，启动！',
+    emoji: '🎬',
     date: '2026-10-28',
-    hot: 86,
+    hot: 89,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：万字复盘AL惨败北美16强回家！HOPE没有希望，连还手的勇气都没！。',
-    animation: 'textPop',
-    animText: '万字复盘AL惨败北美16强回家…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1yyxK6oEiA',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '普通女同事的职场纠纷和爱恨情仇【…',
-    emoji: '🎤',
-    date: '2026-10-28',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：普通女同事的职场纠纷和爱恨情仇【卡黄盘点】。',
+    desc: 'B站今日热门第12名：疯狂十六强，启动！。',
     animation: 'fire',
-    animText: '普通女同事的职场纠纷和爱…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1HZnR6yEGj',
+    animText: '疯狂十六强，启动！',
+    emojis: ['🎬', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1kaxT6RETB',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '武契奇败选',
-    emoji: '🎯',
+    id: 'r14',
+    name: '秦始皇之死：真的是求长生不老，害…',
+    emoji: '🎵',
     date: '2026-10-28',
-    hot: 81,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：武契奇败选。',
-    animation: 'flower',
-    animText: '武契奇败选',
-    emojis: ['🎯', '⚡'],
+    desc: 'B站今日热门第14名：秦始皇之死：真的是求长生不老，害了他吗？。',
+    animation: 'ring',
+    animText: '秦始皇之死：真的是求长生不老…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV15CxT67Ev4',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r12',
+    name: '固态硬盘渠道价大面积下跌：创今年…',
+    emoji: '🎬',
+    date: '2026-10-28',
+    hot: 89,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第12名：固态硬盘渠道价大面积下跌：创今年最大跌幅｜显卡日报10月28日。',
+    animation: 'fire',
+    animText: '固态硬盘渠道价大面积下跌…',
+    emojis: ['🎬', '⚡'],
     color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1vXnZ6yEsP',
+    videoUrl: 'https://www.bilibili.com/video/BV1VGxu6jEzm',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '对中国34个省的刻板印象',
+    emoji: '🎮',
+    date: '2026-10-28',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：对中国34个省的刻板印象。',
+    animation: 'flower',
+    animText: '对中国34个省的刻板印象',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1oenS6REGE',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '固态硬盘渠道价大面积下跌', '如何加入大肥鱼对抗赛', '勇士新秀伦德伯格有多强', '锐评LPL瑞士轮Day4表现', '凯恩获金球奖是否实至名归', 'AL止步S16十六强单曲', '西甲就姆巴佩不当言论道歉', '北京JDG 广州TTG', '外交部回应姆巴佩发表不当言论', '热火双塔阵容为何1+1小于2', '中国U17女足小组第一出线', '自媒体人举报电诈遇害始末'
+  'Donk单图狂砍35杀难救主', '我国造船业3大指标持续领跑全球', '阿森纳遭英乙球队淘汰', '12个AI预测S16瑞士轮第四轮', '厄尔尼诺背景下华南高温成因', 'iPhone Duo使用体验究竟如何', '北京JDG 广州TTG', 'TYLOO 0-2 FURIA淘汰出局', '用Kimi K3.1复刻修图剪辑软件', '卢拉回应小博索纳罗前往美国', '自媒体人举报电诈遇害始末', '固态硬盘渠道价大面积下跌'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
