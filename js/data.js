@@ -5,33 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r14',
-    name: '《明日方舟：终末地》版本情报 |…',
-    emoji: '🎵',
+    id: 'r1',
+    name: '特朗普为了中期大选真拼了',
+    emoji: '🔥',
     date: '2026-10-28',
-    hot: 87,
+    hot: 100,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：《明日方舟：终末地》版本情报 | 危机合约浸蓝测试作战PV与「丹青渡」更新。',
-    animation: 'ring',
-    animText: '《明日方舟：终末地》版本情报…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1uExu6GEFs',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '东北八大怪之大缸小缸腌酸菜',
-    emoji: '🎮',
-    date: '2026-10-28',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：东北八大怪之大缸小缸腌酸菜。',
-    animation: 'flower',
-    animText: '东北八大怪之大缸小缸腌酸…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1VDxT6kEFL',
+    desc: 'B站今日热门第1名：特朗普为了中期大选真拼了。',
+    animation: 'textPop',
+    animText: '特朗普为了中期大选真拼了',
+    emojis: ['🔥', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1znxg6fEKA',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -50,51 +35,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '特朗普为了中期大选真拼了',
-    emoji: '🍿',
-    date: '2026-10-28',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：特朗普为了中期大选真拼了。',
-    animation: 'emojiRain',
-    animText: '特朗普为了中期大选真拼了',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1znxg6fEKA',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '挑战穿轮滑鞋全程爬武功山登顶后在…',
-    emoji: '🎤',
-    date: '2026-10-28',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：挑战穿轮滑鞋全程爬武功山登顶后在滑下来。',
-    animation: 'fire',
-    animText: '挑战穿轮滑鞋全程爬武功山…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1rLxM6sEPk',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '【究极佐菲格斗】第五集 危险的雄…',
-    emoji: '📺',
-    date: '2026-10-28',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：【究极佐菲格斗】第五集 危险的雄狮！佐菲机器人 雷欧 泰罗 超兽黑鸽子 黑暗星人巴巴尔 登场。',
-    animation: 'textPop',
-    animText: '究极佐菲格斗第五集 危险的雄狮…',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1U3x56HE7v',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r16',
     name: '爸爸去哪儿 x Counting…',
     emoji: '⚡',
@@ -110,33 +50,78 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r17',
-    name: '永远和你在一起',
-    emoji: '🍿',
+    id: 'r13',
+    name: '东北八大怪之大缸小缸腌酸菜',
+    emoji: '🎮',
     date: '2026-10-28',
-    hot: 84,
+    hot: 88,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：永远和你在一起。',
+    desc: 'B站今日热门第13名：东北八大怪之大缸小缸腌酸菜。',
+    animation: 'flower',
+    animText: '东北八大怪之大缸小缸腌酸…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1VDxT6kEFL',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '中国买走秘鲁76%的铜，为啥还是…',
+    emoji: '🔥',
+    date: '2026-10-28',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：中国买走秘鲁76%的铜，为啥还是“外人”？。',
+    animation: 'shake',
+    animText: '中国买走秘鲁76%的铜…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1mZxj6ZEz3',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '做了一个错误的决定： 信了贵州辣…',
+    emoji: '🎯',
+    date: '2026-10-28',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：做了一个错误的决定： 信了贵州辣卤不辣！。',
     animation: 'emojiRain',
-    animText: '永远和你在一起',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1hmx56oEPg',
+    animText: '做了一个错误的决定：…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1fexT6pEQr',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '【2026王者荣耀共创之夜】晚会…',
+    emoji: '🏆',
+    date: '2026-10-28',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：【2026王者荣耀共创之夜】晚会完整回放。',
+    animation: 'shake',
+    animText: '2026王者荣耀共创之夜…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1zoxM64E9B',
     source: 'B站今日热门（实时抓取）'
   },
   {
     id: 'r19',
-    name: '被人买凶杀死的自媒体人徽剑【热点…',
+    name: '永远和你在一起',
     emoji: '🎤',
     date: '2026-10-28',
     hot: 82,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：被人买凶杀死的自媒体人徽剑【热点详解01】。',
+    desc: 'B站今日热门第19名：永远和你在一起。',
     animation: 'fire',
-    animText: '被人买凶杀死的自媒体人徽…',
+    animText: '永远和你在一起',
     emojis: ['🎤', '⚡'],
     color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1mdxN68E7F',
+    videoUrl: 'https://www.bilibili.com/video/BV1hmx56oEPg',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -154,6 +139,21 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1chxT6xEH1',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r15',
+    name: '【究极佐菲格斗】第五集 危险的雄…',
+    emoji: '📺',
+    date: '2026-10-28',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：【究极佐菲格斗】第五集 危险的雄狮！佐菲机器人 雷欧 泰罗 超兽黑鸽子 黑暗星人巴巴尔 登场。',
+    animation: 'textPop',
+    animText: '究极佐菲格斗第五集 危险的雄狮…',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV1U3x56HE7v',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '央视不认可皇马表态', '塔图姆40分0失误集锦', '详解近期全球市场趋势', 'Shanks回应AL止步十六强', '多国大选对世界有哪些影响', '多地公交推行按需停模式', '东契奇41分难阻湖人赛季首败', '万字细嗦警匪片空枪剧情', '罗翔用AI做了个视频', '12个AI预测S16瑞士轮第四轮', '王者荣耀共创之夜完整回放', '中方强烈要求美国立即停止封锁古巴'
+  '外交部回应姆巴佩道歉', 'AI能复原被破坏的二维码吗', '美以两场选举搅动中东', '国务院原副总理刘延东同志逝世', '小博索纳罗败选后现状如何', '多地公交推行按需停模式', '去年全国刑事立案数为本世纪最低', 'iQOO Neo12', '西班牙列车相撞已致50死', '万字细嗦警匪片空枪剧情', '内塔尼亚胡阵营未获议会多数席位', 'DeepInfer如何让模型提速又降本'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
