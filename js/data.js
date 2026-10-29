@@ -5,6 +5,36 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
+    id: 'r1',
+    name: '喝可乐不打嗝小游戏~',
+    emoji: '🔥',
+    date: '2026-10-29',
+    hot: 100,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第1名：喝可乐不打嗝小游戏~。',
+    animation: 'textPop',
+    animText: '喝可乐不打嗝小游戏~',
+    emojis: ['🔥', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1rvxE6HEPT',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r2',
+    name: '男生最怕的事也莫过于此',
+    emoji: '🎬',
+    date: '2026-10-29',
+    hot: 99,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第2名：男生最怕的事也莫过于此。',
+    animation: 'dance',
+    animText: '男生最怕的事也莫过于此',
+    emojis: ['🎬', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1eyxj6qEjF',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r16',
     name: '爸爸去哪儿 x Counting…',
     emoji: '⚡',
@@ -36,62 +66,32 @@ const RECENT_MEMES = [
   },
   {
     id: 'r17',
-    name: '喝可乐不打嗝小游戏~',
+    name: '永远和你在一起',
     emoji: '🍿',
     date: '2026-10-29',
     hot: 84,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：喝可乐不打嗝小游戏~。',
+    desc: 'B站今日热门第17名：永远和你在一起。',
     animation: 'emojiRain',
-    animText: '喝可乐不打嗝小游戏~',
+    animText: '永远和你在一起',
     emojis: ['🍿', '⚡'],
     color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1rvxE6HEPT',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r18',
-    name: '永远和你在一起',
-    emoji: '🏆',
-    date: '2026-10-29',
-    hot: 83,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：永远和你在一起。',
-    animation: 'shake',
-    animText: '永远和你在一起',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
     videoUrl: 'https://www.bilibili.com/video/BV1hmx56oEPg',
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r19',
-    name: '特朗普为了中期大选真拼了',
-    emoji: '🎤',
+    id: 'r18',
+    name: '当你穿进老钱班38',
+    emoji: '🏆',
     date: '2026-10-29',
-    hot: 82,
+    hot: 83,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：特朗普为了中期大选真拼了。',
-    animation: 'fire',
-    animText: '特朗普为了中期大选真拼了',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1znxg6fEKA',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r20',
-    name: '男生最怕的事也莫过于此',
-    emoji: '🎯',
-    date: '2026-10-29',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：男生最怕的事也莫过于此。',
-    animation: 'flower',
-    animText: '男生最怕的事也莫过于此',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1eyxj6qEjF',
+    desc: 'B站今日热门第18名：当你穿进老钱班38。',
+    animation: 'shake',
+    animText: '当你穿进老钱班38',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1yJxj69EMh',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -110,6 +110,36 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r16',
+    name: '特朗普为了中期大选真拼了',
+    emoji: '⚡',
+    date: '2026-10-29',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：特朗普为了中期大选真拼了。',
+    animation: 'dance',
+    animText: '特朗普为了中期大选真拼了',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1znxg6fEKA',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r18',
+    name: '小时候做过的那些事...（第7~…',
+    emoji: '🏆',
+    date: '2026-10-29',
+    hot: 83,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第18名：小时候做过的那些事...（第7~12集）。',
+    animation: 'shake',
+    animText: '小时候做过的那些事...…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1vQnd6qE2q',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r19',
     name: '被人买凶杀死的自媒体人徽剑【热点…',
     emoji: '🎤',
@@ -124,36 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1mdxN68E7F',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r20',
-    name: '对中国34个省的刻板印象',
-    emoji: '🎯',
-    date: '2026-10-29',
-    hot: 81,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：对中国34个省的刻板印象。',
-    animation: 'flower',
-    animText: '对中国34个省的刻板印象',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1oenS6REGE',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r21',
-    name: '疯狂十六强，启动！',
-    emoji: '🔥',
-    date: '2026-10-29',
-    hot: 80,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第21名：疯狂十六强，启动！。',
-    animation: 'ring',
-    animText: '疯狂十六强，启动！',
-    emojis: ['🔥', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1kaxT6RETB',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'LYON IG', '去年全国刑事立案数为本世纪最低', '国务院原副总理刘延东同志逝世', 'MKOI T1', '苹果发布首款触屏MacBook Pro', '外交部回应姆巴佩道歉', '数据回顾T1战胜MKOI', '后会友期成年人破碎友情', '小博索纳罗败选后现状如何', '为何NBA赛季初球员伤病频繁', '自媒体人举报电诈遇害始末', '罗翔用AI做了个视频'
+  '电脑硬件到底涨了多少倍', '去年全国刑事立案数为本世纪最低', '国务院原副总理刘延东同志逝世', 'LYON IG', 'MKOI T1', '苹果发布首款触屏MacBook Pro', '数据回顾T1战胜MKOI', '外交部回应姆巴佩道歉', '小博索纳罗败选后现状如何', '为何NBA赛季初球员伤病频繁', '多地公交推行按需停模式', '自媒体人举报电诈遇害始末'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
