@@ -35,18 +35,18 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r29',
-    name: 'CPOPwave出海长红IP——…',
-    emoji: '🎤',
+    id: 'r18',
+    name: '“我本该命途齐天”【孙悟空＆新·…',
+    emoji: '🏆',
     date: '2026-10-31',
-    hot: 72,
+    hot: 83,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第29名：CPOPwave出海长红IP——《原神》让世界认识中国游戏。',
-    animation: 'textPop',
-    animText: 'CPOPwave出海长红…',
-    emojis: ['🎤', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV17sxY6xEWK',
+    desc: 'B站今日热门第18名：“我本该命途齐天”【孙悟空＆新·与天齐】。',
+    animation: 'shake',
+    animText: '“我本该命途齐天”孙悟空…',
+    emojis: ['🏆', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1bnsZ6GEN3',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,18 +65,33 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r18',
-    name: '“我本该命途齐天”【孙悟空＆新·…',
-    emoji: '🏆',
+    id: 'r29',
+    name: 'CPOPwave出海长红IP——…',
+    emoji: '🎤',
     date: '2026-10-31',
-    hot: 83,
+    hot: 72,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第18名：“我本该命途齐天”【孙悟空＆新·与天齐】。',
-    animation: 'shake',
-    animText: '“我本该命途齐天”孙悟空…',
-    emojis: ['🏆', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1bnsZ6GEN3',
+    desc: 'B站今日热门第29名：CPOPwave出海长红IP——《原神》让世界认识中国游戏。',
+    animation: 'textPop',
+    animText: 'CPOPwave出海长红…',
+    emojis: ['🎤', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV17sxY6xEWK',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r30',
+    name: '最逆天的一节课！！',
+    emoji: '🎯',
+    date: '2026-10-31',
+    hot: 71,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第30名：最逆天的一节课！！。',
+    animation: 'dance',
+    animText: '最逆天的一节课！！',
+    emojis: ['🎯', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Z7xK6LE8i',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -95,51 +110,6 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r16',
-    name: '《崩坏：星穹铁道》4.7版本PV…',
-    emoji: '⚡',
-    date: '2026-10-31',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：《崩坏：星穹铁道》4.7版本PV：「此刻，将群星付之一笑」。',
-    animation: 'dance',
-    animText: '《崩坏：星穹铁道》4.7版本PV…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1XBxv6WExn',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '最逆天的一节课！！',
-    emoji: '🍿',
-    date: '2026-10-31',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：最逆天的一节课！！。',
-    animation: 'emojiRain',
-    animText: '最逆天的一节课！！',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1Z7xK6LE8i',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r13',
-    name: '奶龙＆豆包《Trouble Ma…',
-    emoji: '🎮',
-    date: '2026-10-31',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：奶龙＆豆包《Trouble Maker》token没啦【AI MV大赛】。',
-    animation: 'flower',
-    animText: '奶龙＆豆包《Trouble…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1stsZ6iESz',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
     id: 'r11',
     name: '《星游记》前传电影启动，方向黑洞…',
     emoji: '🔥',
@@ -154,6 +124,36 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV18Kxv6jETs',
     source: 'B站今日热门（实时抓取）'
   },
+  {
+    id: 'r20',
+    name: '【逆水寒×中国歌剧舞剧院】再见仍…',
+    emoji: '🎯',
+    date: '2026-10-31',
+    hot: 81,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第20名：【逆水寒×中国歌剧舞剧院】再见仍是初遇的惊艳，国家队跳阿初祈月舞！。',
+    animation: 'flower',
+    animText: '逆水寒×中国歌剧舞剧院再见仍是初遇的惊艳…',
+    emojis: ['🎯', '⚡'],
+    color: '#1dd1a1',
+    videoUrl: 'https://www.bilibili.com/video/BV1ossf64EKA',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '《崩坏：星穹铁道》4.7版本PV…',
+    emoji: '⚡',
+    date: '2026-10-31',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：《崩坏：星穹铁道》4.7版本PV：「此刻，将群星付之一笑」。',
+    animation: 'dance',
+    animText: '《崩坏：星穹铁道》4.7版本PV…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1XBxv6WExn',
+    source: 'B站今日热门（实时抓取）'
+  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '央视记者直击德国总统访华', 'G2 HLE', '显卡价格连续三天大面积下跌', 'TLAW LOS', '攻击21首次在四川舰起降', '星游记前传电影启动', '369六届S赛保底八强', '解放军位黄岩岛战备警巡', '邓紫棋自由的你MV', 'IG应援曲我会等', '07后极繁主义爆改宝剑嫂', 'BLG TES'
+  '央视记者直击德国总统访华', 'G2 HLE', '显卡价格连续三天大面积下跌', 'TLAW LOS', '星游记前传电影启动', '攻击21首次在四川舰起降', '369六届S赛保底八强', '罗小黑战记', '解放军位黄岩岛战备警巡', '07后极繁主义爆改宝剑嫂', '怎么看特朗普前律师疑卖特赦', 'CFO KC'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
