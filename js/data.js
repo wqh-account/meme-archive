@@ -5,18 +5,18 @@
 /* ---------- 杩?0澶╂渶鐑锛堥椤佃疆鎾?+ 鍗＄墖澧欙級 ---------- */
 const RECENT_MEMES = [
   {
-    id: 'r25',
-    name: ' 【独家】《凡人修仙传之慕兰之战…',
-    emoji: '📺',
+    id: 'r14',
+    name: '【2026全球总决赛】11月1日…',
+    emoji: '🎵',
     date: '2026-11-01',
-    hot: 76,
+    hot: 87,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第25名： 【独家】《凡人修仙传之慕兰之战》第22集【总第198集】。',
-    animation: 'shake',
-    animText: ' 独家《凡人修仙传之慕兰…',
-    emojis: ['📺', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1vVxi68EWD',
+    desc: 'B站今日热门第14名：【2026全球总决赛】11月1日 HLE vs BLG。',
+    animation: 'ring',
+    animText: '2026全球总决赛11月1日…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1C8xn6YEDA',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -35,18 +35,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r14',
-    name: '【鬼谷闲谈】沧龙：问君能有几多愁…',
-    emoji: '🎵',
+    id: 'r19',
+    name: '《动物声卡驱动异常》',
+    emoji: '🎤',
     date: '2026-11-01',
-    hot: 87,
+    hot: 82,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：【鬼谷闲谈】沧龙：问君能有几多愁，恰似鳞龙入海流。',
-    animation: 'ring',
-    animText: '鬼谷闲谈沧龙：问君能有几多愁…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1qfxB6qEjD',
+    desc: 'B站今日热门第19名：《动物声卡驱动异常》。',
+    animation: 'fire',
+    animText: '《动物声卡驱动异常》',
+    emojis: ['🎤', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1pkxi66EG6',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r10',
+    name: '玩具熊：模仿者的秘密，第5期，全…',
+    emoji: '🎯',
+    date: '2026-11-01',
+    hot: 91,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第10名：玩具熊：模仿者的秘密，第5期，全结局。',
+    animation: 'emojiRain',
+    animText: '玩具熊：模仿者的秘密…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1upx16LErq',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r13',
+    name: '【OC动画】馆长大人，请消消气！…',
+    emoji: '🎮',
+    date: '2026-11-01',
+    hot: 88,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第13名：【OC动画】馆长大人，请消消气！🌙酒魔女与她的贵客【魔女夜话小剧场】【手搓动画大赛】。',
+    animation: 'flower',
+    animText: 'OC动画馆长大人，请消消气…',
+    emojis: ['🎮', '⚡'],
+    color: '#ff9ff3',
+    videoUrl: 'https://www.bilibili.com/video/BV1dRx16pEPw',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -65,18 +95,48 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r20',
-    name: '灭建国的超能力',
-    emoji: '🎯',
+    id: 'r16',
+    name: '【战双帕弥什】「莱亚·祈星」角色…',
+    emoji: '⚡',
     date: '2026-11-01',
-    hot: 81,
+    hot: 85,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第20名：灭建国的超能力。',
-    animation: 'flower',
-    animText: '灭建国的超能力',
-    emojis: ['🎯', '⚡'],
-    color: '#1dd1a1',
-    videoUrl: 'https://www.bilibili.com/video/BV1ugxq6HEfH',
+    desc: 'B站今日热门第16名：【战双帕弥什】「莱亚·祈星」角色PV | “生日快乐”。',
+    animation: 'dance',
+    animText: '战双帕弥什「莱亚·祈星」角色PV…',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV1rFxe6hEmn',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '压抑到极致的爆发，BLG晋级淘汰…',
+    emoji: '🍿',
+    date: '2026-11-01',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：压抑到极致的爆发，BLG晋级淘汰赛！BLG 2-0 HLE 赛后数据雷达图丨2026全球总决赛-瑞士轮。',
+    animation: 'emojiRain',
+    animText: '压抑到极致的爆发，BLG晋级淘汰赛…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1Yfxp6HEaF',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '耗资上万！我重制了网页版MC！【…',
+    emoji: '🎵',
+    date: '2026-11-01',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：耗资上万！我重制了网页版MC！【B站AI创造公开赛】。',
+    animation: 'ring',
+    animText: '耗资上万！我重制了网页版MC…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Nxxr6oES2',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -94,66 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1Ntxr6xE7Y',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r14',
-    name: '选一条路，决定你接下来的旅途',
-    emoji: '🎵',
-    date: '2026-11-01',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：选一条路，决定你接下来的旅途。',
-    animation: 'ring',
-    animText: '选一条路，决定你接下来的…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Nax16uEHm',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r15',
-    name: '《动物声卡驱动异常》',
-    emoji: '📺',
-    date: '2026-11-01',
-    hot: 86,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第15名：《动物声卡驱动异常》。',
-    animation: 'textPop',
-    animText: '《动物声卡驱动异常》',
-    emojis: ['📺', '⚡'],
-    color: '#f368e0',
-    videoUrl: 'https://www.bilibili.com/video/BV1pkxi66EG6',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '“若神不能理解我，那祂便算不上神…',
-    emoji: '⚡',
-    date: '2026-11-01',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：“若神不能理解我，那祂便算不上神！！”。',
-    animation: 'dance',
-    animText: '“若神不能理解我，那祂便算不上神…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1wbxr6REXk',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r10',
-    name: '玩具熊：模仿者的秘密，第5期，全…',
-    emoji: '🎯',
-    date: '2026-11-01',
-    hot: 91,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第10名：玩具熊：模仿者的秘密，第5期，全结局。',
-    animation: 'emojiRain',
-    animText: '玩具熊：模仿者的秘密…',
-    emojis: ['🎯', '⚡'],
-    color: '#feca57',
-    videoUrl: 'https://www.bilibili.com/video/BV1upx16LErq',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  'HLE BLG', '中低端显卡价格持续下跌', '可控核聚变将在这代人实现', 'MKOI KC', '切尔西2-0曼联', 'UP主挑战搬空大润发', '詹姆斯关键球技术有多强', 'AI短片邪修润魂子', '山海君回顾IG战胜LYON', 'Jinggg官宣离开PRX', 'G2 HLE', 'TLAW LOS'
+  '牧神记', '谷歌太空AI算力中心成功运行', '拜仁2-2多特', 'HLE BLG', '巴萨6-1阿拉维斯', '数据回顾BLG战胜HLE', '卡卡入选AC米兰名人堂', '韩国解说看BLG零封HLE', '超级科学晚全程回顾', 'LOS LYON', '锐评BLG战胜HLE晋级八强', '米兰3-1终结国米不败'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
