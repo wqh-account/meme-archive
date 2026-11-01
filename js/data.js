@@ -20,6 +20,51 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
+    id: 'r15',
+    name: '世界最最最烂活',
+    emoji: '📺',
+    date: '2026-11-01',
+    hot: 86,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第15名：世界最最最烂活。',
+    animation: 'textPop',
+    animText: '世界最最最烂活',
+    emojis: ['📺', '⚡'],
+    color: '#f368e0',
+    videoUrl: 'https://www.bilibili.com/video/BV15YxH6nEku',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r16',
+    name: '美国中期选举大斗法',
+    emoji: '⚡',
+    date: '2026-11-01',
+    hot: 85,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第16名：美国中期选举大斗法。',
+    animation: 'dance',
+    animText: '美国中期选举大斗法',
+    emojis: ['⚡', '⚡'],
+    color: '#5f27cd',
+    videoUrl: 'https://www.bilibili.com/video/BV15Mxn6UEnt',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r11',
+    name: '【独家】牧神记 第107集 上苍',
+    emoji: '🔥',
+    date: '2026-11-01',
+    hot: 90,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第11名：【独家】牧神记 第107集 上苍。',
+    animation: 'shake',
+    animText: '独家牧神记 第107集…',
+    emojis: ['🔥', '⚡'],
+    color: '#48dbfb',
+    videoUrl: 'https://www.bilibili.com/video/BV1QMxz6hEV5',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
     id: 'r18',
     name: '全球笑点下降2000倍而我不变【…',
     emoji: '🏆',
@@ -35,18 +80,63 @@ const RECENT_MEMES = [
     source: 'B站今日热门（实时抓取）'
   },
   {
-    id: 'r19',
-    name: '《动物声卡驱动异常》',
-    emoji: '🎤',
+    id: 'r10',
+    name: '12月14日全球公测 |《白银之…',
+    emoji: '🎯',
     date: '2026-11-01',
-    hot: 82,
+    hot: 91,
     tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：《动物声卡驱动异常》。',
-    animation: 'fire',
-    animText: '《动物声卡驱动异常》',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1pkxi66EG6',
+    desc: 'B站今日热门第10名：12月14日全球公测 |《白银之城》角色PV - 库拉蒂：愚者与勇者。',
+    animation: 'emojiRain',
+    animText: '12月14日全球公测…',
+    emojis: ['🎯', '⚡'],
+    color: '#feca57',
+    videoUrl: 'https://www.bilibili.com/video/BV1BJnR66Eij',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r17',
+    name: '【时间啊，向前！】TL-1至TL…',
+    emoji: '🍿',
+    date: '2026-11-01',
+    hot: 84,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第17名：【时间啊，向前！】TL-1至TL-10 摆完挂机 简单好抄。',
+    animation: 'emojiRain',
+    animText: '时间啊，向前！TL-1至TL-10…',
+    emojis: ['🍿', '⚡'],
+    color: '#ff6b6b',
+    videoUrl: 'https://www.bilibili.com/video/BV1Ssxp6yEur',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '"从今天起，无论系统是否崩溃，我…',
+    emoji: '🎵',
+    date: '2026-11-01',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名："从今天起，无论系统是否崩溃，我都不会按下Ctrl+C"【AI全民制作人】。',
+    animation: 'ring',
+    animText: '"从今天起，无论系统是否崩溃…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1ZAnd6gE8C',
+    source: 'B站今日热门（实时抓取）'
+  },
+  {
+    id: 'r14',
+    name: '选一条路，决定你接下来的旅途',
+    emoji: '🎵',
+    date: '2026-11-01',
+    hot: 87,
+    tags: ['B站热门', '今日'],
+    desc: 'B站今日热门第14名：选一条路，决定你接下来的旅途。',
+    animation: 'ring',
+    animText: '选一条路，决定你接下来的…',
+    emojis: ['🎵', '⚡'],
+    color: '#54a0ff',
+    videoUrl: 'https://www.bilibili.com/video/BV1Nax16uEHm',
     source: 'B站今日热门（实时抓取）'
   },
   {
@@ -64,96 +154,6 @@ const RECENT_MEMES = [
     videoUrl: 'https://www.bilibili.com/video/BV1upx16LErq',
     source: 'B站今日热门（实时抓取）'
   },
-  {
-    id: 'r13',
-    name: '【OC动画】馆长大人，请消消气！…',
-    emoji: '🎮',
-    date: '2026-11-01',
-    hot: 88,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第13名：【OC动画】馆长大人，请消消气！🌙酒魔女与她的贵客【魔女夜话小剧场】【手搓动画大赛】。',
-    animation: 'flower',
-    animText: 'OC动画馆长大人，请消消气…',
-    emojis: ['🎮', '⚡'],
-    color: '#ff9ff3',
-    videoUrl: 'https://www.bilibili.com/video/BV1dRx16pEPw',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r19',
-    name: '1944滇缅竹林：远征军教盟军吃…',
-    emoji: '🎤',
-    date: '2026-11-01',
-    hot: 82,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第19名：1944滇缅竹林：远征军教盟军吃虎皮笋，油手把风笛吹成妖笛【AI全民制作人】。',
-    animation: 'fire',
-    animText: '1944滇缅竹林：远征军教盟军吃虎皮笋…',
-    emojis: ['🎤', '⚡'],
-    color: '#48dbfb',
-    videoUrl: 'https://www.bilibili.com/video/BV1q8x56uEDU',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r16',
-    name: '【战双帕弥什】「莱亚·祈星」角色…',
-    emoji: '⚡',
-    date: '2026-11-01',
-    hot: 85,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第16名：【战双帕弥什】「莱亚·祈星」角色PV | “生日快乐”。',
-    animation: 'dance',
-    animText: '战双帕弥什「莱亚·祈星」角色PV…',
-    emojis: ['⚡', '⚡'],
-    color: '#5f27cd',
-    videoUrl: 'https://www.bilibili.com/video/BV1rFxe6hEmn',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r17',
-    name: '压抑到极致的爆发，BLG晋级淘汰…',
-    emoji: '🍿',
-    date: '2026-11-01',
-    hot: 84,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第17名：压抑到极致的爆发，BLG晋级淘汰赛！BLG 2-0 HLE 赛后数据雷达图丨2026全球总决赛-瑞士轮。',
-    animation: 'emojiRain',
-    animText: '压抑到极致的爆发，BLG晋级淘汰赛…',
-    emojis: ['🍿', '⚡'],
-    color: '#ff6b6b',
-    videoUrl: 'https://www.bilibili.com/video/BV1Yfxp6HEaF',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r14',
-    name: '耗资上万！我重制了网页版MC！【…',
-    emoji: '🎵',
-    date: '2026-11-01',
-    hot: 87,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第14名：耗资上万！我重制了网页版MC！【B站AI创造公开赛】。',
-    animation: 'ring',
-    animText: '耗资上万！我重制了网页版MC…',
-    emojis: ['🎵', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Nxxr6oES2',
-    source: 'B站今日热门（实时抓取）'
-  },
-  {
-    id: 'r22',
-    name: '【漫士】这可能是人类提出最深刻的…',
-    emoji: '🎬',
-    date: '2026-11-01',
-    hot: 79,
-    tags: ['B站热门', '今日'],
-    desc: 'B站今日热门第22名：【漫士】这可能是人类提出最深刻的数学/计算机问题。',
-    animation: 'textPop',
-    animText: '漫士这可能是人类提出最深…',
-    emojis: ['🎬', '⚡'],
-    color: '#54a0ff',
-    videoUrl: 'https://www.bilibili.com/video/BV1Ntxr6xE7Y',
-    source: 'B站今日热门（实时抓取）'
-  },
 ];
 
 /* ---------- 鐖嗘姊楀簱 ---------- */
@@ -161,7 +161,7 @@ const VIRAL_MEMES = [{"id":"v1","name":"中国人能飞（揽佬）","emoji":"�
 
 /* ---------- 椤堕儴婊氬姩鐑瘝 ---------- */
 const HOT_WORDS = [
-  '牧神记', '谷歌太空AI算力中心成功运行', '拜仁2-2多特', 'HLE BLG', '巴萨6-1阿拉维斯', '数据回顾BLG战胜HLE', '卡卡入选AC米兰名人堂', '韩国解说看BLG零封HLE', '超级科学晚全程回顾', 'LOS LYON', '锐评BLG战胜HLE晋级八强', '米兰3-1终结国米不败'
+  'S16瑞士轮全位置数据图', '牧神记', '中期选举对特朗普有多重要', '锐评BLG战胜HLE晋级八强', '华南什么时候能入秋', '未成年人别拿年龄当犯罪免罚护身符', 'Viper说HLE终究要淘汰不如输给我', '歌剧老师锐评韩娱', 'Knight发条大招4杀', '第一次去混浴是什么体验', 'HLE BLG', '数据回顾BLG战胜HLE'
 ];
 
 /* ---------- 缂栧勾鍙?---------- */
